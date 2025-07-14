@@ -1,0 +1,949 @@
+<html>
+    <head>
+<meta name="Title" content="|TECHNO PLAYER|">
+<meta name="Author" content="Raked">
+<meta name="Description" content="Venta de Reproductores y Radio Streaming">
+<meta name="Keywords" content="TECHNO PLAYER,facebook,musica online,hi5,radio,humor,djs">
+<meta name="Language" content="Spanish">
+<meta name="Revisit" content="1 day">
+<meta name="Distribution" content="Global">
+<meta name="Robots" content="Index">
+<link href="assets/PC.png" rel="shortcut icon">
+<script src="block.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<title>TECHNO PLAYER</title>
+<link href="TechnoPlayer.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+    
+BODY {
+	BACKGROUND: url(assets/BG.png) #ffffff fixed no-repeat center 5%;
+	background-repeat: repeat;
+	background-image: url(assets/BG.png);
+}html{SSCROLLBAR-FACE-COLOR: white; MARGIN: 0px; SCROLLBAR-HIGHLIGHT-COLOR: white; SCROLLBAR-SHADOW-COLOR: darkgray; SCROLLBAR-3DLIGHT-COLOR: darkgray; SCROLLBAR-ARROW-COLOR: darkgray; SCROLLBAR-TRACK-COLOR: white; FONT-FAMILY: arial; SCROLLBAR-DARKSHADOW-COLOR: white; }
+.Videos {
+    font-family: Arial, Helvetica, sans-serif;
+	color: #2D1A00;
+	font-weight: none;
+	font-size: 12px;
+}
+.Estilo2 {font-size: 12px}
+
+.Nroran {
+font-size: 25px;
+FONT-FAMILY: "Arial Black", Gadget, sans-serif;
+color:#ff0000;
+font-weight: bold;
+LETTER-SPACING: -1px;
+font-style: italic;
+}
+
+.Estilo3 {
+	color: #56DCD9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.Artista {
+    font-size: 12px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.Artisbaj {
+    font-size: 12px;
+	color: #ffffff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.Estilo4 {color: #FFFFFF}
+.Estilo5 {color: #56DCD9}
+
+.Votar {
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #B7FFFF;
+	font-weight: none;
+}
+.Estilo6 {font-size: 14px}
+.Estilo10 {
+	font-size: 10px;
+	color: #FFFFFF;
+}
+.Estilo12 {
+	font-size: 10px;
+	color: #666666;
+}
+.Estilo14 {font-size: 11px; color: #010101; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.Estilo15 {color: #000066}
+.Estilo16 {font-size: 11px}
+.Estilo18 {font-size: 25px; FONT-FAMILY: "Arial Black", Gadget, sans-serif; color: #FCD84C; font-weight: bold; LETTER-SPACING: -1px; font-style: italic; }
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #000033;
+	font-weight: bold;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000033;
+}
+a:hover {
+	text-decoration: none;
+	color: #413665;
+}
+a:active {
+	text-decoration: none;
+	color: #000033;
+}
+.Estilo19 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+.Estilo20 {
+	color: #406285;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+-->
+</style>
+        
+    <style type="text/css" id="operaUserStyle"></style>
+        <style type="text/css">
+            :root [href^="//mage98rquewz.com/"], :root [href^="//x4pollyxxpush.com/"], :root zeus-ad, :root span[id^="ezoic-pub-ad-placeholder-"], :root ins.adsbygoogle[data-ad-slot], :root guj-ad, :root gpt-ad, :root div[id^="zergnet-widget"], :root div[id^="vuukle-ad-"], :root div[id^="taboola-stream-"], :root div[id^="sticky_ad_"], :root div[id^="pa_sticky_ad_box_middle_"], :root div[id^="optidigital-adslot"], :root div[id^="gpt_ad_"], :root div[id^="ezoic-pub-ad-"], :root div[id^="dfp-ad-"], :root div[id^="crt-"][style], :root div[id^="advads_ad_"], :root div[id^="adspot-"], :root div[id^="ads300_250-widget-"], :root div[id^="ads300_100-widget-"], :root div[id^="ads250_250-widget-"], :root div[id^="adrotate_widgets-"], :root ps-connatix-module, :root div[id^="ad_position_"], :root div[id^="ad-div-"], :root div[id^="_vdo_ads_player_ai_"], :root div[id*="ScriptRoot"], :root div[id*="MarketGid"], :root div[data-native_ad], :root div[data-native-ad], :root div[data-mini-ad-unit], :root div[data-insertion], :root div[data-id-advertdfpconf], :root div[data-google-query-id], :root hl-adsense, :root div[data-contentexchange-widget], :root div[data-content="Advertisement"], :root div[data-alias="300x250 Ad 2"], :root div[data-adzone], :root div[data-adunit-path], :root div[data-adname], :root div[data-ad-wrapper], :root div[data-ad-placeholder], :root div[class^="native-ad-"], :root div[data-dfp-id], :root div[class^="kiwi-ad-wrapper"], :root div[aria-label="Ads"], :root display-ads, :root display-ad-component, :root bottomadblock, :root atf-ad-slot, :root aside[id^="adrotate_widgets-"], :root ark-top-ad, :root amp-fx-flying-carpet, :root amp-embed[type="taboola"], :root amp-connatix-player, :root div[id^="google_dfp_"], :root ad-slot, :root a[href^="https://banners.livepartners.com/"], :root a[target="_blank"][onmousedown="this.href^='http://paid.outbrain.com/network/redir?"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="https://www.purevpn.com/"][href*="&utm_source=aff-"], :root a[href^="https://www.onlineusershielder.com/"], :root a[href^="https://www.nudeidols.com/cams/"], :root a[href^="https://financeads.net/tc.php?"], :root a[href^="https://www.mrskin.com/tour"], :root a[href^="https://www.kingsoffetish.com/tour?partner_id="], :root a[href^="https://www.infowarsstore.com/"] > img, :root a[href^="https://www.highperformancecpmgate.com/"], :root amp-ad, :root a[href^="https://www.highcpmrevenuenetwork.com/"], :root a[href^="https://lnkxt.bannerator.com/"], :root a[href^="https://www.geekbuying.com/dynamic-ads/"], :root a[href^="https://www.friendlyduck.com/AF_"], :root a[href^="https://www.financeads.net/tc.php?"], :root [href^="https://www.herbanomic.com/"] > img, :root a[href^="https://maymooth-stopic.com/"], :root a[href^="https://www.dql2clk.com/"], :root a[href^="https://www.nutaku.net/signup/landing/"], :root a[href^="https://www.dating-finder.com/signup/?ai_d="], :root a[href^="https://www.brazzersnetwork.com/landing/"], :root a[href^="https://www.adxsrve.com/"], :root [data-template-type="nativead"], :root a[href^="https://www.endorico.com/Smartlink/"], :root a[href^="https://www.adultempire.com/"][href*="?partner_id="], :root a[href^="https://voluum.prom-xcams.com/"], :root a[href^="https://twinrdsrv.com/"], :root a[href^="https://trk.nfl-online-streams.club/"], :root a[href^="https://tracking.avapartner.com/"], :root a[href^="https://track.wg-aff.com"], :root a[href^="https://track.ultravpn.com/"], :root a[href^="https://track.afcpatrk.com/"], :root a[href^="https://track.1234sd123.com/"], :root a[href^="https://torguard.net/aff.php"] > img, :root a[href^="https://tc.tradetracker.net/"] > img, :root a[href^="https://tatrck.com/"], :root a[href^="https://click.candyoffers.com/"], :root [href^="https://zstacklife.com/"] img, :root a[href^="https://t.aslnk.link/"], :root a[href^="https://t.adating.link/"], :root a[href^="https://safesurfingtoday.com/"][href*="?skip="], :root a[href^="https://land.brazzersnetwork.com/landing/"], :root a[href^="https://t.acam.link/"], :root a[href^="https://syndication.optimizesrv.com/"], :root a[href^="https://go.trackitalltheway.com/"], :root [href^="https://track.fiverr.com/visit/"] > img, :root a[href^="https://syndication.exoclick.com/"], :root a[href^="https://syndication.dynsrvtbg.com/"], :root div[data-alias="300x250 Ad 1"], :root a[href^="https://syndicate.contentsserved.com/"], :root a[href^="https://svb-analytics.trackerrr.com/"], :root a[href^="https://streamate.com/landing/click/"], :root a[href^="https://ad.doubleclick.net/"], :root a[href^="https://static.fleshlight.com/images/banners/"], :root a[href^="https://slkmis.com/"], :root a[href^="https://s.zlink3.com/"], :root a[href^="https://www.mrskin.com/account/"], :root a[href^="https://s.optzsrv.com/"], :root a[href^="https://quotationfirearmrevision.com/"], :root a[href^="https://pubads.g.doubleclick.net/"], :root a[href^="https://ak.oalsauwy.net/"], :root a[href^="https://softwa.cfd/"], :root a[href^="https://play1ad.shop/"], :root a[href^="https://prf.hn/click/"][href*="/camref:"] > img, :root a[href^="https://www.dating-finder.com/?ai_d="], :root a[href^="https://serve.awmdelivery.com/"], :root a[href^="https://prf.hn/click/"][href*="/adref:"] > img, :root app-ad, :root a[href^="https://postback1win.com/"], :root a[href^="https://a.adtng.com/"], :root a[href^="https://playnano.online/offerwalls/?ref="], :root a[href^="https://www.privateinternetaccess.com/"] > img, :root a[href^="https://mmwebhandler.aff-online.com/"], :root a[href^="https://www.bet365.com/"][href*="affiliate="], :root a[href^="https://pb-track.com/"], :root a[href^="https://pb-front.com/"], :root a[href^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://ngineet.cfd/"], :root a[href^="https://ndt5.net/"], :root a[href^="http://eighteenderived.com/"], :root a[href^="https://natour.naughtyamerica.com/track/"], :root a[href^="https://mediaserver.entainpartners.com/renderBanner.do?"], :root a[href^="https://www.sugarinstant.com/?partner_id="], :root a[href^="https://m.do.co/c/"] > img, :root .nya-slot[style], :root a[href^="https://a.bestcontentweb.top/"], :root a[href^="https://lobimax.com/"], :root a[href^="https://lead1.pl/"], :root a[href^="https://landing1.brazzersnetwork.com"], :root a[href^="https://landing.brazzersnetwork.com/"], :root a[href^="https://join.virtuallust3d.com/"], :root a[href^="https://kiksajex.com/"], :root a[href^="https://juicyads.in/"], :root a[href^="https://www.mypornstarcams.com/landing/click/"], :root a[href^="https://snowdayonline.xyz/"], :root a[href^="https://mediaserver.gvcaffiliates.com/renderBanner.do?"], :root a[href^="https://join.dreamsexworld.com/"], :root a[href^="https://jaxofuna.com/"], :root a[href^="https://itubego.com/video-downloader/?affid="], :root a[href^="https://italarizege.xyz/"], :root a[href^="https://iqbroker.com/"][href*="?aff="], :root ad-shield-ads, :root a[href^="https://hot-growngames.life/"], :root a[href^="https://golinks.work/"], :root a[href^="https://go.xxxvjmp.com/"], :root a[href^="https://zirdough.net/"], :root [class^="tile-picker__CitrusBannerContainer-sc-"], :root a[href^="https://go.xxxiijmp.com"], :root a[href^="https://go.xtbaffiliates.com/"], :root .OUTBRAIN[data-widget-id^="FMS_REELD_"], :root [data-role="tile-ads-module"], :root a[href^="https://go.xlviirdr.com"], :root a[href^="https://go.xlviiirdr.com"], :root a[href^="https://ismlks.com/"], :root [href^="https://www.mypillow.com/"] > img, :root a[href^="https://go.xlirdr.com"], :root [data-css-class="dfp-inarticle"], :root a[href^="https://l.hyenadata.com/"], :root a[href^="https://go.tmrjmp.com"], :root a[href^="https://go.skinstrip.net"][href*="?campaignId="], :root a[href^="https://go.markets.com/visit/?bta="], :root a[href^="https://billing.purevpn.com/aff.php"] > img, :root a[href^="https://go.hpyrdr.com/"], :root a[href^="https://lijavaxa.com/"], :root a[href^="https://go.goaserv.com/"], :root a[href^="https://t.hrtye.com/"], :root a[href^="https://go.etoro.com/"] > img, :root a[href^="https://go.dmzjmp.com"], :root div[class^="Display_displayAd"], :root a[href^="https://www.bang.com/?aff="], :root #mgb-container > #mgb, :root a[href^="https://go.admjmp.com"], :root div[id^="div-gpt-"], :root a[href^="https://gml-grp.com/"], :root a[href^="https://get.surfshark.net/aff_c?"][href*="&aff_id="] > img, :root a[href^="https://gamingadlt.com/?offer="], :root a[href^="https://www.adskeeper.com"], :root [href^="https://www.reimageplus.com/"], :root a[data-redirect^="https://paid.outbrain.com/network/redir?"], :root [href^="https://clicks.affstrack.com/"] > img, :root a[href^="https://ak.hauchiwu.com/"], :root a[href^="https://engine.phn.doublepimp.com/"], :root a[href^="https://engine.blueistheneworanges.com/"], :root a[href^="https://eergortu.net/"], :root a[href^="https://dl-protect.net/"], :root a[href^="https://disobediencecalculatormaiden.com/"], :root a[href^="https://datingoffers30.info/"], :root a[href*=".foxqck.com/"], :root a[href^="https://ctosrd.com/"], :root a[href^="https://clixtrac.com/"], :root [href^="https://noqreport.com/"] > img, :root a[href^="https://clicks.pipaffiliates.com/"], :root a[href^="https://datewhisper.life/"], :root a[href^="https://get-link.xyz/"], :root a[href^="https://click.linksynergy.com/fs-bin/"] > img, :root a[href^="https://combodef.com/"], :root AD-TRIPLE-BOX, :root a[href^="https://click.hoolig.app/"], :root a[href^="https://track.totalav.com/"], :root img[src^="https://images.purevpnaffiliates.com"], :root a[href^="https://porntubemate.com/"], :root a[href^="https://clickadilla.com/"], :root a[href^="https://click.dtiserv2.com/"], :root a[href^="https://go.xlvirdr.com"], :root a[href^="http://www.iyalc.com/"], :root a[href^="https://claring-loccelkin.com/"], 
+            :root a[href^="https://s.ma3ion.com/"], :root a[href^="https://cams.imagetwist.com/in/?track="], :root a[href^="https://t.ajrkm1.com/"], :root [href="https://masstortfinancing.com"] img, :root a[href^="https://bongacams10.com/track?"], :root a[href*=".g2afse.com/"], :root [data-ad-name], :root a[href^="https://bodelen.com/"], :root a[href^="http://revolvemockerycopper.com/"], :root a[href^="https://awptjmp.com/"], :root a[href^="https://join.sexworld3d.com/track/"], :root a[href^="https://intenseaffiliates.com/redirect/"], :root a[href^="https://ads.ad4game.com/"], :root a[href^="https://aweptjmp.com/"], :root [class^="s2nPlayer"], :root a[href^="https://chaturbate.jjgirls.com/?track="], :root a[href^="https://ausoafab.net/"], :root a[href^="https://activate-game.com/"], :root .scroll-fixable.rail-right > .deals-rail, :root [data-wpas-zoneid], :root a[href^="https://a2.adform.net/"], :root a[href^="https://auesk.cfd/"], :root a[href^="https://ak.psaltauw.net/"], :root a[href^="https://adclick.g.doubleclick.net/"], :root div[id^="ad-position-"], :root a[href^="https://leg.xyz/?track="], :root a[href^="https://www.toprevenuegate.com/"], :root a[href^="https://bc.game/"], :root a[href^="https://a.bestcontentoperation.top/"], :root a[href^="https://adultfriendfinder.com/go/"], :root a[href^="https://ads.planetwin365affiliate.com/"], :root a[href^="https://ads.leovegas.com/"], :root [data-m-ad-id], :root a[href^="https://a-ads.com/"], :root div[id^="rc-widget-"], :root a[href^="http://eslp34af.click/"], :root a[href^="https://turnstileunavailablesite.com/"], :root a[href^="https://chaturbate.com/in/?"], :root [href^="https://freecourseweb.com/"] > .sitefriend, :root a[href^="https://prf.hn/click/"][href*="/creativeref:"] > img, :root a[href*="&maxads="], :root a[href^="http://www.adultempire.com/unlimited/promo?"][href*="&partner_id="], :root a[href^="https://1betandgonow.com/"], :root a[href^="https://www.googleadservices.com/pagead/aclk?"], :root a[href^="http://www.mrskin.com/tour"], :root a[href^="http://www.friendlyduck.com/AF_"], :root a[href^="https://getvideoz.click/"], :root a[href^="http://troopsassistedstupidity.com/"], :root a[href^="https://bongacams2.com/track?"], :root amp-ad-custom, :root a[href^="http://trk.globwo.online/"], :root a-ad, :root a[href^="https://offhandpump.com/"], :root a[href^="http://stickingrepute.com/"], :root #slashboxes > .deals-rail, :root a[href^="http://premonitioninventdisagree.com/"], :root a[href^="http://naggingirresponsible.com/"], :root a[href^="https://in.rabbtrk.com/"], :root div[data-ad-targeting], :root a[href^="https://hotplaystime.life/"], :root a[href^="http://www.h4trck.com/"], :root a[href^="https://81ac.xyz/"], :root a[href^="http://guestblackmail.com/"], :root a[href^="http://cam4com.go2cloud.org/aff_c?"], :root a[href^="https://ads.betfair.com/redirect.aspx?"], :root a[href^="https://ad.kubiccomps.icu/"], :root [href^="https://www.mypatriotsupply.com/"] > img, :root a[href^="https://trk.softonixs.xyz/"], :root a[href^="https://sexynearme.com/"], :root a[href^="https://myclick-2.com/"], :root a[href^="http://dragnag.com/"], :root a[style="width:100%;height:100%;z-index:10000000000000000;position:absolute;top:0;left:0;"], :root [id^="div-gpt-ad"], :root .ob_container .item-container-obpd, :root div[id^="yandex_ad"], :root a[href^="https://pb-imc.com/"], :root a[href^="http://deskfrontfreely.com/"], :root a[href^="https://track.adform.net/"], :root a[href^="http://avthelkp.net/"], :root a[href^="https://a.medfoodhome.com/"], :root a[onmousedown^="this.href='http://paid.outbrain.com/network/redir?"][target="_blank"] + .ob_source, :root a[href^="https://engine.flixtrial.com/"], :root [data-type="ad-vertical"], :root a[href^="http://annulmentequitycereals.com/"], :root citrus-ad-wrapper, :root a[href^="https://go.grinsbest.com/"], :root a[onmousedown^="this.href='https://paid.outbrain.com/network/redir?"][target="_blank"], :root a[href^="//startgaming.net/tienda/" i], :root a[href^="https://www.get-express-vpn.com/offer/"], :root a[href^="//s.st1net.com/splash.php"], :root a[href^="https://a.medfoodsafety.com/"], :root a[href^="//go.eabids.com/"], :root a[href^="https://go.nordvpn.net/aff"] > img, :root .\[\&_\.gdprAdTransparencyCogWheelButton\]\:\!pjra-z-\[5\], :root [href^="http://clicks.totemcash.com/"], :root a[href^="https://ad.zanox.com/ppc/"] > img, :root [data-d-ad-id], :root a[href*=".engine.adglare.net/"], :root [href^="https://www.profitablegatecpm.com/"], :root div[id^="lazyad-"], :root a[href^="http://com-1.pro/"], :root a[href*=".cfm?domain="][href*="&fp="], :root [data-dynamic-ads], :root a[href^="https://xbet-4.com/"], :root a[data-widget-outbrain-redirect^="http://paid.outbrain.com/network/redir?"], :root [data-ad-width], :root [data-block-type="ad"], :root [href^="https://join.playboyplus.com/track/"], :root a[data-url^="http://paid.outbrain.com/network/redir?"] + .author, :root a[href^="https://ab.advertiserurl.com/aff/"], :root a[data-oburl^="https://paid.outbrain.com/network/redir?"], :root a[href^="https://trk.sportsflix4k.club/"], :root a[href^="http://dragfault.com/"], :root [href^="https://cpa.10kfreesilver.com/"], :root a[href^="https://a.bestcontentfood.top/"], :root a[data-obtrack^="http://paid.outbrain.com/network/redir?"], :root a[data-href^="http://ads.trafficjunky.net/"], :root a[href^="https://go.xlivrdr.com"], :root [onclick^="location.href='https://1337x.vpnonly.site/"], :root [name^="google_ads_iframe"], :root [id^="section-ad-banner"], :root [data-advadstrackid], :root a[href^="http://muzzlematrix.com/"], :root [href^="https://zone.gotrackier.com/"], :root [href^="https://www.restoro.com/"], :root a[href^="https://bngpt.com/"], :root a[href^="https://www.sheetmusicplus.com/"][href*="?aff_id="], :root a[href^="http://adultfriendfinder.com/go/"], :root a[href^="https://fastestvpn.com/lifetime-special-deal?a_aid="], :root a[href^="https://tour.mrskin.com/"], :root a[href^="https://vo2.qrlsx.com/"], :root [href^="https://www.avantlink.com/click.php"] img, :root a[href^="https://losingoldfry.com/"], :root [href^="https://routewebtk.com/"], :root a[href^="https://t.ajump1.com/"], :root div[id^="div-ads-"], :root [href^="https://rapidgator.net/article/premium/ref/"], :root [href^="https://join.girlsoutwest.com/"], :root [href^="https://join3.bannedsextapes.com"], :root .vid-present > .van_vid_carousel__padding, :root div[id^="adngin-"], :root [data-rc-widget], :root span[data-ez-ph-id], :root [href^="https://track.aftrk1.com/"], :root a[href^="https://go.xxxijmp.com"], :root [href^="https://istlnkcl.com/"], :root div[data-adunit], :root app-large-ad, :root [href^="https://turtlebids.irauctions.com/"] img, :root [href^="https://wct.link/click?"], :root [href^="https://ilovemyfreedoms.com/landing-"], :root [href^="https://go.xlrdr.com"], :root a[href^="https://tm-offers.gamingadult.com/"], :root [href^="https://charmingdatings.life/"], :root [href^="https://glersakr.com/"], :root [href^="https://v.investologic.co.uk/"], :root a[href^="https://www.goldenfrog.com/vyprvpn?offer_id="][href*="&aff_id="], :root [id^="ad-wrap-"], :root a[href*="//jjgirls.com/sex/Chaturbate"], :root [data-id^="div-gpt-ad"], :root a[href^="https://tracker.loropartners.com/"], :root [href^="https://awbbjmp.com/"], :root a[href*=".adsrv.eacdn.com/"], :root [href^="https://antiagingbed.com/discount/"] > img, :root [href^="https://www.brighteonstore.com/products/"] img, :root a[href^="https://bngprm.com/"], :root [href^="https://shiftnetwork.infusionsoft.com/go/"] > img, :root a[href^="https://go.strpjmp.com/"], :root a[href^="https://go.bushheel.com/"], :root a[href^="https://ctjdwm.com/"], :root a[href^="https://camfapr.com/landing/click/"], :root [href="//sexcams.plus/"], :root [href^="http://www.mypillow.com/"] > img, :root [href^="https://www.targetingpartner.com/"], :root div[class^="Adstyled__AdWrapper-"], :root a[href^="https://startgaming.net/tienda/" i], :root .section-subheader > .section-hotel-prices-header, :root [href^="https://www.hostg.xyz/"] > img, :root a[href^="https://join.virtualtaboo.com/track/"], :root [id^="ad_sky"], :root #kt_player > a[target="_blank"], :root a[href^="http://bongacams.com/track?"], :root [href^="http://mypillow.com/"] > img, :root [href="https://ourgoldguy.com/contact/"] img, :root [href="https://www.masstortfinancing.com/"] > img, :root [href="https://jdrucker.com/gold"] > img, :root [href^="https://ad.admitad.com/"], :root [href^="https://mypillow.com/"] > img, :root [data-testid="ad_testID"], :root a[href^="http://handgripvegetationhols.com/"], :root [class^="amp-ad-"], :root a[href^="http://tc.tradetracker.net/"] > img, :root [data-ez-name], :root a[href^="https://black77854.com/"], :root [data-revive-zoneid] > iframe, :root [data-testid="adBanner-wrapper"], :root [href^="https://mylead.global/stl/"] > img, :root [href^="https://mypatriotsupply.com/"] > img, :root a[href^="https://go.hpyjmp.com"], :root [href^="https://mystore.com/"] > img, :root a[href^="https://witnessjacket.com/"], :root [data-mobile-ad-id], :root a[href^="https://fc.lc/ref/"], :root [data-adshim], :root topadblock, :root a[href^="//s.zlinkd.com/"], :root a[href^="https://bs.serving-sys.com"], :root [href^="https://goldcometals.com/clk.trk"], :root [data-desktop-ad-id], :root [href^="https://www.cloudways.com/en/?id"], :root a[href^="https://www.liquidfire.mobi/"], :root .grid > .container > #aside-promotion, :root DFP-AD, :root [id^="ad_slider"], :root [data-adbridg-ad-class], :root a[href^="https://linkboss.shop/"], :root [data-adblockkey], :root a[href^="https://go.cmtaffiliates.com/"], :root [href^="https://optimizedelite.com/"] > img, :root [data-name="adaptiveConstructorAd"], :root [onclick*="content.ad/"], :root [data-ad-manager-id], :root AMP-AD, :root [data-ad-cls], :root a[href^="https://6-partner.com/"], :root [href^="https://affiliate.fastcomet.com/"] > img, :root a[href^="https://go.mnaspm.com/"], :root [class^="adDisplay-module"],
+            :root AD-SLOT, :root #kt_player > div[style="position: absolute; inset: 0px; z-index: 170;"], :root [data-freestar-ad][id], :root a[href^="https://go.xxxjmp.com"], :root #leader-companion > a[href], :root a[href^="http://www.adultdvdempire.com/?partner_id="][href*="&utm_"], :root [data-ad-module], :root a[href^="http://partners.etoro.com/"], :root a[href^=" https://www.friendlyduck.com/AF_"], :root a[href*="/jump/next.php?r="], :root app-advertisement, :root a[href^="https://getmatchedlocally.com/"], :root a[href^="https://clickins.slixa.com/"], :root [class^="div-gpt-ad"], :root a[href^="https://traffdaq.com/"], :root a[href^="https://cam4com.go2cloud.org/"], :root a[href^="http://li.blogtrottr.com/click?"], :root .ob_dual_right > .ob_ads_header ~ .odb_div { display: none !important; }
+        </style></head>
+<body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+    <table width="890" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tbody>
+            <tr>
+                <td height="6" bgcolor="#FFFFFF" class="Estilo2">
+                    <div align="center"><img src="assets/Line.png" width="890" height="6"></div>
+                </td>
+            </tr>
+            <tr>
+                <td height="20" background="FG/Vamos-BMIX_03.jpg" bgcolor="#FFFFFF" class="Estilo2">
+                    <div align="center">
+                  <img src="https://imgur.com/AU4Panb.png" width="890" height="140">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td height="33" bgcolor="#FFFFFF" class="Estilo2">
+                    <div align="center">
+                        <table width="890" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td width="890" height="50" class="Estilo2">
+                                        <div id="navigation">
+                                            <ul>
+                                               <li id="active"><a href="index.html">Inicio</a></li>
+                                                <li><a href="https://i.postimg.cc/yY78kKJm/Horarios-Techno-Player-FX.png" target="_blank">Horarios</a></li>
+                                                <li><a href="https://www.facebook.com/profile.php?id=100066461005306" target="_blank">Facebook</a></li>
+                                                <li><a href="https://www.appcreator24.com/app3181173-9u7jzn" target="_blank">App</a></li>
+                                                <li><a href="https://open.spotify.com/playlist/1VYdKkwhvk03yVitlPok09" target="_blank">Ranking</a></li>
+                                                <li><a href="https://www.twitch.tv/iraked" target="_blank">Eventos</a></li>
+                                                <li><a href="https://wa.me/9567062121" target="_blank">Contacto Cazie</a></li>
+                                                <li><a href="https://wa.me/8112848448" target="_blank">Contacto Juan</a></li>
+                                            </ul>
+	                                   </div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+        </tr>
+            <tr>
+                <td height="18" bgcolor="#FFFFFF" class="Estilo2">
+                    <table width="700" height="1932" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="880" height="10" class="Estilo2"><div align="center"><img src="assets/zepere.gif" width="250" height="10"></div></td>
+                            </tr>
+                        <tr>
+                    <td height="793" class="Estilo2">
+                        <div align="center">
+                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
+                        <tbody>
+                    <tr>
+                        <td width="554" height="793" valign="top">
+                    <table width="540" border="0" cellpadding="0" cellspacing="0" bgcolor="#ff0000">
+                        <tbody>
+                            <tr>
+                                <td width="496" height="10" bgcolor="#FFFFFF">
+                                    <div align="left"><img src="assets/Eventos.png" width="540" height="55">
+                                    </div>
+                                </td>
+                            </tr>
+                        <tr></tr>
+                        <tr>
+                            <td width="496" height="10" bgcolor="#FFFFFF">
+                                <div align="center"><img src="assets/Line1.png" width="540" height="10"></div>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td height="0" align="center" valign="center">
+                        <table width="520" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td height="173" class="Estilo2">
+                                        <div align="left"><iframe name="usu" width="520" height="230" src="Slider.html" marginwidth="1" marginheight="1" scrolling="no" border="0" frameborder="0"></iframe></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table></td>
+                            </tr>
+                        <tr>
+                            <td height="0" align="center" valign="center" bgcolor="#FFFFFF"><img src="assets/Line3.png" width="540" height="10"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                        <table width="300" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td height="8" class="Estilo2"><div align="center"><img src="assets/zepere.gif" width="250" height="8"></div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                            <table width="540" border="0" cellpadding="0" cellspacing="0">
+                    <tbody>
+                        <tr>
+                            <td width="496" height="10" bgcolor="#FFFFFF"><div align="left"><img src="assets/ranking_03.png" width="540" height="72"></div></td>
+                        </tr>
+                    <tr></tr>
+                        <tr>
+                            <td height="0" align="center" valign="center" bgcolor="#56DCD9">
+                                <table width="540" height="300" border="0" align="center" cellpadding="0" cellspacing="0" background="assets/Rankin.png" bgcolor="#3A3F55">
+                        <tbody>
+                            <tr>
+                                <td height="173" class="Estilo2">
+                                    <div align="center">
+                                        <table width="500" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="277" height="216" class="Estilo2">       <table width="205" height="201" border="0" align="right" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="205" height="36" class="Estilo2">        <table width="203" height="35" border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="40" height="35" class="Estilo2"><div align="center" class="Nroran">1</div></td>
+                                    <td width="163" class="Estilo2">
+                                        <div align="center">
+                                            <table width="163" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td height="15" class="Estilo2">
+                <div align="center" class="RAN-Arti">
+                    <div align="left">
+                        <table width="163" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
+                        <tbody>
+                          <tr>
+                            <td width="80" height="10" class="Estilo2">
+                                <div align="center" class="RAN-Arti">
+                                    <div align="left" class="Estilo7 Estilo3">José Madero</div>
+                                </div>
+                              </td>
+                            <td width="83" class="Estilo2">&nbsp;</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td height="15" class="RAN-Titu Estilo4 Estilo6">Cum Laude</td>
+                                </tr>
+                        </tbody>
+                            </table>
+                                </div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                  </table>
+                        </td>
+                            </tr>
+                                <tr>
+                                    <td height="36" class="Estilo2">
+                                        <table width="203" height="36" border="0" align="left" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <td width="40" height="36" class="Estilo2"><div align="center" class="Nroran">2</div>
+                                    </td>
+                                        <td width="163" class="Estilo2">
+                                            <div align="center">
+                                        <table width="163" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                <tr>
+                                    <td height="15" class="Estilo2">
+                                        <div align="center" class="RAN-Arti">
+                                            <div align="left">
+                                        <table width="163" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td width="139" height="10" class="Estilo2">
+                                                <div align="center" class="RAN-Arti">
+                                                    <div align="left" class="Estilo7 Estilo3 Estilo5">Camilo, Carín León</div>
+                                                </div>
+                                            </td>
+                                        <td width="24" class="Estilo2">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                      </table>
+                                        </div>
+                                            </div>
+                                        </td>
+                                </tr>
+                                    <tr>
+                                        <td height="15" class="RAN-Titu Estilo4 Estilo6">Una vida pasada</td>
+                                    </tr>
+                                    </tbody>
+                                        </table>
+                                            </div>
+                                                </td>
+                                            </tr>
+                                    </tbody>
+                                </table>
+                                    </td>
+                                        </tr>
+                                            <tr>
+                                                <td height="35" class="Estilo2">    <div align="left">
+                                                <table width="203" height="35" border="0" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                        <tr>
+                                            <td width="40" height="15" class="Estilo2"><div align="center" class="Nroran">3</div>
+                                            </td>
+                                                <td width="163" class="Estilo2">    <div align="center">
+                                                <table width="163" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                        <tr>
+                                  <td height="15" class="Estilo2"><div align="center" class="RAN-Arti">
+                                      <div align="left">
+                                        <table width="163" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
+                                          <tbody>
+                                            <tr>
+                                              <td width="80" height="10" class="Estilo2"><div align="center" class="RAN-Arti">
+                                                  <div align="left" class="Estilo7 Estilo3">Luck Ra,Maluma, Khea</div>
+                                              </div></td>
+                                              <td width="83" class="Estilo2">&nbsp;</td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </div>
+                                  </div></td>
+                                </tr>
+                                <tr>
+                                  <td height="15" class="RAN-Titu Estilo4 Estilo6">Hola perdida REMIX</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div></td>
+              </tr>
+              <tr>
+                <td height="36" class="Estilo2"><table width="203" height="35" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td width="40" height="35" class="Estilo2"><div align="center" class="Nroran">4</div></td>
+                      <td width="163" class="Estilo2"><div align="center">
+                          <table width="163" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr>
+                                <td height="15" class="Estilo2"><div align="center" class="RAN-Arti">
+                                    <div align="left">
+                                      <table width="163" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                          <tr>
+                                            <td width="80" height="10" class="Estilo2"><div align="center" class="RAN-Arti">
+                                                <div align="left" class="Estilo7 Estilo3 Estilo5">Marshmello, Manuel Turizo</div>
+                                            </div></td>
+                                            <td width="83" class="Estilo2">&nbsp;</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                </div></td>
+                              </tr>
+                              <tr>
+                                <td height="15" class="RAN-Titu Estilo4 Estilo6">El merengue</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td height="35" class="Estilo2"><table width="203" height="35" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td width="40" height="35" class="Estilo2"><div align="center" class="Nroran">5</div></td>
+                      <td width="163" class="Estilo2"><div align="center">
+                          <table width="163" height="30" border="0" align="center" cellpadding="0" cellspacing="0">
+                            <tbody>
+                              <tr>
+                                <td height="15" class="Estilo2"><div align="center" class="RAN-Arti">
+                                    <div align="left">
+                                      <table width="163" height="10" border="0" align="center" cellpadding="0" cellspacing="0">
+                                        <tbody>
+                                          <tr>
+                                            <td width="80" height="10" class="Estilo2"><div align="center" class="RAN-Arti">
+                                                <div align="left" class="Estilo7 Estilo3">Enrique Iglesias, María Becerra</div>
+                                            </div></td>
+                                            <td width="83" class="Estilo2">&nbsp;</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                </div></td>
+                              </tr>
+                              <tr>
+                                <td height="15" class="RAN-Titu Estilo4 Estilo6">Así es la vida</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div></td>
+                    </tr>
+                  </tbody>
+                </table></td>
+              </tr>
+              <tr>
+                <td height="23" class="Estilo6"> <div align="right" class="Votar">Vota por tu favorito <a href="https://www.facebook.com/profile.php?id=100066461005306" target="_blank"><img src="assets/facebook-icon.gif" alt="Vota Aqui" width="20" height="20" border="0"></a> </div></td>
+              </tr>
+              </tbody>
+            </table></td>
+                <td width="223" class="Estilo2"><div align="center">
+                  <table width="200" height="54" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody>
+              <tr>
+                <td width="200" height="18" class="Estilo2"><div align="center"><table width="140" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ff0000">
+              <tbody>
+              <tr>
+                <td height="18" class="Estilo2"><div align="center" class="Artista">Artista Del Mes </div></td>
+              </tr>
+              </tbody>
+            </table></div></td>
+              </tr>
+              <tr>
+                <td height="18" bgcolor="#ff0000" class="Estilo2"><div align="center"><img src="assets/Pepe.png" width="180" height="170"></div></td>
+              </tr>
+              <tr>
+                <td height="18" bgcolor="color: rgb(0, 0, 0, 0.5)" class="Estilo2"><div align="center" class="Artisbaj">José Madero</div></td>
+              </tr>
+              </tbody>
+            </table>
+                  <p></p>
+                </div></td>
+              </tr>
+              </tbody>
+            </table>
+                              </div></td>
+                  </tr></tbody></table></td>
+                </tr>
+                <tr>
+                  <td height="8" align="center" valign="center" bgcolor="#FFFFFF"><img src="assets/zepere.gif" width="250" height="8"></td>
+                </tr>
+              </tbody>
+            </table>            
+            <table width="300" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody>
+                <tr>
+                  <td height="18" bgcolor="#FFCC00" class="Estilo2"><div align="center">
+                    <img src="https://imgur.com/H5VNaHf.png" width="540" height="124">
+                    
+                  </div></td>
+                </tr>
+              </tbody>
+            </table>            </td>
+          <td valign="top" width="100"><table width="5" height="0" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+              <tr>
+                <td height="10">&nbsp;</td>
+              </tr>
+              </tbody>
+            </table>&nbsp;</td>
+          <td valign="top" width="123"><table width="330" height="300" border="0" align="center" cellpadding="0" cellspacing="0" background="assets/Video.png" bgcolor="#2E2748">
+            <tbody><tr>
+                <td height="289" class="Estilo2"><div align="center"><table width="310" height="289" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tbody><tr><td height="8" class="Estilo2"><div align="center"><img src="assets/zepere.gif" width="250" height="10"></div></td>
+              </tr>
+              <tr>
+                <td height="10" class="Estilo2">
+                    <div align="center">
+                        <iframe width="310" height="220" src="https://www.youtube.com/embed/z8acUAG_IoY?si=cMMvQXGO8q3lPGbK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen=""></iframe>
+                    </div>
+                  </td>
+              </tr>
+              <tr>
+                <td height="10" class="Estilo2"><div align="center"><img src="assets/zepere.gif" width="250" height="22"></div></td>
+              </tr>
+              <tr>
+                <td width="300" height="15" class="Estilo2"> <div align="left" class="Videos">Christian Nodal<span class="Estilo1"> - </span>Kbron y medio</div></td>
+              </tr>
+              <tr>
+                <td height="18" class="Estilo2"><img src="assets/zepere.gif" width="250" height="22"></td>
+              </tr>
+              </tbody>
+            </table>
+                </div></td>
+              </tr>
+              </tbody>
+            </table>
+            <table width="300" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody>
+              <tr>
+                <td height="18" class="Estilo2">&nbsp;</td>
+              </tr>
+              </tbody>
+            </table>
+            <table width="330" border="0" cellpadding="0" cellspacing="0" bgcolor="#2E2748">
+              <tbody>
+              <tr>
+                <td width="326" height="18"><div align="center"><img src="assets/Radio.png" width="330" height="80"></div></td>
+              </tr>
+              <tr>
+
+                <td height="100" align="center" valign="center" bgcolor="#FECD43"><p>
+                  <iframe src="https://xatradio.com/player/zxelhc1v.html" name="RADIO" marginwidth="0" marginheight="0" hspace="0" vspace="0" target="RADIO" id="RADIO" frameborder="0" height="130" scrolling="Si" width="330"></iframe><!--
+                  </object-->
+                </p>                  </td>
+              </tr>
+              <tr>
+                <td height="18"><div align="center"></div></td>
+              </tr>
+              </tbody>
+            </table>            
+            <table width="300" height="28" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody>
+              <tr>
+                <td height="3" class="Estilo2"><div align="center"><img src="assets/zepere.gif" alt="." width="200" height="7"></div></td>
+              </tr>
+              <tr>
+                <td height="10" class="Estilo2"><div align="center">
+                  DAR CLICK AQUI ----&gt;</div></td><td align="center" width="76" class="menu-sik"><a href="https://xatradio.com/player/zxelhc1v.html" target="RADIO">ACTUALIZAR</a></td>
+              </tr>
+              <tr>
+                <td height="5" class="Estilo2"><div align="center"><img src="assets/zepere.gif" alt="." width="200" height="7"></div></td>
+              </tr>
+              </tbody>
+            </table>
+            <table border="0" cellpadding="0" cellspacing="0" width="330">
+              <tbody>
+              <tr>
+                <td width="336" height="5" align="center" valign="center" bgcolor="#3a5a97"><table width="300" height="5&quot;" border="0" align="left" cellpadding="0" cellspacing="0">
+              <tbody>
+              <tr>
+                <td width="10" height="5" class="Estilo2"><img src="assets/zepere.gif" width="10" height="32"></td>
+                <td width="290" class="Estilo2"><img src="assets/facebook.png" width="78" height="15"><span class="Estilo10"> DALE CLIC A ME GUSTA </span></td>
+              </tr>
+              </tbody>
+            </table></td>
+              </tr>
+              <tr>
+                <td height="150" bgcolor="#010101">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=213&href=https%3A%2F%2Fwww.facebook.com%2F104884035070295%2Fvideos%2F307118887434622%2F&show_text=false&width=560&t=0" width="330" height="210" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                  </td>
+              </tr>
+              </tbody>
+            </table>            </td>
+        </tr>
+        </tbody>
+      </table>
+                    </div></td>
+              </tr>
+              <tr>
+                <td height="10" class="Estilo2">
+                  <div align="left"><span class="Estilo12"></span><img src="assets/zepere.gif" width="250" height="10"></div></td>
+              </tr>
+              <tr>
+                <td height="83" class="Estilo2"><table width="700" height="54" border="0" align="center" cellpadding="0" cellspacing="0">
+              <tbody>
+              <tr>
+                <td height="18" class="Estilo2"><img src="https://imgur.com/QA4S0sB.png" width="650" height="100">
+                </td>
+                <td class="Estilo2"><table width="8" height="0" border="0" cellpadding="0" cellspacing="0">
+                  <tbody>
+                    <tr>
+                      <td height="10">&nbsp;</td>
+                    </tr>
+                  </tbody>
+                </table></td>
+                <td bgcolor="#3A5A97" class="Estilo2"><img src="assets/dalegusta.gif" width="220" height="90"></td>
+              </tr>
+              </tbody>
+            </table>                  </td>
+              </tr>
+              <tr>
+                <td height="10" class="Estilo2"><div align="center"><img src="FG/zepere.gif" width="250" height="10"></div></td>
+              </tr>
+              <tr>
+                <td height="15" class="Estilo2"><div align="center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
+        <tbody>
+        <tr>
+          <td width="590" height="227" valign="top"><table width="590" border="0" cellpadding="0" cellspacing="0">
+              <tbody>
+              <tr>
+                <td width="590" height="10" bgcolor="#FFFFFF"><img src="assets/Xat.png" width="600" height="43"></td>
+
+              <tr>
+
+                <td height="68" align="center" valign="center" background="assets/Techno.png"><p><iframe src="https://xat.com/embed/chat.php#id=220513096&amp;gn=1079Sentimientos" width="590" height="500" frameborder="0" scrolling="no"></iframe><br><small><a target="_BLANK" href="https://xat.com/embed/chat.php#id=220513096&gn=1079Sentimientos"></a> | <a target="_BLANK" href="https://xat.com/1079Sentimientos"></a></small><br></p>                  </td>
+              </tr>
+
+              <tr>
+                <td height="11"><div align="center"><table border="0" cellpadding="0" cellspacing="0" width="590" height="1">
+				    <tbody>
+                        <tr>
+				            <td width="660" bgcolor="#ff0000"><center><span class="Estilo14"><strong>FORMA PARTE DE ESTA GRANDIOSA FAMILIA</strong></span> <span class="tdcontetd Estilo14">Y DEL STAFF, AGREGANOS A FAVORITOS</span><center/></td>
+                        </tr>
+				            <tr>
+								<td bgcolor="#ff0000"><strong class="Griz Estilo15"><span class="Estilo30">
+								<font size="3"><center>&nbsp;&nbsp;&nbsp;&nbsp;<span class="Estilo1"><span class="Estilo3"><font color="#ffffff">COMPARTE CON TUS AMIGOS </font><font color="#010101"></font></span><font color="#010101"><br>
+                                <input name="url_web" type="text" style="border: 2px solid rgb(255, 0, 0); padding: 1px 4px; font-size: 8pt; color: rgb(0, 0, 0); font-family: Tahoma; background-color: rgb(255, 0, 0);" onfocus="this.select()" value="La Mejor Música  En https://xat.com/1079Sentimientos 24Hrs" size="50">
+                                </font></span><center>
+                                </center></center></font>
+                                    <table width="267" height="0" border="0" align="left" cellpadding="0" cellspacing="0">
+                                      <tbody>
+                                        <tr>
+                                        </tr>
+                                      </tbody>
+                                    </table><font size="3">
+								  </font></span><font size="3">
+								</font></strong></td>
+				            </tr>
+				    </tbody></table></div></td>
+				</tr>
+                    </tbody>
+            </table>
+            <table width="590" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td height="18" bgcolor="#FEF4DE" class="Estilo2">&nbsp;</td>
+              </tr>
+              </tbody>
+            </table></td>
+
+          <td valign="top" width="5"><table width="5" height="0" border="0" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td height="18">&nbsp;</td>
+              </tr>
+              </tbody>
+            </table>&nbsp;</td>
+          <td valign="top" width="280"><table width="280" border="0" cellpadding="0" cellspacing="0" bgcolor="#000000">
+
+              <tbody>
+
+              <tr>
+
+                <td width="362" height="33"> f <img src="https://i.ibb.co/4ddkSZG/Banner.png" width="78" height="15"> </td>
+              </tr>
+
+              <tr>
+
+                <td height="18" align="center" valign="center"><img src="https://imgur.com/onxI9TQ.gif" width="280" height="580">
+
+              </td></tr>
+
+              <tr>
+
+                <td height="5">&nbsp;</td>
+              </tr>
+              </tbody>
+            </table>            </td>
+        </tr>
+        </tbody>
+      </table></div></td>
+              </tr>
+              <tr>
+                <td height="10" class="Estilo2"><div align="center"><img src="FG/zepere.gif" width="250" height="10"></div></td>
+              </tr>
+              <tr>
+                <td height="15" class="Estilo2"><div align="center"><table align="center" border="0" cellpadding="0" cellspacing="0" width="700">
+
+        <tbody>
+
+        <tr>
+          <td width="188" valign="top"><table width="310" height="310" border="0" align="center" cellpadding="0" cellspacing="0" background="
+              " bgcolor="#FA5E1A">
+
+              <tbody>
+
+              <tr>
+
+                <td height="189" background="assets/Fan.png" class="Estilo2"><div align="center">
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <p>&nbsp;</p>
+                  <table width="200" height="54" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tbody>
+                      
+                      <tr>
+                        <td width="200" height="18" bgcolor="#322D44" class="Estilo2"><div align="center"><img src="assets/Ruby.png" width="200" height="155"></div></td>
+                      </tr>
+                      <tr>
+                        <td height="18" bgcolor="#ffffff" class="Estilo2"><div align="center" class="Artisbaj">
+                          <table width="140" height="0" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#ff0000">
+                            <tbody>
+                              <tr>
+                                <td height="18" class="Estilo2"><div align="center" class="Artista">Ruby</div></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>&nbsp;</p>
+                  </div></td>
+              </tr>
+              </tbody>
+            </table></td>
+
+          <td width="10" valign="top"><table width="7" height="0" border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td height="18">&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+            </td>
+          <td width="212" height="310" valign="top"><table width="270" height="36" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#DFFDFD">
+
+              <tbody>
+
+              <tr>
+
+                <td height="18" class="Estilo2"><div align="center"><img src="assets/Horoscopos.png" width="270" height="50"></div>
+                </td>
+              </tr>
+              <tr>
+                <td height="18" class="Estilo2"><div align="center"><table width="270" height="108" border="0" align="center" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td width="270" height="18" bgcolor="#DFFDFD" class="Estilo2"><div align="center"><table width="260" height="80" border="0" align="center" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td width="90" height="61" class="Estilo2"><div align="center"><img src="assets/Acuario.png" width="56" height="68"></div></td>
+                <td width="90" class="Estilo2"><div align="center"><img src="assets/Aries.png" width="56" height="68"></div></td>
+                <td width="80" class="Estilo2"><div align="center"><img src="assets/Cancer.png" width="56" height="68"></div></td>
+                <td width="80" class="Estilo2"><div align="center"><img src="assets/Capricornio.png" width="56" height="68"></div></td>
+              </tr>
+              <tr>
+                <td height="18" class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/aquarius_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Acuario</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/aries_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Aries</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/cancer_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Cancer</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/capricorn_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Capricornio</a></div></td>
+              </tr>
+              </tbody>
+            </table>
+                </div></td>
+              </tr>
+              <tr>
+                <td height="18" bgcolor="#DFFDFD" class="Estilo2"><div align="center"><table width="260" height="80" border="0" align="center" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td width="90" height="61" class="Estilo2"><div align="center"><img src="assets/Leo.png" width="56" height="68"></div></td>
+                <td width="90" class="Estilo2"><div align="center"><img src="assets/Escorpio.png" width="56" height="68"></div></td>
+                <td width="80" class="Estilo2"><div align="center"><img src="assets/Geminis.png" width="56" height="68"></div></td>
+                <td width="80" class="Estilo2"><div align="center"><img src="assets/Libra.png" width="56" height="68"></div></td>
+              </tr>
+              <tr>
+                <td height="18" class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/leo_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Leo</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/scorpio_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Escorpio</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/gemini_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Geminis</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/libra_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Libra</a></div></td>
+              </tr>
+              </tbody>
+            </table></div></td>
+              </tr>
+              <tr>
+                <td height="18" bgcolor="#DFFDFD" class="Estilo2"><div align="center"><table width="260" height="80" border="0" align="center" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td width="90" height="61" class="Estilo2"><div align="center"><img src="assets/Piscis.png" width="56" height="68"></div></td>
+                <td width="90" class="Estilo2"><div align="center"><img src="assets/Sagitario.png" width="56" height="68"></div></td>
+                <td width="80" class="Estilo2"><div align="center"><img src="assets/Tauro.png" width="56" height="68"></div></td>
+                <td width="80" class="Estilo2"><div align="center"><img src="assets/Virgo.png" width="56" height="68"></div></td>
+              </tr>
+              <tr>
+                <td height="18" class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/pisces_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Piscis</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/sagittarius_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Sagitario</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/taurus_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Tauro</a></div></td>
+                <td class="Estilo2"><div align="center"><a href="http://www.horoscopofree.com/misc/partnership/iframe/virgo_st.html" target="_blank" onclick="window.open(this.href, this.target, 'width=460,height=100'); return false;">Virgo</a></div></td>
+              </tr>
+              </tbody>
+            </table></div></td>
+              </tr>
+              </tbody>
+            </table></div></td>
+              </tr>
+              </tbody>
+            </table>
+            </td>
+            
+          <td valign="top" width="10"><table width="7" height="0" border="0" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td height="18">&nbsp;</td>
+              </tr>
+              </tbody>
+            </table>&nbsp;</td>
+          <td valign="top" width="280"><table width="280" border="0" cellpadding="0" cellspacing="0" bgcolor="#32284B">
+
+              <tbody>
+
+              <tr>
+
+                <td width="362" height="33"><div align="center"><img src="assets/Staff.png" width="280" height="40"></div></td>
+              </tr>
+
+              <tr>
+
+                <td height="18" align="center" valign="center"><iframe src="Locutores.html" name="US" width="270" marginwidth="0" height="260" marginheight="0" scrolling="no" frameborder="0" hspace="0" vspace="0" id="D9"></iframe></td>
+              </tr>
+
+              <tr>
+
+                <td height="5"><div align="center"><img src="assets/zepere.gif" width="250" height="10"></div></td>
+              </tr>
+              </tbody>
+            </table>            </td>
+        </tr>
+        </tbody>
+      </table>
+                    <table width="300" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td height="10" class="Estilo2"><div align="center"><img src="assets/zepere.gif" width="250" height="10"></div></td>
+              </tr>
+              </tbody>
+            </table>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="699">
+
+        <tbody>
+
+        <tr>
+
+          <td width="554" height="100" valign="top"><table border="0" cellpadding="0" cellspacing="0" width="439">
+
+              <tbody>
+
+              <tr>
+
+                <td width="439" height="10" bgcolor="#000000"><div align="center"><a href="https://xat.com/1079Sentimientos" target="_blank"><img src="assets/Banner%20Sentimientos.png" alt="Vota Aqui" width="540" height="100" border="0"></a></div></td>
+              </tr>
+              </tbody>
+            </table>          </td>
+
+          <td valign="top" width="100"><table width="7" height="0" border="0" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td height="18">&nbsp;</td>
+              </tr>
+              </tbody>
+            </table>&nbsp;</td>
+          <td valign="top" width="123"><table border="0" cellpadding="0" cellspacing="0" width="200">
+
+              <tbody>
+
+              <tr>
+
+                <td width="362" height="100" bgcolor="#000000"><div align="center"><img src="assets/Aqui.png" width="330" height="100"></div></td>
+              </tr>
+              </tbody>
+            </table>            </td>
+        </tr>
+        </tbody>
+      </table>
+                    <table width="300" height="0" border="0" align="center" cellpadding="0" cellspacing="0">
+
+              <tbody>
+
+              <tr>
+
+                <td height="18" class="Estilo2"><div align="center"></div></td>
+              </tr>
+              </tbody>
+            </table>
+                </div></td>
+              </tr>
+              
+              <tr>
+                <td height="15" class="Estilo2"><div align="left">
+                  <table width="865" height="82" border="0" align="center" cellpadding="0" cellspacing="0" background="https://imgur.com/fWxH5PI.png" bgcolor="#ff0000">
+
+              <tbody>
+
+              <tr>
+                <td width="864" height="18" class="Estilo2">&nbsp;</td>
+              </tr>
+              
+              <tr>
+                <td height="14" class="Estilo2"><div align="center" class="Estilo89"> 107.9 Sentimientos | Techno Player </div></td>
+              </tr>
+              <tr>
+                <td height="18" class="Estilo2">&nbsp;</td>
+              </tr>
+              <tr>
+                <td height="14" class="Estilo2"><div align="center">
+                  <p class="Estilo89" jquery1334112808796="17">Copyright © Derechos Reservados   | Designs & Creations <a href="https://www.flickr.com/photos/196640889@N04/" target="_blank">RAKED</a> - CDMX 2024 </p>
+                </div></td>
+              </tr>
+              </tbody>
+            </table>
+                </div>
+                <div align="center"><img src="assets/zepere.gif" width="250" height="15"></div></td>
+              </tr>
+              </tbody>
+            </table>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+            <p>&nbsp;</p>
+        </table>
+            <p>&nbsp;</p>
+    </body>
+</html>
