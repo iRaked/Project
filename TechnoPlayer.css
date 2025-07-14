@@ -1,0 +1,39 @@
+#navigation {
+	width: 890px;
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	background: url(assets/Navegacion.png) no-repeat left top;
+} 
+#navigation ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+} 
+#navigation ul li {
+	display: inline;
+	margin: 0px;
+} 
+#navigation ul li a {
+	height:50px;
+	display: block;
+	float: left;
+	font: bold 12px Arial;
+	color: #2D1A00;
+	text-decoration: none;
+	background: url(assets/NSeparador.png) no-repeat right center;
+	padding-top: 17px;
+	padding-right: 15px;
+	padding-bottom: 0;
+	padding-left: 15px;
+} 
+
+#navigation ul li a:hover {
+	color:#FFF;
+	background: url(assets/NHover.png) repeat-x left top;
+}
+
+#navigation ul li#active a {
+	color:#FFF;
+	background: url(assets/NHover1.png) repeat-x left top;
+}
