@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+
+<title>Bejeweled</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="description" content="Play Bejeweled online for free. Bejeweled is a popular game series that was first released by EA and PopCap Games in 2001. Originally created for gameplay on computers, the franchise has evolved over the years so that users can enjoy the game on their smartphones as well. As of 2021, the game has over 250,000 reviews averaging 4.4 stars (out of 5) on the Google Play store.
+" />
+<meta name="keywords" content="Bejeweled" />
+
+
+<style>
+.parent {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    color: 000000;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    margin: 5px
+}
+
+.parent1 {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    color: 000000;
+    font-family: Verdana, sans-serif;
+    font-size: 15px;
+    margin-top: 5px
+}
+
+
+@media screen and (max-width:800px) {
+    div.parent1 {
+        display: flex
+    }
+}
+
+body {
+    background-color: #faf5e8
+}
+
+a:link {
+    color: #009cff
+}
+
+a:visited {
+    color: #009cff
+}
+
+a:hover {
+    color: #ff69b4
+}
+
+div.left {
+    position: relative
+}
+
+@media screen and (min-width:100px) {
+    div.left {
+        display: none
+    }
+}
+
+
+
+
+@media screen and (min-width:1300px) {
+    div.left {
+        width: 95px;
+        display: inline-block;
+        margin: 0 0 0 5px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    div.left {
+        width: 110px;
+        margin: 0 0 0 5px;
+        display: inline-block
+    }
+}
+
+@media screen and (min-width:1700px) {
+    div.left {
+        width: 110px;
+        margin: 0 0 0 79px;
+        display: inline-block
+    }
+}
+
+
+div.hide {
+    position: relative
+}
+
+@media screen and (max-width:1610px) {
+    div.hide {
+        display: none
+    }
+}
+
+div.hide2 {
+    position: relative
+}
+
+@media screen and (max-width:1680px) {
+    div.hide2 {
+        display: none
+    }
+}
+div.hide3 {
+    position: relative
+}
+
+@media screen and (max-width:1024px) {
+    div.hide3 {
+        display: none
+    }
+}
+div.hide3 {
+    position: relative
+}
+
+@media screen and (max-width:1440px) {
+    div.hide4 {
+        display: none
+    }
+}
+div.hide5 {
+    position: relative
+}
+
+@media screen and (max-width:1200px) {
+    div.hide5 {
+        display: none
+    }
+}
+
+
+div.leftunder {
+    position: relative
+}
+
+@media screen and (min-width:1400px) {
+    div.leftunder {
+        width: 300px;
+        margin: 0;
+        display: inline-block
+    }
+}
+
+div.left3 {
+    position: relative
+}
+
+@media screen and (min-width:1600px) {
+    div.left3 {
+        width: 210px;
+        margin: 0;
+        display: inline-block
+    }
+}
+
+
+
+
+
+
+div.game {
+    padding: 0
+}
+
+
+
+
+
+@media screen and (min-width:100px) {
+    div.game {
+        width: 700px;
+        height: 400px;
+        background-color: #000;
+        display: inline-block;
+        position: relative
+    }
+}
+@media screen and (min-width:1000px) {
+    div.game {
+        width: 800px;
+        height: 450px;
+        background-color: #000;
+        display: inline-block;
+        position: relative
+    }
+}
+@media screen and (min-width:1200px) {
+    div.game {
+        width: 938px;
+        height: 530px;
+        background-color: #000;
+        display: inline-block;
+        position: relative
+    }
+}
+
+
+@media screen and (min-width:1601px) {
+    div.game {
+        width: 1066px;
+        height: 600px;
+        display: inline-block;
+        position: relative;
+        background-color: #000
+    }
+}
+@media only screen and (max-width:1000px) {
+    div.right {
+        display: none
+    }
+}
+@media screen and (min-width:1023px) {
+    div.right {
+        width: 150px;
+        display: inline-block;
+        margin: 0 0 0 10px
+    }
+}
+@media screen and (min-width:1200px) {
+    div.right {
+        width: 300px;
+        display: inline-block;
+        margin: 0 0 0 10px
+    }
+}
+
+@media screen and (min-width:1300px) {
+    div.right {
+        width: 300px;
+        display: inline-block;
+        margin: 0 0 0 10px
+    }
+}
+
+@media screen and (min-width:1400px) {
+    div.right {
+        width: 320px;
+        display: inline-block;
+        margin: 0 0 0 20px
+    }
+}
+
+@media screen and (min-width:1599px) {
+    div.right {
+        width: 300px;
+        display: inline-block;
+        margin: 0 0 0 15px
+    }
+}
+
+@media screen and (min-width:1681px) {
+    div.right {
+        width: 320px;
+        display: inline-block;
+        margin: 0 0 0 15px
+    }
+}
+
+
+
+@media screen and (min-width:100px) {
+    div.right2 {
+        display: none
+    }
+}
+
+@media screen and (min-width:1600px) {
+    div.right2 {
+        width: 230px;
+        display: inline-block;
+        margin: 0 0 0 15px
+    }
+}
+
+@media screen and (min-width:100px) {
+    div.under {
+        width: 100%;
+        display: inline-block;
+        margin: 0
+    }
+}
+
+@media screen and (min-width:1601px) {
+    div.under {
+        width: 1845px;
+        display: inline-block;
+        margin: 0
+    }
+}
+div.under2 {
+}
+@media screen and (min-width: 100px) {
+  div.under2 {
+  width: 90%;
+display: inline-block; /* Change this to block and see what happens */
+position:relative;
+  margin: 0px 0px 5px 0px;
+  padding: 20px;
+background-color: white;
+
+  }
+}
+
+.hvrbox,
+.hvrbox * {
+    box-sizing: border-box
+}
+
+.hvrbox {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    margin-bottom: 6px;
+    margin-right: 3px
+}
+
+.hvrbox:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.05);
+    transition: transform .2s
+}
+
+.hvrbox img {
+    width: 90px;
+    height: 90px;
+    rounded-corners: -webkit-border-radius:9px;
+    -moz-border-radius: 9px;
+    border-radius: 15px
+}
+
+.hvrbox .hvrbox-layer_bottom {
+    display: block
+}
+
+.hvrbox .hvrbox-layer_top {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 85px;
+    height: 85px;
+    color: #fff;
+    padding: 15px;
+    -moz-transition: all .4s ease-in-out 0s;
+    -webkit-transition: all .4s ease-in-out 0s;
+    -ms-transition: all .4s ease-in-out 0s;
+    transition: all .4s ease-in-out 0s
+}
+
+.hvrbox.active .hvrbox-layer_top,
+.hvrbox:hover .hvrbox-layer_top {
+    opacity: 1
+}
+
+.hvrbox .hvrbox-text {
+    font-family: sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 12px;
+    display: inline-block;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000
+}
+
+.hvrbox .hvrbox-text_mobile {
+    font-size: 15px;
+    border-top: 1px solid #b3b3b3;
+    border-top: 1px solid rgba(179, 179, 179, .7);
+    margin-top: 5px;
+    padding-top: 2px;
+    display: none
+}
+
+.hvrbox.active .hvrbox-text_mobile {
+    display: block
+}
+
+.adslot3 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 745px;
+    height: 93px;
+    padding: 0 5px 5px 5x
+}
+
+.adslot4 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 423px;
+    height: 93px;
+    padding: 0 5px 5px 5x
+}
+
+.adslot5 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 103px;
+    height: 100px;
+    padding: 0 5px 5px 5x
+}
+
+.button {
+    font-family: Verdana, sans-serif;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    margin-top: 7px
+}
+
+.button3 {
+    font-family: Verdana, sans-serif;
+    background-color: #17a2b8;
+    border: none;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    margin-top: 2px
+}
+
+.button3,
+.button3:active,
+.button3:hover,
+.button3:link,
+.button3:visited {
+    color: #fff;
+    text-decoration: none
+}
+
+.button4 {
+    font-family: Verdana, sans-serif;
+    background-color: #17a2b8;
+    border: none;
+    padding: 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    border-radius: 15px;
+    margin-bottom: 2px;
+    margin-top: 2px
+}
+
+.button4,
+.button4:active,
+.button4:hover,
+.button4:link,
+.button4:visited {
+    color: #fff;
+    text-decoration: none
+}
+
+.light-modal {
+    --lm-body-bg: #ffffff;
+    --lm-modal-bg: #ffffff;
+    --lm-close-bg: #007bff;
+    --lm-small-modal: 30vw;
+    --lm-large-modal: 50vw;
+    --lm-font-size: 14px;
+    display: none;
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    z-index: 9000;
+    transition: background 1s;
+    font-size: var(--lm-font-size);
+    visibility: hidden
+}
+
+.light-modal-content {
+    background: var(--lm-body-bg);
+    color: #000;
+    width: var(--lm-small-modal);
+    border-radius: .2em;
+    position: relative;
+    max-height: calc(100vh - 150px);
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column
+}
+
+.light-modal-content.large-content {
+    width: var(--lm-large-modal)
+}
+
+.light-modal-header {
+    padding: 20px 20px 20px 20px;
+    background: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.light-modal-heading {
+    margin: 0;
+    font-size: 1.5em
+}
+
+.light-modal-heading+.light-modal-close-icon {
+    position: static
+}
+
+.light-modal-body {
+    padding: 20px;
+    overflow: auto;
+    max-height: 450px
+}
+
+.light-modal-footer {
+    padding: 20px 20px 20px 20px;
+    background: rgba(0, 0, 0, 0);
+    text-align: right;
+    display: flex;
+    align-items: center
+}
+
+.light-modal-close-btn,
+.light-modal-close-icon {
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: .2em;
+    background: var(--lm-close-bg);
+    font-size: 1.5em;
+    line-height: 1;
+    opacity: 1;
+    transition: opacity .2s ease-in-out
+}
+
+.light-modal-close-btn:hover,
+.light-modal-close-icon:hover {
+    opacity: .9
+}
+
+.light-modal-close-icon {
+    position: absolute;
+    top: -15px;
+    right: -15px
+}
+
+.light-modal-close-btn {
+    font-size: 1.3em;
+    line-height: 1.4
+}
+
+.light-modal-caption {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, .2);
+    border-radius: .2em;
+    width: 100%;
+    text-align: center;
+    margin-top: 5px
+}
+
+.light-modal:target {
+    background: rgba(0, 0, 0, .5);
+    display: flex;
+    visibility: visible
+}
+
+.light-modal-navigation .navigation-next,
+.light-modal-navigation .navigation-prev {
+    width: 32px;
+    height: 32px;
+    border-color: #000;
+    transition: border-color .2s
+}
+
+.light-modal-navigation .navigation-next:hover,
+.light-modal-navigation .navigation-prev:hover {
+    border-color: rgba(255, 255, 255, .7)
+}
+
+.light-modal-navigation .navigation-next {
+    position: absolute;
+    right: -50px;
+    top: 50%;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    transform: rotate(-135deg)
+}
+
+.light-modal-navigation .navigation-prev {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    transform: rotate(45deg)
+}
+
+@media (max-width:480px) {
+    .light-modal-navigation .navigation-next {
+        right: 5px
+    }
+    .light-modal-navigation .navigation-prev {
+        left: 5px
+    }
+}
+
+@-webkit-keyframes basic {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes basic {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.basic {
+    -webkit-animation-name: basic;
+    animation-name: basic
+}
+
+@media (max-width:1000px) {
+    .light-modal {
+        --lm-small-modal: 70vw;
+        --lm-large-modal: 70vw
+    }
+}
+
+</style>
+    
+</head>
+    <body id="top" class="game" data-gamecontainer="iframe" data-gamesize="1066x600" data-gameurl="https://en.gameslol.net/data//bejeweled-hd//index.html">
+        <style>
+            body {
+              margin: 0;
+              font-family: verdana, Helvetica, sans-serif;	
+            }
+
+            .topnav {
+              overflow: hidden;
+              background-color: #333;
+            }
+
+            .topnav a {
+              float: left;
+              display: block;
+              color: #f2f2f2;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+              font-size: 18px;
+            }
+
+            .topnav a:hover {
+              background-color: #ddd;
+              color: black;
+            }
+
+            .topnav a.active {
+              background-color: ##ddd;
+              color: white;
+            }
+
+            .topnav .icon {
+              display: none;
+            }
+
+            @media screen and (max-width: 600px) {
+              .topnav a:not(:first-child) {display: none;}
+              .topnav a.icon {
+                float: right;
+                display: block;
+              }
+            }
+
+            @media screen and (max-width: 600px) {
+              .topnav.responsive {position: relative;}
+              .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+              }
+              .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+              }
+            }
+            </style>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+<!-- CENTRAR CONTENEDOR -->
+<div class="parent1">
+
+<div class="left">
+    <div class="hvrbox">
+	   <a href="https://www.bubbleshooter.net/game/bejeweled/"><img src="https://www.bubbleshooter.net/cdn-cgi/image/quality=78,width=90,height=90,fit=cover,f=auto/img/bubble/bejeweled.png" alt="Bejeweled" title="Bejeweled"  class="hvrbox-layer_bottom">
+	   <div class="hvrbox-layer_top">
+		<div class="hvrbox-text">Bejeweled</div>
+	   </div></a>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://www.bubbleshooter.net/css.css">
+<link rel="stylesheet" href="https://www.bubbleshooter.net/game.min.css?v=2.5.10">
+<script defer src="https://www.bubbleshooter.net/js2.js"></script>
+<script defer src="https://www.bubbleshooter.net/js.js"></script>
+<script defer src="https://www.bubbleshooter.net/jquery.raty-fa.min.js"></script>
+<script defer src="https://www.bubbleshooter.net/game.min.js"></script>
+<style>
+div.embed-game {
+    padding: 0
+}
+
+@media screen and (min-width:100px) {
+    div.embed-game {
+        width: 700px;
+        height: 400px;
+        background-color: #000;
+        display: inline-block;
+        position: relative
+    }
+}
+@media screen and (min-width:1000px) {
+    div.embed-game {
+        width: 800px;
+        height: 450px;
+        background-color: #000;
+        display: inline-block;
+        position: relative
+    }
+}
+@media screen and (min-width:1200px) {
+    div.embed-game {
+        width: 838px;
+        height: 530px;
+        background-color: #000;
+        display: inline-block;
+        position: relative
+    }
+}
+
+
+@media screen and (min-width:1601px) {
+    div.embed-game {
+        width: 1066px;
+        height: 600px;
+        display: inline-block;
+        position: relative;
+        background-color: #000
+    }
+}
+</style>
+
+
+<div>
+<div class="embed-game" id="game-container">
+<div class="embed-game-item">
+<div class="bw-img fill" style="background-image:url(https://www.bubbleshooter.net/bg.png)"></div>
+<div class="sm-img center-vh" style="background-image:url(https://www.bubbleshooter.net/cdn-cgi/image/quality=78,width=242,height=175,fit=cover,f=auto/img/bejeweled.jpg)">
+<a class="startGame" href="https://en.gameslol.net/data//bejeweled-hd//index.html?gd_sdk_referrer_url=https://www.bubbleshooter.net/game/bejeweled/"><div class="button play"></div></a>
+</div>
+
+</div></div></div>
+
+<div class="parent">
+<div class="under">
+
+
+<style>
+.buttonfull {
+    font-family: verdana, sans-serif;
+    background-color: #4caf50;
+    border: none;
+    color: #fff;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 6px;
+    margin-bottom: 2px;
+    margin-top: 7px
+}
+</style>
+
+<div class="adslot5 hide5">
+<div id="ad-slot" style="min-width: 90px; min-height: 90px;">
+<button onclick="javascript:void(0);" id="toggle_fullscreen" class="buttonfull">Fullscreen</button><br>
+  <script>
+        var button = document.querySelector('#toggle_fullscreen');
+        button.addEventListener('click', fullscreen);
+// when you are in fullscreen, ESC and F11 may not be trigger by keydown listener.
+    // so don't use it to detect exit fullscreen
+        document.addEventListener('keydown', function (e) {
+        console.log('key press' + e.keyCode);
+        });
+// detect enter or exit fullscreen mode
+        document.addEventListener('webkitfullscreenchange', fullscreenChange);
+        document.addEventListener('mozfullscreenchange', fullscreenChange);
+        document.addEventListener('fullscreenchange', fullscreenChange);
+        document.addEventListener('MSFullscreenChange', fullscreenChange);
+
+        function fullscreen() {
+// check if fullscreen mode is available
+        if (document.fullscreenEnabled ||
+        document.webkitFullscreenEnabled ||
+        document.mozFullScreenEnabled ||
+        document.msFullscreenEnabled) {
+
+// which element will be fullscreen
+        var iframe = document.querySelector('#game-container');
+// Do fullscreen
+        if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+        } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+        } else if (iframe.mozRequestFullScreen) {
+        iframe.mozRequestFullScreen();
+        } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+        }
+         }
+        else {
+        document.querySelector('.error').innerHTML = 'Your browser is not supported';
+        }
+         }
+
+        function fullscreenChange() {
+        if (document.fullscreenEnabled ||
+        document.webkitIsFullScreen ||
+        document.mozFullScreen ||
+        document.msFullscreenElement) {
+        console.log('enter fullscreen');
+        $("#game-container").addClass("fullscreen");
+        $(".game-iframe").addClass("fullscreen");
+        }
+        else {
+        $("#game-container").removeClass("fullscreen");
+        $(".game-iframe").removeClass("fullscreen");
+        console.log('exit fullscreen');
+
+        }
+// force to reload iframe once to prevent the iframe source didn't care about trying to resize the window
+    // comment this line and you will see
+
+        }
+</script>
+
+<script async type="text/javascript" src="https://portal.cdn.yollamedia.com/storage/tag/ps178a0275edba92454b046c899b178418f6eaf6ab.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-54120-23"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-54120-23');
+</script>
+</body>
+</html>
