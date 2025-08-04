@@ -1,0 +1,81 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background-color: #323232;
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper {
+    width: 100%;
+    padding: 150px 0 50px 0;
+}
+.swiper-slide {
+    width: 300px;
+    height: 500px;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    text-align: center;
+}
+/* Base con transición suave */
+.swiper-slide {
+  transition: box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+/* Efecto al activar hover o focus */
+.swiper-slide:hover,
+.swiper-slide:focus {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+  filter: brightness(1.2);
+  z-index: 10;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.icons i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.icons img {
+    width: 250px;
+}
+
+.product-txt p {
+    font-size: 20px;
+    color: #c4c4c4;
+}
+
+.product-txt h3 {
+    font-size: 28px;
+    color: #3688ff;
+    text-transform: uppercase;
+}
+
+.product-txt h2 {
+    font-size: 20px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 15px 75px;
+    border: 1px solid #3688ff;
+    border-radius: 180px;
+    color: #3688ff;
+    text-decoration: none;
+    margin-top: 0px;
+}
