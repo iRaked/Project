@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  background-color: transparent;
+  font-family: 'Segoe UI', sans-serif;
+  color: #cccccc; /* Gris para textos */
+}
+
+.contador-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 2px solid #3688ff;
+  border-radius: 8px;
+  box-shadow: 0 0 12px #3688ff;
+  background-color: rgba(0, 0, 0, 0.2); /* Semi-transparente */
+}
+
+.bandera {
+  width: 26px;
+  height: 20px;
+  border-radius: 3px;
+  box-shadow: 0 0 5px #3688ff;
+}
+
+.fallback {
+  box-shadow: 0 0 10px #ff4444;
+}
+
+.visitas {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #cccccc;
+}
+
+.panel-validacion {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #cccccc;
+}
