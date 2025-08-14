@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+  const bandera = document.getElementById("bandera");
+  bandera.src = "assets/flags/mx.png";
+});
 async function detectarPais() {
   const res = await fetch('https://ip-api.com/json');
   const data = await res.json();
@@ -13,7 +17,11 @@ async function renderContador() {
   const codigo = await detectarPais();
   const bandera = await banderaExistente(codigo);
 
-  document.getElementById('bandera').src = bandera;
-  document.getElementById('bandera').className = bandera.includes('xx') ? 'bandera fallback' : 'bandera';
+  const img = document.getElementById('bandera');
+  img.src = bandera;
+  img.className = bandera.includes('xx') ? 'bandera fallback' : 'bandera';
+
   document.getElementById('codigo').textContent = `Código detectado: ${codigo}`;
 }
+
+renderContador();
