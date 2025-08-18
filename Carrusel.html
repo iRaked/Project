@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/x-icon" href="assets/SG.ico" />
+    <!-- BLOCK RIGHT CLICK -->
+  <script type="text/javascript">
+    document.onkeydown = function(){return false};
+    document.oncontextmenu = function(){return false}
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrusel</title>
+  <link rel="stylesheet" href="Carrusel.css" />
+  <script defer src="Carrusel.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="layout-container">
+    <div class="animate seven">
+      <span>R</span><span>e</span><span>c</span><span>u</span><span>e</span><span>r</span><span>d</span><span>o</span><span>s</span>
+      <span> </span>
+      <span>R</span><span>o</span><span>b</span><span>a</span><span>d</span><span>o</span><span>s</span>
+    </div>
+
+    <div id="drag-container">
+      <div id="spin-container">
+        <img src="assets/img/Laura.png" alt="Photo 1">
+        <img src="assets/img/Lilitha.jpg" alt="Photo 2">
+        <img src="assets/img/Sussie.png" alt="Photo 3">
+        <img src="assets/img/Dalia.png" alt="Photo 4">
+        <img src="assets/img/Jenn.png" alt="Photo 5">
+        <img src="assets/img/Valen.jpg" alt="Photo 6">
+        <img src="assets/img/Abril.jpg" alt="Photo 7">
+        <img src="assets/img/Karime.png" alt="Photo 8">
+        <p>
+          Tu nombre<br>
+          Algunas historias no se cierran con un punto final, solo quedan en pausa, por si acaso el destino decide retomarlas. Gracias por lo que fuimos, por lo que aprendimos, y por todo lo que aún vive en los recuerdos que no necesitan nombre para brillar por eso tu foto la llevo en mi cartera pirata y es una pena que en mi país haya demasiada inseguridad porque ayer me robaron mis pertenencias. 📷 + 🏴‍☠️ = 💔
+        </p>
+      </div>
+      <div id="ground"></div>
+    </div>
+  </div>
+    <audio autoplay preload="auto" loop="false" style="display:none;">
+  <source src="assets/song/Las%20cosas%20m%C3%A1s%20bonitas.mp3" type="audio/mpeg">
+  Tu navegador no soporta audio HTML5.
+</audio>
+</body>
+</html>

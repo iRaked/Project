@@ -1,0 +1,122 @@
+body {
+  cursor: url('https://i.ibb.co/2YBCcwH/Cursor-Sky-FX.png'), auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://i.ibb.co/N2Pr0KZN/Background-Black-GFX.gif') no-repeat center center fixed;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.animate.seven {
+  font-family: 'Dancing Script', cursive;
+  font-size: 5rem;
+  color: #3688dd;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.animate.seven span {
+  display: inline-block;
+  opacity: 0;
+  transform: translate(-150px, 0) scale(.3);
+  animation: leftRight 1s forwards;
+}
+
+.animate.seven span:hover {
+  color: #00e6e6;
+  text-shadow: -2px 7px 5px rgb(0, 230, 230);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.animate.seven span:nth-child(n) {
+  animation-delay: calc(0.05s * var(--i));
+}
+
+@keyframes leftRight {
+  40% { transform: translate(50px, 0) scale(.7); opacity: 1; color: #743dc0; }
+  80% { transform: translate(0) scale(2); opacity: 0; }
+  100% { transform: translate(0) scale(1); opacity: 1; }
+}
+
+#drag-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+#spin-container {
+  width: 120px;
+  height: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-style: preserve-3d;
+  transform: translate(-50%, -50%);
+}
+
+#spin-container img {
+  position: absolute;
+  width: 120px;
+  height: 170px;
+  object-fit: cover;
+  transform-origin: center center;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 0 8px #3688ff; /* GLOW COLOR 1 */
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0005);
+}
+
+#spin-container img.clicked {
+  box-shadow: 0 0 25px #ff00aa; /* GLOW COLOR CLIC */
+  z-index: 10;
+}
+
+#spin-container img:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 15px #ff0000; /* GLOW COLOR CURSOR */
+  -webkit-box-reflect: below 10px linear-gradient(transparent, transparent, #0007);
+}
+
+#spin-container p {
+  font-family: 'Merriweather', serif;
+  font-size: 1rem;
+  color: white;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+}
+
+#ground {
+  width: 480px;
+  height: 480px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateX(90deg);
+  background: radial-gradient(#9993, transparent);
+}
+@keyframes spin {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
+
+@keyframes spinRevert {
+  from { transform: rotateY(360deg); }
+  to { transform: rotateY(0deg); }
+}
