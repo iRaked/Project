@@ -33,8 +33,26 @@ body {
   color: #cccccc;
 }
 
+.contador-container span {
+  color: #888;
+}
+
 .panel-validacion {
   margin-top: 8px;
   font-size: 0.9em;
   color: #cccccc;
+}
+
+.contador-container {
+  transition: box-shadow 0.3s ease;
+}
+.contador-container:hover {
+  box-shadow: 0 0 16px #00aaff;
+}
+
+@media (max-width: 480px) {
+  .contador-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
