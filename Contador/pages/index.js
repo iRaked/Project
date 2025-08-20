@@ -1,47 +1,53 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import { supabase } from '../supabaseClient';
 
 export default function Home() {
+  const [visitas, setVisitas] = useState([]);
+  const [error, setError] = useState(null);
+
   useEffect(() => {
-    (async () => {
-      try {
-        const geo = await fetch('https://ipapi.co/json/').then(res => res.json());
-        const ip = geo.ip;
-        const pais = geo.country_name;
-        const bandera = geo.country_code;
-        const fecha = new Date().toISOString();
+    const mostrarVisitas = async () => {
+      const { data, error } = await supabase
+        .from('visitas_globales')
+        .select('ip, pais, fecha') // Evita traer campos innecesarios
+        .order('fecha', { ascending: false });
 
-        await fetch('/api/registrar-visita', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ ip, pais, bandera, fecha })
-        });
-
-        // 🎉 Confetti visual
-        const confetti = document.createElement('div');
-        confetti.innerText = '🎉 ¡Nueva visita desde ' + pais + '!';
-        confetti.style.position = 'fixed';
-        confetti.style.top = '20px';
-        confetti.style.left = '50%';
-        confetti.style.transform = 'translateX(-50%)';
-        confetti.style.background = '#00AAFF';
-        confetti.style.color = '#fff';
-        confetti.style.padding = '10px 20px';
-        confetti.style.borderRadius = '8px';
-        confetti.style.boxShadow = '0 0 10px #00FFFF';
-        confetti.style.zIndex = '9999';
-        document.body.appendChild(confetti);
-        setTimeout(() => confetti.remove(), 4000);
-      } catch (err) {
-        console.error('Error al registrar visita:', err);
+      if (error) {
+        console.error('🔴 Error al obtener visitas:', error);
+        setError('No se pudieron cargar las visitas');
+        return;
       }
-    })();
+
+      setVisitas(data);
+    };
+
+    mostrarVisitas();
   }, []);
 
   return (
     <div className="contador-wrapper">
       <div className="contador-panel">
         <h3 className="contador-titulo">🌍 Visitas Globales</h3>
-        <img src="" alt="Bandera" className="contador-img" />
+
+        {error && (
+          <p className="contador-error">
+            ⚠️ {error}
+          </p>
+        )}
+
+        {!error && visitas.length === 0 && (
+          <p className="contador-vacio">No hay visitas registradas aún.</p>
+        )}
+
+        {visitas.slice(0, 5).map((v, i) => (
+          <div key={i} className="visita-item">
+            🌐 <strong>{v.pais.toUpperCase()}</strong> ({v.ip}) —{' '}
+            {new Date(v.fecha).toLocaleString('es-MX', {
+              dateStyle: 'short',
+              timeStyle: 'short',
+            })}
+          </div>
+        ))}
       </div>
     </div>
   );
