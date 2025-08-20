@@ -1,7 +1,7 @@
 // supabaseClient.js
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://TU_PROYECTO.supabase.co';
-const supabaseKey = 'TU_PUBLIC_ANON_KEY'; // Solo si lo usas en frontend
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 export const supabase = createClient(supabaseUrl, supabaseKey);
