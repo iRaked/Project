@@ -1,29 +1,26 @@
 import { createClient } from '@supabase/supabase-js';
 
 const supabase = createClient(
-  'https://TU_PROYECTO.supabase.co',       // Reemplaza con tu URL
-  'TU_SERVICE_ROLE_KEY'                    // Usa la clave secreta (no la pública)
+  process.env.SUPABASE_URL,
+  process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') return res.status(405).end();
+  if (req.method !== 'GET') return res.status(405).end();
 
-  const { ip, pais, bandera, fecha } = req.body;
+  try {
+    const { count, error } = await supabase
+      .from('visitas_globales')
+      .select('*', { count: 'exact', head: true });
 
-  // Verificar si ya existe la IP
-  const { data: existente } = await supabase
-    .from('visitas_globales')
-    .select('ip')
-    .eq('ip', ip)
-    .single();
+    if (error) {
+      console.error('🔴 Error al contar visitas:', error);
+      return res.status(500).json({ error: 'No se pudo obtener el total' });
+    }
 
-  if (existente) return res.status(200).json({ mensaje: 'IP ya registrada' });
-
-  const { error } = await supabase
-    .from('visitas_globales')
-    .insert([{ ip, pais, bandera, fecha }]);
-
-  if (error) return res.status(500).json({ error });
-
-  res.status(200).json({ mensaje: 'Visita registrada con éxito' });
+    res.status(200).json({ total: count });
+  } catch (err) {
+    console.error('🔴 Error general en el contador:', err);
+    res.status(500).json({ error: 'Error interno del servidor' });
+  }
 }
