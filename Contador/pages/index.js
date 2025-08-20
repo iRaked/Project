@@ -9,7 +9,7 @@ export default function Home() {
     const mostrarVisitas = async () => {
       const { data, error } = await supabase
         .from('visitas_globales')
-        .select('ip, pais, fecha') // Evita traer campos innecesarios
+        .select('ip, pais, fecha')
         .order('fecha', { ascending: false });
 
       if (error) {
@@ -18,7 +18,7 @@ export default function Home() {
         return;
       }
 
-      setVisitas(data);
+      setVisitas(data ?? []);
     };
 
     mostrarVisitas();
@@ -30,22 +30,22 @@ export default function Home() {
         <h3 className="contador-titulo">🌍 Visitas Globales</h3>
 
         {error && (
-          <p className="contador-error">
-            ⚠️ {error}
-          </p>
+          <p className="contador-error">⚠️ {error}</p>
         )}
 
         {!error && visitas.length === 0 && (
           <p className="contador-vacio">No hay visitas registradas aún.</p>
         )}
 
-        {visitas.slice(0, 5).map((v, i) => (
-          <div key={i} className="visita-item">
-            🌐 <strong>{v.pais.toUpperCase()}</strong> ({v.ip}) —{' '}
-            {new Date(v.fecha).toLocaleString('es-MX', {
-              dateStyle: 'short',
-              timeStyle: 'short',
-            })}
+        {visitas.slice(0, 5).map(({ ip, pais, fecha }, index) => (
+          <div key={index} className="visita-item">
+            🌐 <strong>{pais?.toUpperCase() || 'XX'}</strong> ({ip}) —{' '}
+            {fecha
+              ? new Date(fecha).toLocaleString('es-MX', {
+                  dateStyle: 'short',
+                  timeStyle: 'short',
+                })
+              : 'Fecha desconocida'}
           </div>
         ))}
       </div>
