@@ -2,15 +2,6 @@ body {
   cursor: url('https://i.ibb.co/2YBCcwH/Cursor-Sky-FX.png'), auto;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background: url('https://i.ibb.co/N2Pr0KZN/Background-Black-GFX.gif') no-repeat center center fixed;
-  background-size: cover;
-  overflow: hidden;
-  overflow-y: auto;
-}
-
 .layout-container {
   display: flex;
   flex-direction: column;
@@ -121,3 +112,4 @@ body {
   from { transform: rotateY(360deg); }
   to { transform: rotateY(0deg); }
 }
+
