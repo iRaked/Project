@@ -5,9 +5,10 @@ body {
 body {
   margin: 0;
   padding: 0;
-  background: url('') no-repeat center center fixed;
+  background: url('https://i.ibb.co/N2Pr0KZN/Background-Black-GFX.gif') no-repeat center center fixed;
   background-size: cover;
   overflow: hidden;
+  overflow-y: auto;
 }
 
 .layout-container {
@@ -119,5 +120,4 @@ body {
 @keyframes spinRevert {
   from { transform: rotateY(360deg); }
   to { transform: rotateY(0deg); }
-
 }
