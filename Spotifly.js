@@ -64,35 +64,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     // 🎯 Desplazamiento con validación visual
-    function updateCarousel(direction) {
-      const nextOffset = direction === "next"
-        ? currentOffset + scrollAmount
-        : currentOffset - scrollAmount;
+function updateCarousel(direction) {
+  const containerWidth = container.parentElement.offsetWidth;
+  const totalWidth = container.scrollWidth;
+  const maxOffset = totalWidth - containerWidth;
 
-      const containerRect = container.parentElement.getBoundingClientRect();
-      const cardsRect = container.getBoundingClientRect();
-      const reachedEnd = cardsRect.right <= containerRect.right;
-      const reachedStart = currentOffset <= 0;
+  const nextOffset = direction === "next"
+    ? Math.min(currentOffset + scrollAmount, maxOffset)
+    : Math.max(currentOffset - scrollAmount, 0);
 
-      if ((direction === "next" && reachedEnd) || (direction === "prev" && reachedStart)) {
-        return;
-      }
+  currentOffset = nextOffset;
+  container.style.transform = `translateX(-${currentOffset}px)`;
 
-      currentOffset = nextOffset;
-      container.style.transform = `translateX(-${currentOffset}px)`;
+  // 🧭 Validar límites visuales
+  btnPrev.disabled = currentOffset <= 0;
+  btnNext.disabled = currentOffset >= maxOffset - 1; // ← margen de tolerancia
+}
 
-      setTimeout(() => {
-        const updatedRect = container.getBoundingClientRect();
-        btnPrev.disabled = currentOffset <= 0;
-        btnNext.disabled = updatedRect.right <= containerRect.right;
-      }, 300);
-    }
-
-    // 🧭 Eventos de navegación
-    if (btnNext && btnPrev) {
-      btnNext.addEventListener("click", () => updateCarousel("next"));
-      btnPrev.addEventListener("click", () => updateCarousel("prev"));
-    }
+// 🧭 Eventos de navegación
+if (btnNext && btnPrev) {
+  btnNext.addEventListener("click", () => updateCarousel("next"));
+  btnPrev.addEventListener("click", () => updateCarousel("prev"));
+}
 
     // 🔍 Ritual de búsqueda por sección
     function performSearch() {
