@@ -67,7 +67,8 @@ document.addEventListener("DOMContentLoaded", () => {
 function updateCarousel(direction) {
   const containerWidth = container.parentElement.offsetWidth;
   const totalWidth = container.scrollWidth;
-  const maxOffset = totalWidth - containerWidth;
+  const cardWidth = Math.floor((18 * 16 + 16) * 0.6); // ≈ 182px
+const maxOffset = totalWidth - containerWidth + cardWidth;
 
   const nextOffset = direction === "next"
     ? Math.min(currentOffset + scrollAmount, maxOffset)
