@@ -1,0 +1,538 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: 'Rubik';
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 30rem 1fr;
+	grid-template-rows: min-content 1fr min-content;
+	margin-bottom: 8rem;
+}
+
+/* ********************************** */
+/*               TOPBAR               */
+/* ********************************** */
+.topbar {
+  display: flex;
+  justify-content: flex-end; /* ← alinea todo a la derecha */
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #101010;
+  position: fixed;
+  z-index: 30;
+  top: 0;
+  left: 30rem; /* ← en lugar de right: 0 */
+  width: calc(100% - 30rem); /* ← se mantiene */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 18rem;
+  border: 2px solid #fff;
+  border-radius: 4rem;
+  padding: 0.5rem 1.5rem;
+  background-color: #181818; /* aura como la card */
+  height: 60px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2); /* aura ritual */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-46rem); /* desplazamiento ceremonial */
+}
+
+/* Hover ritual compartido con las cards */
+.search-bar:hover {
+  box-shadow: 0 0 2.5rem rgba(255, 255, 255, 0.25); /* aura expandida */
+  transform: scale(1.02) translateX(-46rem); /* expansión emocional */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* borde etéreo */
+  backdrop-filter: blur(6px); /* respiración visual */
+}
+
+.search-bar input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 1.4rem;
+  width: 18rem;
+  font-weight: 500;
+}
+
+.search-bar input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+
+.search-icon {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search-icon:hover {
+  transform: scale(1.1);
+}
+
+.buttons-user {
+	display: flex;
+	align-items: center;
+	gap: 3rem;
+}
+
+.btn-register {
+	color: #a7a7a7;
+	font-weight: 700;
+	text-decoration: none;
+	font-size: 1.6rem;
+}
+
+.btn-register:hover {
+	color: #fff;
+	transform: scale(1.04);
+}
+
+.btn-login {
+	text-decoration: none;
+}
+
+.btn-full {
+	font-size: 1.6rem;
+	color: #000;
+	padding: 1.5rem 2rem;
+	border-radius: 2rem;
+	font-weight: 700;
+	background-color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+.btn-full:hover {
+	transform: scale(1.04);
+}
+
+/* ********************************** */
+/*               SIDEBAR              */
+/* ********************************** */
+.navbar {
+	background-color: #000;
+	color: #b3b3b3;
+	padding-top: 2.4rem;
+
+	grid-row: 1/3;
+	grid-column: 1/2;
+
+	display: flex;
+	flex-direction: column;
+	gap: 4rem;
+
+	position: fixed;
+	width: 30rem;
+	height: calc(100vh - 8rem);
+}
+
+.logo-svg {
+	color: #fff;
+	width: 18rem;
+	padding: 0 2.4rem;
+}
+
+.nav-main {
+	padding: 0 2.4rem;
+
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+}
+
+.nav-main li {
+	list-style: none;
+}
+
+.nav-main li a {
+	text-decoration: none;
+	font-size: 1.6rem;
+	color: #b3b3b3;
+
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 2rem;
+	font-weight: 600;
+	text-overflow: ellipsis;
+	transition: all 0.3s ease;
+}
+
+.nav-main li a:hover {
+	color: #fff;
+}
+
+.nav-main li a i {
+	font-size: 2rem;
+}
+
+.extra-options {
+	display: inline-flex;
+	flex-direction: column;
+	gap: 3rem;
+
+	padding: 0 2.4rem;
+	margin-top: 1.5rem;
+	flex: 1;
+}
+
+.extra-options button {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #b3b3b3;
+	text-align: left;
+	font-size: 1.6rem;
+	font-weight: 600;
+
+	display: flex;
+	gap: 1.5rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.extra-options button i {
+	font-size: 2rem;
+} 
+
+.extra-options button:hover {
+	color: #fff;
+}
+
+.container-links {
+	display: flex;
+	flex-direction: column;
+	padding: 0 2.5rem;
+
+	gap: 2rem;
+	margin-bottom: 5rem;
+}
+
+.btn-language {
+	border: 1px solid #727272;
+	background: none;
+	color: #fff;
+	padding: 1rem;
+	width: 18rem;
+	border-radius: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 1.3rem;
+	cursor: pointer;
+	transition: all 0.4s ease;
+}
+
+.btn-language:hover {
+	transform: scale(1.05);
+}
+
+.btn-language i {
+	font-size: 1.8rem;
+}
+
+.container-links-legal {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2rem;
+
+	margin-bottom: 3rem;
+}
+
+.container-links-legal a {
+	text-decoration: none;
+	color: #b3b3b3;
+	font-size: 1.2rem;
+}
+
+/* ********************************** */
+/*         CONTENIDO PRINCIPAL        */
+/* ********************************** */
+.spotify {
+  grid-row: 1/3;
+  grid-column: 2/-1;
+
+  background-color: #121212;
+  padding: 2.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.section-title:hover {
+  text-decoration: underline;
+}
+
+.section-1,
+.section-2,
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.section-1 {
+  position: relative;
+  padding-top: 7rem; /* espacio para que los botones no colisionen con el título */
+}
+
+.section-3 .cover img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* asegura que sea cuadrado */
+  object-fit: cover;
+  border-radius: 50%; /* ← el círculo ritual */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* opcional: aura sutil */
+}
+
+.cards-container {
+    width: 1152px;
+  position: relative;
+  overflow: hidden;
+  padding: 0 2rem;
+  max-width: 100vw; /* ← asegura que el botón derecho no se exilie fuera del viewport */
+}
+
+.cards {
+  display: flex;
+    width: max-content;
+  gap: 2px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.card {
+    width: 150px;
+  flex-shrink: 0;
+  flex: 0 0 18rem;
+  background-color: #181818;
+  border-radius: 0.5rem;
+  padding: 1.1rem;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  min-height: 250px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-color: #222;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.nav-prev {
+  position: absolute;
+  top: 50%;
+  left: 1.5rem;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.nav-next {
+  position: absolute;
+  top: 50%;
+  right: 1.5rem;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.card:hover {
+  background-color: #282828;
+}
+
+.cover img {
+  width: 100%;
+  border-radius: 0.5rem;
+}
+
+.cover {
+  overflow: hidden;
+    margin-bottom: 1px;
+}
+
+.info h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 600;
+}
+
+.info p {
+  font-size: 1.3rem;
+  color: #b3b3b3;
+  font-weight: 400;
+  line-height: 1.5;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* Botón Play con crecimiento y cambio de tono */
+.btn-play {
+  position: absolute;
+  bottom: 10rem;
+  right: 1.5rem;
+  background-color: #28a745;
+  color: #010101;
+  border: none;
+  border-radius: 50px;
+  padding: 14px 16px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover directo sobre el botón */
+.btn-play:hover {
+  background-color: #32b84c; /* verde luminoso, no muy distinto */
+    opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .btn-play {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.nav-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  z-index: 25;
+  pointer-events: none; /* permite que las cards sigan siendo interactuables */
+}
+
+.nav-btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  pointer-events: auto; /* reactiva interacción en el botón */
+}
+
+.nav-btn:hover {
+  background-color: #32b84c;
+  box-shadow: 0 0 8px rgba(50, 184, 76, 0.5); /* aura verde ritual */
+}
+
+.cards.scrollable {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 2.4rem;
+}
+
+/* ********************************** */
+/*               FOOTER               */
+/* ********************************** */
+
+
+/* ********************************** */
+/*            BANNER FINAL            */
+/* ********************************** */
+.banner-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	padding: 1rem 2rem;
+	background-image: linear-gradient(90deg, #af2896, #509bf5);
+	color: #fff;
+
+	position: fixed;
+	bottom: 0;
+	z-index: 20;
+	width: 100%;
+	height: 8rem;
+}
+
+.banner-bottom .content {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.banner-bottom .content span {
+	font-size: 1.4rem;
+	text-transform: uppercase;
+}
+
+.banner-bottom .content p {
+	font-size: 1.6rem;
+}
+
+/* Clases Adicionales */
+.transparent {
+	opacity: 0.9;
+}

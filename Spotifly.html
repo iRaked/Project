@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- BLOCK RIGHT CLICK -->
+        <script type="text/javascript">
+            document.onkeydown = function(){return false};
+            document.oncontextmenu = function(){return false}
+        </script>
+		<title>Spotifly</title>
+		<link rel="stylesheet" href="Spotifly.css"/>
+	</head>
+	<body>
+		<main class="main container">
+			<!-- TopBar -->
+			<div class="topbar">
+				<div class="buttons-user">
+                    <div class="search-bar">
+                      <input type="text" id="searchInput" placeholder="¿Qué quieres reproducir?" />
+                      <button class="search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </button>
+                    </div>
+					<a href="#" class="btn-register">Registrarte</a>
+					<a href="#" class="btn-login btn-full">Iniciar sesión</a>
+				</div>
+			</div>
+			<!-- SideBar -->
+			<nav class="navbar">
+				<div class="container-logo">
+                  <a href="#" class="link-logo">
+                    <img src="img/logo/spotifly.png" alt="Spotifly Logo" class="logo-img" />
+                  </a>
+                </div>
+				<ul class="nav-main">
+					<li>
+						<a href="#"> <i class="fa-solid fa-house"></i>Inicio </a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fa-solid fa-magnifying-glass"></i>Buscar</a
+						>
+					</li>
+					<li>
+						<a href="#"
+							><i class="fa-solid fa-bookmark"></i>Tu biblioteca</a
+						>
+					</li>
+				</ul>
+
+				<div class="extra-options">
+					<button class="btn-create-list">
+						<i class="fa-solid fa-plus"></i>
+						Crear Lista
+					</button>
+					<button class="btn-favorite-songs">
+						<i class="fa-solid fa-heart"></i>
+						Canciones que te gustan
+					</button>
+				</div>
+
+				<div class="container-links">
+					<div class="container-links-legal">
+						<a href="https://www.spotify.com/ec/legal/">Legal</a>
+						<a href="https://www.spotify.com/ec/privacy/"
+							>Centro de Privacidad</a
+						>
+						<a href="https://www.spotify.com/ec/legal/privacy-policy/"
+							>Política de Privacidad</a
+						>
+						<a href="https://www.spotify.com/ec/legal/cookies-policy/"
+							>Cookies</a
+						>
+						<a
+							href="https://www.spotify.com/ec/legal/privacy-policy/#s3"
+							>Información sobre los anuncios
+						</a>
+					</div>
+
+					<button class="btn-language">
+						<i class="fa-solid fa-globe"></i>
+						Español de España
+					</button>
+				</div>
+			</nav>
+
+			<!-- Contenedor principal -->
+            <div class="spotify">
+
+                <!-- Sección 1 -->
+            <div class="section-1">
+        <h1 class="section-title">Hits</h1>
+
+  <!-- Contenedor de tarjetas con scroll horizontal y botones de navegación -->
+  <div class="cards-container">
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+    <!-- Botón izquierdo -->
+    <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <!-- Carrusel de tarjetas -->
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="cover">
+          <img src="assets/covers/Daaz%20-%20I%20like%20you%20mucho.png" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Daaz</h2>
+          <p>I like you mucho</p>
+          <audio src="assets/audio/Daaz%20-%20I%20like%20you%20mucho.MP3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="cover">
+          <img src="assets/covers/Cabas%20-%20Enamor%C3%A1ndonos.jpg" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Cabas</h2>
+          <p>Enamorándonos</p>
+          <audio src="assets/audio/Cabas%20-%20Enamor%C3%A1ndonos.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Camilo Evaluna Montaner</h2>
+          <p>Índigo</p>
+          <audio src="assets/audio/%C3%8Dndigo.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Kany García</h2>
+          <p>Agüita e coco</p>
+          <audio src="assets/audio/Kanny%20Garc%C3%ADa%20-%20Ag%C3%BCita%20e%20coco.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Becky G & Manuel Turizo</h2>
+          <p>Qué haces</p>
+          <audio src="assets/audio/Becky%20G,%20Manuel%20Turizo%20-%20Qu%C3%A9%20haces.MP3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Beret & Morat</h2>
+          <p>Porfa no te vayas</p>
+          <audio src="assets/audio/Beret%20&%20Morat%20-%20Porfa%20no%20te%20vayas.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+        
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Juanes</h2>
+          <p>Me enamora</p>
+          <audio src="assets/audio/Juanes%20-%20Me%20enamora.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Julio García & Jah Love</h2>
+          <p>Eres tú</p>
+          <audio src="assets/audio/Julio%20Garc%C3%ADa%20-%20Eres%20t%C3%BA%20%5BF%5D%20Jah%20Love.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Rusherking & Dread Mar</h2>
+          <p>Perfecta</p>
+          <audio src="assets/audio/Rusherking%20&%20Dread%20Mar%20I%20-%20Perfecta.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Río Roma & CNCO</h2>
+          <p>Princesa</p>
+          <audio src="assets/audio/R%C3%ADo%20Roma%20-%20Princesa%20%5BF%5D%20CNCO.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Botón derecho -->
+    <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</div>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- Sección 2 -->
+<div class="section-2">
+  <h1 class="section-title">Regional Mexicano</h1>
+
+  <!-- Contenedor de tarjetas con navegación -->
+  <div class="cards-container">
+    <!-- Botón izquierdo -->
+    <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <!-- Carrusel de tarjetas -->
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Grupo Frontera & Carín León</h2>
+          <p>Mutuo</p>
+          <audio src="assets/audio/Grupo%20Frontera,%20Car%C3%ADn%20Le%C3%B3n%20%20-%20Mutuo.MP3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Freddo Lucky Bossi & Espinoza Paz</h2>
+          <p>Llévame</p>
+          <audio src="assets/audio/Freddo%20Lucky%20Bossi%20&%20Espinoza%20Paz%20-%20Ll%C3%A9vame.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Grupo Frontera & Ke Personaje</h2>
+          <p>Sencillamente bonita</p>
+          <audio src="assets/audio/Grupo%20Frontera,%20Ke%20Personaje%20-%20Sencillamente%20bonita.MP3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Xavi, Manuel Turizo</h2>
+          <p>En privado</p>
+          <audio src="assets/audio/Xavi,%20Manuel%20Turizo%20-%20En%20privado.MP3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Michelle Maciel & Eden Muñoz</h2>
+          <p>CCC</p>
+          <audio src="assets/audio/CCC%20-%20Michelle%20Maciel%20x%20Eden%20Mu%C3%B1oz.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Michelle Maciel</h2>
+          <p>Me todo</p>
+          <audio src="assets/audio/Michelle%20Maciel%20-%20Me%20todo.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Christian Nodal & Estevie</h2>
+          <p>Un besito más</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 8 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Milla 22</h2>
+          <p>Me gustas curiosa</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 9 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Los Elegantes De Jerez & Distinto Norte</h2>
+          <p>Estás bien bonita</p>
+          <audio src="assets/audio/Los%20Elegantes%20De%20Jerez%20&%20Distinto%20Norte%20-%20Est%C3%A1s%20bien%20bonita.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 10 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>La Maquinaria Norteña</h2>
+          <p>Con ese corazón</p>
+          <audio src="assets/audio/Con%20ese%20coraz%C3%B3n%20-%20La%20Maquinaria%20Norte%C3%B1a.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 11 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Conjunto Rienda Real</h2>
+          <p>Contigo quiero</p>
+          <audio src="assets/audio/Contigo%20quiero%20-%20Conjunto%20Rienda%20Real.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 12 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Rodrigo Guerrero</h2>
+          <p>Contigo</p>
+          <audio src="assets/audio/Contigo%20-%20Rodrigo%20Guerrero.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 13 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>ElArturo</h2>
+          <p>Cada día más</p>
+          <audio src="assets/audio/ElArturo%20-%20Cada%20d%C3%ADa%20m%C3%A1s.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 14 -->
+      <div class="card">
+        <div class="cover"><img src="#" alt="Cover" /></div>
+        <div class="info">
+          <h2>Calibre 50</h2>
+          <p>Un imposible a tu medida</p>
+          <audio src="assets/audio/Un%20imposible%20a%20tu%20medida.mp3" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 15 -->
+    <div class="card">
+      <div class="cover"><img src="#" alt="Cover" /></div>
+      <div class="info">
+        <h2>Grupo Firme</h2>
+        <p>Me gustas</p>
+        <audio src="assets/audio/Grupo%20Firme%20-%20Me%20gustas.mp3" class="audio-track"></audio>
+        <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+      </div>
+    </div>
+
+    <!-- Botón derecho (fuera del carrusel) -->
+    <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div> <!-- cierre de .cards-container -->
+    </div> <!-- cierre de .section -->
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- Sección 3 -->
+<div class="section-3">
+  <h1 class="section-title">Viva Latino</h1>
+
+  <!-- Contenedor de tarjetas con navegación -->
+  <div class="cards-container">
+    <!-- Botón izquierdo -->
+    <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <!-- Carrusel de tarjetas -->
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Today</h2>
+          <p>Miley</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>RapCaviar</h2>
+          <p>New</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>All</h2>
+          <p>The</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Rock</h2>
+          <p>Rock</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Chill</h2>
+          <p>Kick</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Viva</h2>
+          <p>Today</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>LAST</h2>
+          <p>megamix</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+    <!-- Botón derecho -->
+    <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+    </div>
+</div>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- Sección 4 -->
+<div class="section-4">
+  <h1 class="section-title">Rock</h1>
+
+  <!-- Contenedor de tarjetas con navegación -->
+  <div class="cards-container">
+    <!-- Botón izquierdo -->
+    <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <!-- Carrusel de tarjetas -->
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Today</h2>
+          <p>Miley</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>RapCaviar</h2>
+          <p>New</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>All</h2>
+          <p>The</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Rock</h2>
+          <p>Rock</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Chill</h2>
+          <p>Kick</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Viva</h2>
+          <p>Today</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Mega</h2>
+          <p>megamix</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+    <!-- Botón derecho -->
+    <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</div>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- Sección 5 -->
+<div class="section-5">
+  <h1 class="section-title">Mega Mix</h1>
+
+  <!-- Contenedor de tarjetas con navegación -->
+  <div class="cards-container">
+    <!-- Botón izquierdo -->
+    <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <!-- Carrusel de tarjetas -->
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Today</h2>
+          <p>Miley</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>RapCaviar</h2>
+          <p>New</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>All</h2>
+          <p>The</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Rock</h2>
+          <p>Rock</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Chill</h2>
+          <p>Kick</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Viva</h2>
+          <p>Today</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Mega</h2>
+          <p>megamix</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+    <!-- Botón derecho -->
+    <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</div>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+<!-- Sección 6 -->
+<div class="section-6">
+  <h1 class="section-title">After Party</h1>
+
+  <!-- Contenedor de tarjetas con navegación -->
+  <div class="cards-container">
+    <!-- Botón izquierdo -->
+    <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+
+    <!-- Carrusel de tarjetas -->
+    <div class="cards">
+      <!-- Card 1 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Today</h2>
+          <p>Miley</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>RapCaviar</h2>
+          <p>New</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>All</h2>
+          <p>The</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Rock</h2>
+          <p>Rock</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Chill</h2>
+          <p>Kick</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Viva</h2>
+          <p>Today</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+      <!-- Card 7 -->
+      <div class="card">
+        <div class="cover">
+          <img src="#" alt="Cover" />
+        </div>
+        <div class="info">
+          <h2>Mega</h2>
+          <p>megamix</p>
+          <audio src="#" class="audio-track"></audio>
+          <button class="btn-play"><i class="fa-solid fa-play"></i></button>
+        </div>
+      </div>
+
+    <!-- Botón derecho -->
+    <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</div>
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ? ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+			<!-- Parte final  -->
+			<footer class="footer"></footer>
+            
+</main>
+        
+		<div class="banner-bottom">
+			<div class="content">
+				<span>Muestra de Spotifly</span>
+				<p>
+					Todos los tracks son obras intelectuales de sus artistas y están bajo derechos de autor
+				</p>
+			</div>
+			
+		</div>
+
+		<!-- Script de FontAwesome -->
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Script personal -->
+		<script src="Spotifly.js"></script>
+	</body>
+</html>
