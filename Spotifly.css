@@ -155,6 +155,11 @@ body, html {
 	padding: 0 2.4rem;
 }
 
+.logo-img {
+  max-width: 64px;
+  height: auto;
+}
+
 .nav-main {
 	padding: 0 2.4rem;
 
@@ -299,7 +304,10 @@ body, html {
 
 .section-1,
 .section-2,
-.section-3 {
+.section-3,
+.section-5,
+.section-6,
+.section-7 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -311,12 +319,17 @@ body, html {
   padding-top: 7rem; /* espacio para que los botones no colisionen con el título */
 }
 
-.section-3 .cover img {
+.section-4 .cover img {
   width: 100%;
   aspect-ratio: 1 / 1; /* asegura que sea cuadrado */
   object-fit: cover;
   border-radius: 50%; /* ← el círculo ritual */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* opcional: aura sutil */
+}
+
+.section-5 .cover img {
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .cards-container {
