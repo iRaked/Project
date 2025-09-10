@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = -1;
     let currentOffset = 0;
-
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     // 🔊 Reproducir un track específico
     function playTrack(index) {
       if (currentIndex !== -1) {
@@ -48,21 +48,30 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // 🖱️ Evento para cada botón de play
-    cards.forEach((card, index) => {
-      const btn = card.querySelector(".btn-play");
-      btn.addEventListener("click", () => {
-        const track = tracks[index];
-        if (!track.paused) {
-          track.pause();
-          togglePlayIcon(card, true);
-          card.classList.remove("active");
-          currentIndex = -1;
-        } else {
-          playTrack(index);
-        }
-      });
-    });
+cards.forEach((card, index) => {
+  const btn = card.querySelector(".btn-play");
+  const track = tracks[index];
 
+  btn.addEventListener("click", async () => {
+    // Validar que el track esté listo para reproducirse
+    if (track.readyState < 2) return;
+
+    // Si ya está reproduciendo, pausamos
+    if (!track.paused && !track.ended) {
+      track.pause();
+      togglePlayIcon(card, true);
+      card.classList.remove("active");
+      currentIndex = -1;
+    } else {
+      try {
+        playTrack(index);
+      } catch (err) {
+        console.warn("Error al intentar reproducir el audio:", err);
+      }
+    }
+  });
+});
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     // 🎯 Desplazamiento con validación visual
 function updateCarousel(direction) {
   const containerWidth = container.parentElement.offsetWidth;
@@ -87,7 +96,7 @@ if (btnNext && btnPrev) {
   btnNext.addEventListener("click", () => updateCarousel("next"));
   btnPrev.addEventListener("click", () => updateCarousel("prev"));
 }
-
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     // 🔍 Ritual de búsqueda por sección
     function performSearch() {
       const query = searchInput?.value.toLowerCase().trim();
@@ -124,3 +133,87 @@ if (btnNext && btnPrev) {
     searchIcon.addEventListener("click", triggerSearchInAllSections);
   }
 });
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 🎧 Reproductor global
+const globalPlayer = document.getElementById("global-player");
+
+// 🧩 Renderizar sección desde JSON
+async function renderSection1() {
+  const container = document.getElementById("cards-section-1");
+  const btnPrev = document.querySelector(".section-1 .nav-prev");
+  const btnNext = document.querySelector(".section-1 .nav-next");
+  const scrollAmount = 304; // 18rem + 1rem gap
+  let currentOffset = 0;
+
+  try {
+    const response = await fetch("data/section-1.json");
+    const tracks = await response.json();
+
+    tracks.forEach((track, index) => {
+      const card = document.createElement("div");
+      card.classList.add("card");
+
+      card.innerHTML = `
+        <div class="cover"><img src="${track.caratula}" alt="Cover" /></div>
+        <div class="info">
+          <h2>${track.artista}</h2>
+          <p>${track.nombre}</p>
+          <button class="btn-play" data-src="${track.enlace}">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+      `;
+
+      // 🎵 Evento de reproducción
+      const btn = card.querySelector(".btn-play");
+      btn.addEventListener("click", async () => {
+        const src = btn.dataset.src;
+
+        if (globalPlayer.src !== src) {
+          globalPlayer.src = src;
+        }
+
+        try {
+          await globalPlayer.play();
+          togglePlayIcon(btn, false);
+          highlightCard(card);
+        } catch (err) {
+          console.warn("Error al reproducir:", err);
+        }
+      });
+
+      container.appendChild(card);
+    });
+
+    // 🎯 Navegación horizontal
+    btnNext.addEventListener("click", () => {
+      const maxOffset = container.scrollWidth - container.parentElement.offsetWidth;
+      currentOffset = Math.min(currentOffset + scrollAmount, maxOffset);
+      container.style.transform = `translateX(-${currentOffset}px)`;
+    });
+
+    btnPrev.addEventListener("click", () => {
+      currentOffset = Math.max(currentOffset - scrollAmount, 0);
+      container.style.transform = `translateX(-${currentOffset}px)`;
+    });
+
+  } catch (error) {
+    console.error("Error al cargar sección 1:", error);
+  }
+}
+
+// 🎭 Alternar ícono Play/Pause
+function togglePlayIcon(button, toPlay) {
+  const icon = button.querySelector("i");
+  icon.classList.remove("fa-play", "fa-pause");
+  icon.classList.add(toPlay ? "fa-play" : "fa-pause");
+}
+
+// ✨ Resaltar tarjeta activa
+function highlightCard(activeCard) {
+  document.querySelectorAll(".card").forEach(card => {
+    card.classList.remove("active");
+    togglePlayIcon(card.querySelector(".btn-play"), true);
+  });
+  activeCard.classList.add("active");
+}
