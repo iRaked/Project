@@ -1,4 +1,5 @@
-[
+{
+  "hits": [
   {
     "caratula": "assets/covers/Daaz - I like you mucho.png",
     "artista": "Daaz",
@@ -75,7 +76,9 @@
     "nombre": "Princesa",
     "enlace": "https://www.dropbox.com/scl/fi/34s6b39fa96fqybzs14c6/R-o-Roma-Princesa-F-CNCO.mp3?rlkey=njby7269xli107celq1qzo5a0&st=334evf03&dl=0&raw=1",
     "seccion": "hits"
-  },
+  }
+],
+"regional_mexicano": [
   {
     "caratula": "assets/covers/Grupo-Frontera-Carín-León-Mutuo.jpg",
     "artista": "Grupo Frontera & Carín León",
@@ -180,7 +183,9 @@
     "nombre": "Me gustas",
     "enlace": "https://www.dropbox.com/scl/fi/jwc8oqm67txmmr9tylfpz/Grupo-Firme-Me-gustas.mp3?rlkey=jx8lofvs1kd21e1kd9u38x27p&st=8v5c40m2&dl=0&raw=1",
     "seccion": "regional_mexicano"
-  },
+  }
+],
+"viva_latino": [
   {
     "caratula": "assets/covers/Becky-G-Manuel-Turizo-Que-haces.png",
     "artista": "Becky G & Manuel Turizo",
@@ -250,7 +255,9 @@
     "nombre": "Cerquita de mi",
     "enlace": "https://www.dropbox.com/scl/fi/1l1yr85ghnlbyup66rbl6/Nigga-F-Ricky-Rick-Cerquita-de-mi.MP3?rlkey=g3pm8fhccbqy3uhqlj0sfd6oy&st=0vnxi1ba&dl=0&raw=1",
     "seccion": "viva_latino"
-  },
+  }
+],
+"rock_espanol": [
   {
     "caratula": "assets/covers/Enrique-Bunbury-Miren-Iza-Frente-a-frente.jpg",
     "artista": "Enrique Bunbury & Miren Iza",
@@ -425,7 +432,9 @@
     "nombre": "Me haces sentir tan bien",
     "enlace": "https://www.dropbox.com/scl/fi/r5498t466p41meygsvewr/Hazel-Me-haces-sentir-bien.mp3?rlkey=bi7onnujth5z867ot0t8d1zp5&st=hyibczqa&dl=0&raw=1",
     "seccion": "rock_espanol"
-  },
+  }
+],
+"mega_mix": [
   {
     "caratula": "assets/covers/Shakira-Papatinho-Estoy-aqui-[R].jpg",
     "artista": "Shakira & Papatinho",
@@ -551,7 +560,9 @@
     "nombre": "Mesa que mas aplauda (Za, za, za)",
     "enlace": "https://www.dropbox.com/scl/fi/6a9efv7do67mpumfo4yot/Mesa-que-mas-aplauda-Remix-Fem-Version.MP3?rlkey=lz9e34vz9cb64ylbigchdrc3n&st=d16kw5wr&dl=0&raw=1",
     "seccion": "mega_mix"
-  },
+  }
+],
+"after_party": [
   {
     "caratula": "assets/covers/Daaz-&-ElArturo-La-plebada.jpg",
     "artista": "Daaz & ElArturo",
@@ -656,7 +667,9 @@
     "nombre": "Nenuka",
     "enlace": "https://www.dropbox.com/scl/fi/yf438y9leg6uk8dpxk7hv/Herly-RG-Nenuka.mp3?rlkey=ds0yivrtdy9kj4znan6xshhf9&st=1z83mtn3&dl=0&raw=1",
     "seccion": "after_party"
-  },
+  }
+],
+"pop_electronico": [
   {
     "caratula": "assets/covers/Miranda-&-Lali-Yo-Te-Dire.jpg",
     "artista": "Miranda & Lali",
@@ -798,4 +811,4 @@
     "seccion": "pop_electronico"
   }
 ]
-
+}
