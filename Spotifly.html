@@ -5,11 +5,12 @@
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!-- BLOCK RIGHT CLICK -->
-        <script type="text/javascript">
-            document.onkeydown = function(){return false};
-            document.oncontextmenu = function(){return false}
-        </script>
+        <!--  BLOCK -->
+    <script type="text/javascript">
+        document.addEventListener("contextmenu", function (e) {
+        e.preventDefault(); // Bloquea el menú contextual en todo el documento
+        });
+    </script>
 		<title>Spotifly</title>
 		<link rel="stylesheet" href="Spotifly.css"/>
 	</head>
@@ -40,7 +41,7 @@
 						<a href="#"> <i class="fa-solid fa-house"></i>Inicio </a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="https://open.spotify.com/search/">
 							<i class="fa-solid fa-magnifying-glass"></i>Buscar</a
 						>
 					</li>
@@ -72,10 +73,12 @@
                         Radio
                       </button>
                     </a>
-                    <button class="btn-karaoke">
-                      <i class="fa-solid fa-microphone-lines"></i>
-                      Karaoke
-                    </button>
+                    <a href="#" class="btn-karaoke-link">
+                      <button class="btn-karaoke">
+                        <i class="fa-solid fa-microphone-lines"></i>
+                        Karaoke
+                      </button>
+                    </a>
 				</div>
 
 				<div class="container-links">
