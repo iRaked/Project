@@ -316,18 +316,21 @@ function initModalPlayer(contenedorId, playlistData) {
   currentIndex = index;
   showModal(localPlaylist[index]);
 
-  if (btnPrev && btnNext) {
-    btnPrev.style.visibility = "visible";
-    btnNext.style.visibility = "visible";
-    btnPrev.disabled = index === 0;
-    btnNext.disabled = index === localPlaylist.length - 1;
-  }
+  if (btnNext) {
+  btnNext.onclick = () => {
+    if (currentIndex < localPlaylist.length - 1) {
+      playTrack(currentIndex + 1);
+    }
+  };
+}
 
-  if (modalQueue) {
-    modalQueue.querySelectorAll("li").forEach((li, i) => {
-      li.classList.toggle("active", i === index);
-    });
-  }
+if (btnPrev) {
+  btnPrev.onclick = () => {
+    if (currentIndex > 0) {
+      playTrack(currentIndex - 1);
+    }
+  };
+}
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B7 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   // 🔁 Reproducción continua contextual
   modalAudio.onended = () => {
