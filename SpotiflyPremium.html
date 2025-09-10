@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <link rel="icon" type="image/x-icon" href="assets/SG.ico" />
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <!-- BLOCK RIGHT CLICK 
+        <script type="text/javascript">
+            document.onkeydown = function(){return false};
+            document.oncontextmenu = function(){return false}
+        </script>-->
+		<title>Spotifly Premium</title>
+		<link rel="stylesheet" href="SpotiflyPremium.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+  <div class="layout">
+    <!-- SideBar -->
+    <nav class="navbar">
+      <div class="container-logo">
+        <a href="#" class="link-logo">
+          <img src="https://i.ibb.co/dJDPkt0y/Logo-Spotifly-FX.png" alt="Spotifly Logo" class="logo-img" />
+        </a>
+      </div>
+
+      <ul class="nav-main">
+        <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Buscar</a></li>
+        <li><a href="#"><i class="fa-solid fa-bookmark"></i>Tu biblioteca</a></li>
+      </ul>
+
+      <div class="extra-options">
+        <button class="btn-create-list"><i class="fa-solid fa-plus"></i>Crear Lista</button>
+        <button class="btn-favorite-songs"><i class="fa-solid fa-heart"></i>Canciones que te gustan</button>
+        <a href="https://www.ivoox.com/podcast-sesiones_sq_f12464020_1.html" target="_blank" rel="noopener noreferrer">
+          <button class="btn-podcast"><i class="fa-solid fa-podcast"></i>Podcast</button>
+        </a>
+        <a href="https://iraked.github.io/ExtasisRadio/Repro.html" target="_blank" rel="noopener noreferrer">
+          <button class="btn-radio"><i class="fa-solid fa-radio"></i>Radio</button>
+        </a>
+        <button class="btn-karaoke"><i class="fa-solid fa-microphone-lines"></i>Karaoke</button>
+      </div>
+
+      <div class="container-links">
+        <div class="container-links-legal">
+          <a href="https://www.spotify.com/ec/legal/privacy-policy/">Política de Privacidad</a>
+          <a href="https://www.spotify.com/ec/legal/cookies-policy/">Cookies</a>
+        </div>
+        <button class="btn-language"><i class="fa-solid fa-globe"></i>Español de Latinoamérica</button>
+      </div>
+    </nav>
+		<main class="main container">
+  <!-- TopBar -->
+  <div class="topbar">
+    <div class="buttons-user">
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="¿Qué quieres reproducir?" />
+        <button class="search-icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <a href="#" class="btn-register">Registrarte</a>
+      <a href="#" class="btn-login btn-full">Iniciar sesión</a>
+    </div>
+  </div>
+
+  <!-- Contenedor principal -->
+  <div class="spotify">
+    <!-- Secciones musicales -->
+    <div class="section-1">
+      <h1 class="section-title">Hits</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-1"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="section-2">
+      <h1 class="section-title">Regional Mexicano</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-2"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="section-3">
+      <h1 class="section-title">Viva Latino</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-3"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="section-4">
+      <h1 class="section-title">Rock En Español</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-4"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="section-5">
+      <h1 class="section-title">Mega Mix</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-5"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="section-6">
+      <h1 class="section-title">After Party</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-6"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <div class="section-7">
+      <h1 class="section-title">Pop Electrónico</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-7"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reproductor global -->
+  <audio id="global-player" preload="auto"></audio>
+
+  <!-- Footer visual -->
+  <div class="banner-bottom">
+    <div class="content">
+      <span>Spotifly Premium</span>
+      <p>Todos los tracks son obras intelectuales de sus artistas y están bajo derechos de autor</p>
+    </div>
+
+    <div class="footer-counter">
+      <span style="vertical-align: middle; font-size: 10px; color: #000; box-shadow: 0 0 8px 2px #a020f0; border-radius: 30%;">©2025</span>
+      <footer>
+        <a href="https://xat.me/LuzDeErendil" target="_blank" rel="noreferrer">
+          <img src="https://i.ibb.co/SXLf88P8/Santi-Graphics-Logo-SFX.png" width="20" height="20" alt="icon"/>
+        </a>
+      </footer>
+      <div class="contador">
+        <img src="https://s01.flagcounter.com/mini/HEKZ/bg_000000/txt_00FFEE/border_3C00FF/flags_0/" />
+      </div>
+    </div>
+  </div>
+</main>
+    </div> <!-- Cierre de .layout -->
+
+    <!-- Scripts -->
+    <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="SpotiflyPremium.js"></script>
+  </body>
+
+  <!-- Reproductor Modal Universal -->
+  <div id="modal-player" class="modal hidden">
+    <div class="modal-content">
+      <button class="close-modal">×</button>
+
+      <!-- Carátula -->
+      <div class="cover">
+        <img id="modal-cover" src="" alt="Cover" />
+      </div>
+
+      <!-- Información de pista -->
+      <div class="info">
+        <h2 id="modal-artist"></h2>
+        <p id="modal-title"></p>
+      </div>
+
+      <!-- Cola visual -->
+      <ul id="modal-queue" class="modal-queue"></ul>
+
+      <!-- Reproductor personalizado -->
+      <div class="custom-player">
+        <button id="btn-toggle" class="play-btn">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <div class="progress-container">
+          <div id="progress-bar" class="progress-bar"></div>
+        </div>
+      </div>
+
+      <!-- Audio oculto -->
+      <audio id="modal-audio"></audio>
+
+      <!-- Navegación entre pistas -->
+      <div class="modal-nav">
+        <button id="btn-prev" class="nav-btn">⟵</button>
+        <button id="btn-next" class="nav-btn">⟶</button>
+      </div>
+
+      <!-- Controles extendidos -->
+      <div class="modal-controls">
+        <label>
+          Volumen:
+          <input type="range" id="volume-control" min="0" max="1" step="0.01" />
+        </label>
+        <label>
+          Velocidad:
+          <select id="speed-control">
+            <option value="0.5">0.5x</option>
+            <option value="1" selected>1x</option>
+            <option value="1.5">1.5x</option>
+            <option value="2">2x</option>
+          </select>
+        </label>
+        <button id="loop-toggle">Loop: Off</button>
+        <button id="mute-toggle">Mute</button>
+      </div>
+    </div>
+  </div>
+</html>
