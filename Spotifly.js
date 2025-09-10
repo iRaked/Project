@@ -132,21 +132,44 @@ if (btnNext && btnPrev) {
     searchInput.addEventListener("input", triggerSearchInAllSections);
     searchIcon.addEventListener("click", triggerSearchInAllSections);
   }
+
+// Renderizar sección 1 desde JSON
+  renderSection1(); // ←
 });
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🎧 Reproductor global
 const globalPlayer = document.getElementById("global-player");
 
+// ✨ Sincronizar íconos al finalizar el audio
+globalPlayer.addEventListener("ended", () => {
+  document.querySelectorAll(".card").forEach(card => {
+    card.classList.remove("active");
+    const btn = card.querySelector(".btn-play");
+    if (btn) togglePlayIcon(btn, true);
+  });
+});
+
 // 🧩 Renderizar sección desde JSON
 async function renderSection1() {
-  const container = document.getElementById("cards-section-1");
+  function getContainerBySeccion(seccion) {
+  switch (seccion) {
+    default:
+      return document.getElementById("cards-section-1");
+      case "regional_mexicano":
+      return document.getElementById("cards-section-2");
+      case "viva_latino":
+      return document.getElementById("cards-section-3");
+      case "hits":
+  }
+}
+
   const btnPrev = document.querySelector(".section-1 .nav-prev");
   const btnNext = document.querySelector(".section-1 .nav-next");
-  const scrollAmount = 304; // 18rem + 1rem gap
+  const scrollAmount = 18 * 16 + 16; // 18rem + 1rem gap ≈ 304px
   let currentOffset = 0;
 
   try {
-    const response = await fetch("data/section-1.json");
+    const response = await fetch("Spotifly.json");
     const tracks = await response.json();
 
     tracks.forEach((track, index) => {
@@ -164,38 +187,59 @@ async function renderSection1() {
         </div>
       `;
 
-      // 🎵 Evento de reproducción
       const btn = card.querySelector(".btn-play");
+
+      // 🎵 Alternancia play/pause con <source> para compatibilidad
       btn.addEventListener("click", async () => {
         const src = btn.dataset.src;
+        const currentSource = globalPlayer.querySelector("source");
+        const isSameTrack = currentSource?.getAttribute("src") === src;
+        const isPlaying = !globalPlayer.paused && !globalPlayer.ended;
 
-        if (globalPlayer.src !== src) {
-          globalPlayer.src = src;
-        }
+        if (isSameTrack && isPlaying) {
+          globalPlayer.pause();
+          togglePlayIcon(btn, true);
+          card.classList.remove("active");
+        } else {
+          globalPlayer.innerHTML = `<source src="${src}" type="audio/mpeg">`;
+          globalPlayer.load();
 
-        try {
-          await globalPlayer.play();
-          togglePlayIcon(btn, false);
-          highlightCard(card);
-        } catch (err) {
-          console.warn("Error al reproducir:", err);
+          try {
+            await globalPlayer.play();
+            highlightCard(card);
+            togglePlayIcon(btn, false);
+          } catch (err) {
+            console.warn("Error al reproducir:", err);
+          }
         }
       });
 
-      container.appendChild(card);
+      const container = getContainerBySeccion(track.seccion);
+container?.appendChild(card);
+
     });
 
-    // 🎯 Navegación horizontal
-    btnNext.addEventListener("click", () => {
-      const maxOffset = container.scrollWidth - container.parentElement.offsetWidth;
-      currentOffset = Math.min(currentOffset + scrollAmount, maxOffset);
-      container.style.transform = `translateX(-${currentOffset}px)`;
-    });
+    // 🎯 Navegación horizontal con validación visual
+    function updateCarousel(direction) {
+      const containerWidth = container.parentElement.offsetWidth;
+      const totalWidth = container.scrollWidth;
+      const cardWidth = Math.floor(scrollAmount * 0.6); // ≈ 182px
+      const maxOffset = totalWidth - containerWidth + cardWidth;
 
-    btnPrev.addEventListener("click", () => {
-      currentOffset = Math.max(currentOffset - scrollAmount, 0);
+      const nextOffset = direction === "next"
+        ? Math.min(currentOffset + scrollAmount, maxOffset)
+        : Math.max(currentOffset - scrollAmount, 0);
+
+      currentOffset = nextOffset;
       container.style.transform = `translateX(-${currentOffset}px)`;
-    });
+
+      // 🧭 Validar límites visuales
+      btnPrev.disabled = currentOffset <= 0;
+      btnNext.disabled = currentOffset >= maxOffset - 1;
+    }
+
+    btnNext.addEventListener("click", () => updateCarousel("next"));
+    btnPrev.addEventListener("click", () => updateCarousel("prev"));
 
   } catch (error) {
     console.error("Error al cargar sección 1:", error);
@@ -213,7 +257,8 @@ function togglePlayIcon(button, toPlay) {
 function highlightCard(activeCard) {
   document.querySelectorAll(".card").forEach(card => {
     card.classList.remove("active");
-    togglePlayIcon(card.querySelector(".btn-play"), true);
+    const btn = card.querySelector(".btn-play");
+    if (btn) togglePlayIcon(btn, true);
   });
   activeCard.classList.add("active");
 }
