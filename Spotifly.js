@@ -153,15 +153,25 @@ globalPlayer.addEventListener("ended", () => {
 async function renderSection1() {
   function getContainerBySeccion(seccion) {
   switch (seccion) {
-    default:
+    case "hits":
       return document.getElementById("cards-section-1");
-      case "regional_mexicano":
+    case "regional_mexicano":
       return document.getElementById("cards-section-2");
-      case "viva_latino":
+    case "viva_latino":
       return document.getElementById("cards-section-3");
-      case "hits":
+    case "rock_espanol":
+      return document.getElementById("cards-section-4");
+    case "mega_mix":
+      return document.getElementById("cards-section-5");
+    case "after_party":
+      return document.getElementById("cards-section-6");
+    case "pop_electronico":
+      return document.getElementById("cards-section-7");
+    default:
+      return null;
   }
 }
+
 
   const btnPrev = document.querySelector(".section-1 .nav-prev");
   const btnNext = document.querySelector(".section-1 .nav-next");
