@@ -23,15 +23,17 @@ body {
 
 /* 🚫 Evita scroll horizontal no deseado */
 body, html {
+  height: 100%;
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 /* 🧱 Contenedor principal con grid */
 .container {
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 30rem 1fr;
-  grid-template-rows: min-content 1fr min-content;
-  margin-bottom: 8rem;
+  grid-template-rows: auto 1fr auto;
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -582,6 +584,33 @@ a {
   overflow-x: auto;
   scroll-behavior: smooth;
   gap: 2.4rem;
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 1rem;
+    -webkit-overflow-scrolling: touch;
+    touch-action: pan-x;
+  }
+
+  .card {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+  }
+
+  .nav-btn {
+    display: none; /* ← oculta flechas en móvil si usas scroll táctil */
+  }
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
