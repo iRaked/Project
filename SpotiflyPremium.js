@@ -205,45 +205,31 @@ function initCarousel(contenedorId) {
 }
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B4 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🔍 Búsqueda modular por contenedor + activación global
-
-function initSearch(contenedoresIds) {
+function initExternalSearch() {
   const searchInput = document.getElementById("searchInput");
   const searchIcon = document.querySelector(".search-icon");
 
-  contenedoresIds.forEach((contenedorId) => {
-    const container = document.getElementById(contenedorId);
-    if (!container) return;
-
-    const cards = container.querySelectorAll(".card");
-
-    // 🧩 Guardar función de búsqueda en el contenedor
-    container.__searchFn = () => {
-      const query = searchInput?.value.toLowerCase().trim() || "";
-
-      cards.forEach((card) => {
-        const title = card.querySelector("h2")?.textContent.toLowerCase() || "";
-        const description = card.querySelector("p")?.textContent.toLowerCase() || "";
-        const match = query === "" || title.includes(query) || description.includes(query);
-        card.classList.toggle("hidden", !match);
-      });
-    };
-  });
-
-  // 🔁 Activar búsqueda global que invoca cada contenedor
-  function triggerSearchInAllContainers() {
-    contenedoresIds.forEach((contenedorId) => {
-      const container = document.getElementById(contenedorId);
-      if (container && typeof container.__searchFn === "function") {
-        container.__searchFn();
-      }
-    });
+  function buscarEnSpotify(query) {
+    if (!query) return;
+    const url = `https://open.spotify.com/search/${encodeURIComponent(query)}`;
+    window.open(url, "_blank");
   }
 
   if (searchInput && searchIcon) {
-    searchInput.addEventListener("input", triggerSearchInAllContainers);
-    searchIcon.addEventListener("click", triggerSearchInAllContainers);
+    searchIcon.addEventListener("click", () => {
+      const query = searchInput.value.trim();
+      buscarEnSpotify(query);
+    });
+
+    searchInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        const query = searchInput.value.trim();
+        buscarEnSpotify(query);
+      }
+    });
   }
 }
+initExternalSearch();
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B5 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🎭 Funciones auxiliares para alternancia visual y estado activo
 
