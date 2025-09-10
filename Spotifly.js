@@ -201,28 +201,30 @@ async function renderSection1() {
 
       // 🎵 Alternancia play/pause con <source> para compatibilidad
       btn.addEventListener("click", async () => {
-        const src = btn.dataset.src;
-        const currentSource = globalPlayer.querySelector("source");
-        const isSameTrack = currentSource?.getAttribute("src") === src;
-        const isPlaying = !globalPlayer.paused && !globalPlayer.ended;
+  const src = btn.dataset.src;
+  const isSameTrack = globalPlayer.getAttribute("data-current-src") === src;
+  const isPlaying = !globalPlayer.paused && !globalPlayer.ended;
 
-        if (isSameTrack && isPlaying) {
-          globalPlayer.pause();
-          togglePlayIcon(btn, true);
-          card.classList.remove("active");
-        } else {
-          globalPlayer.innerHTML = `<source src="${src}" type="audio/mpeg">`;
-          globalPlayer.load();
+  if (isSameTrack && isPlaying) {
+    globalPlayer.pause();
+    togglePlayIcon(btn, true);
+    card.classList.remove("active");
+  } else {
+    globalPlayer.pause(); // Detiene cualquier reproducción previa
+    globalPlayer.removeAttribute("src"); // Limpia el src anterior
+    globalPlayer.setAttribute("src", src); // Establece el nuevo src
+    globalPlayer.setAttribute("data-current-src", src); // Guarda referencia
+    globalPlayer.load();
 
-          try {
-            await globalPlayer.play();
-            highlightCard(card);
-            togglePlayIcon(btn, false);
-          } catch (err) {
-            console.warn("Error al reproducir:", err);
-          }
-        }
-      });
+    try {
+      await globalPlayer.play();
+      highlightCard(card);
+      togglePlayIcon(btn, false);
+    } catch (err) {
+      console.warn("Error al reproducir:", err);
+    }
+  }
+});
 
       const container = getContainerBySeccion(track.seccion);
 container?.appendChild(card);
