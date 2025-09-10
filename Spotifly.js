@@ -12,33 +12,55 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let currentIndex = -1;
     let currentOffset = 0;
+    let currentCard = null;
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
     // 🔊 Reproducir un track específico
-    function playTrack(index) {
-      if (currentIndex !== -1) {
-        tracks[currentIndex].pause();
-        tracks[currentIndex].currentTime = 0;
-        cards[currentIndex].classList.remove("active");
-        togglePlayIcon(cards[currentIndex], true);
-      }
+    const globalPlayer = document.getElementById("global-player");
 
-      currentIndex = index;
-      const track = tracks[currentIndex];
-      track.play();
-      cards[currentIndex].classList.add("active");
-      togglePlayIcon(cards[currentIndex], false);
+function playTrack(index) {
+  if (currentIndex !== -1) {
+    const prevCard = cards[currentIndex];
+    const prevBtn = prevCard.querySelector(".btn-play");
+    togglePlayIcon(prevCard, true);
+    prevCard.classList.remove("active");
+  }
 
-      track.onended = () => {
-        togglePlayIcon(cards[currentIndex], true);
-        cards[currentIndex].classList.remove("active");
-        const nextIndex = currentIndex + 1;
-        if (nextIndex < tracks.length) {
-          playTrack(nextIndex);
-        } else {
-          currentIndex = -1;
-        }
-      };
-    }
+  currentIndex = index;
+  const card = cards[currentIndex];
+  const btn = card.querySelector(".btn-play");
+  const src = btn.dataset.src;
+
+  globalPlayer.pause();
+  globalPlayer.removeAttribute("src");
+  globalPlayer.setAttribute("src", src);
+  globalPlayer.setAttribute("data-current-src", src);
+  globalPlayer.load();
+
+  globalPlayer.play().then(() => {
+    card.classList.add("active");
+    togglePlayIcon(card, false);
+  }).catch(err => {
+    console.warn("Error al reproducir:", err);
+  });
+// Reproducción continua ================================================================
+  globalPlayer.onended = () => {
+  if (!currentCard) return;
+
+  togglePlayIcon(currentCard, true);
+  currentCard.classList.remove("active");
+
+  if (globalPlayer.paused) return;
+
+  const nextIndex = currentIndex + 1;
+  if (nextIndex < cards.length) {
+    playTrack(nextIndex);
+  } else {
+    currentIndex = -1;
+    currentCard = null;
+  }
+};
+}
+
 
     // 🎭 Alternar ícono Play/Pause
     function togglePlayIcon(card, toPlay) {
@@ -65,6 +87,7 @@ cards.forEach((card, index) => {
     } else {
       try {
         playTrack(index);
+          currentCard = cards[index];// AQUI SE ACTUALIZA?
       } catch (err) {
         console.warn("Error al intentar reproducir el audio:", err);
       }
@@ -186,6 +209,25 @@ async function renderSection1() {
       const card = document.createElement("div");
       card.classList.add("card");
 
+globalPlayer.onended = () => {
+  if (globalPlayer.paused) return;
+  if (!currentCard) return;
+
+  togglePlayIcon(currentCard, true);
+  currentCard.classList.remove("active");
+
+  const nextIndex = currentIndex + 1;
+  const cards = document.querySelectorAll(".section-1 .card");
+  const nextCard = cards[nextIndex];
+  if (nextCard) {
+    const nextBtn = nextCard.querySelector(".btn-play");
+    nextBtn.click(); // ← mantiene compatibilidad con tu lógica actual
+  } else {
+    currentIndex = -1;
+    currentCard = null;
+  }
+};
+
       card.innerHTML = `
         <div class="cover"><img src="${track.caratula}" alt="Cover" /></div>
         <div class="info">
@@ -207,23 +249,45 @@ async function renderSection1() {
 
   if (isSameTrack && isPlaying) {
     globalPlayer.pause();
-    togglePlayIcon(btn, true);
+    togglePlayIcon(card, true);
     card.classList.remove("active");
   } else {
-    globalPlayer.pause(); // Detiene cualquier reproducción previa
-    globalPlayer.removeAttribute("src"); // Limpia el src anterior
-    globalPlayer.setAttribute("src", src); // Establece el nuevo src
-    globalPlayer.setAttribute("data-current-src", src); // Guarda referencia
-    globalPlayer.load();
+  globalPlayer.pause();
+  globalPlayer.removeAttribute("src");
+  globalPlayer.setAttribute("src", src);
+  globalPlayer.setAttribute("data-current-src", src);
+  globalPlayer.load();
 
-    try {
-      await globalPlayer.play();
-      highlightCard(card);
-      togglePlayIcon(btn, false);
-    } catch (err) {
-      console.warn("Error al reproducir:", err);
-    }
+  currentIndex = index;
+  currentCard = card;
+
+  try {
+    await globalPlayer.play();
+    highlightCard(card);
+    togglePlayIcon(card, false);
+
+    // 🔁 Reproducción continua
+    globalPlayer.onended = () => {
+      if (globalPlayer.paused) return;
+      if (!currentCard) return;
+
+      togglePlayIcon(currentCard, true);
+      currentCard.classList.remove("active");
+
+      const nextIndex = currentIndex + 1;
+      const nextCard = document.querySelectorAll(".section-1 .card")[nextIndex];
+      if (nextCard) {
+        const nextBtn = nextCard.querySelector(".btn-play");
+        nextBtn.click(); // ← simula el clic para mantener compatibilidad
+      } else {
+        currentIndex = -1;
+        currentCard = null;
+      }
+    };
+  } catch (err) {
+    console.warn("Error al reproducir:", err);
   }
+}
 });
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
       const container = getContainerBySeccion(track.seccion);
