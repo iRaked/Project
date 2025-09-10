@@ -172,7 +172,7 @@ async function renderSection1() {
   }
 }
 
-
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 5 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
   const btnPrev = document.querySelector(".section-1 .nav-prev");
   const btnNext = document.querySelector(".section-1 .nav-next");
   const scrollAmount = 18 * 16 + 16; // 18rem + 1rem gap ≈ 304px
@@ -225,7 +225,7 @@ async function renderSection1() {
     }
   }
 });
-
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
       const container = getContainerBySeccion(track.seccion);
 container?.appendChild(card);
 
