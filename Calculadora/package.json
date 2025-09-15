@@ -1,0 +1,21 @@
+{
+    "name": "calculadora-javascript",
+    "version": "1.0.0",
+    "description": "Una calculadora simple implementada en JavaScript con tests",
+    "main": "src/calculadora.js",
+    "scripts": {
+        "test": "jest",
+        "start": "node src/main.js",
+        "test:watch": "jest --watch"
+    },
+    "keywords": [
+        "calculadora",
+        "javascript",
+        "tests"
+    ],
+    "author": "Luis",
+    "license": "MIT",
+    "devDependencies": {
+        "jest": "^29.7.0"
+    }
+}

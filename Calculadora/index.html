@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧮 Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <main class="main-content">
+            <!-- Calculadora Principal -->
+            <div class="calculator-container">
+                <div class="calculator">
+                    <div class="display">
+                        <div class="display-history" id="displayHistory"></div>
+                        <div class="display-current" id="displayCurrent">0</div>
+                    </div>
+
+                    <div class="buttons">
+                        <!-- Fila 1 -->
+                        <button class="btn btn-function" onclick="clearAll()">
+                            <i class="fas fa-eraser"></i> C
+                        </button>
+                        <button class="btn btn-function" onclick="clearEntry()">
+                            <i class="fas fa-backspace"></i> CE
+                        </button>
+                        <button class="btn btn-function" onclick="deleteLast()">
+                            <i class="fas fa-delete-left"></i>
+                        </button>
+                        <button class="btn btn-operator" onclick="setOperator('/')">
+                            <i class="fas fa-divide"></i>
+                        </button>
+
+                        <!-- Fila 2 -->
+                        <button class="btn btn-number" onclick="appendNumber('7')">7</button>
+                        <button class="btn btn-number" onclick="appendNumber('8')">8</button>
+                        <button class="btn btn-number" onclick="appendNumber('9')">9</button>
+                        <button class="btn btn-operator" onclick="setOperator('*')">
+                            <i class="fas fa-times"></i>
+                        </button>
+
+                        <!-- Fila 3 -->
+                        <button class="btn btn-number" onclick="appendNumber('4')">4</button>
+                        <button class="btn btn-number" onclick="appendNumber('5')">5</button>
+                        <button class="btn btn-number" onclick="appendNumber('6')">6</button>
+                        <button class="btn btn-operator" onclick="setOperator('-')">
+                            <i class="fas fa-minus"></i>
+                        </button>
+
+                        <!-- Fila 4 -->
+                        <button class="btn btn-number" onclick="appendNumber('1')">1</button>
+                        <button class="btn btn-number" onclick="appendNumber('2')">2</button>
+                        <button class="btn btn-number" onclick="appendNumber('3')">3</button>
+                        <button class="btn btn-operator" onclick="setOperator('+')">
+                            <i class="fas fa-plus"></i>
+                        </button>
+
+                        <!-- Fila 5 -->
+                        <button class="btn btn-number btn-zero" onclick="appendNumber('0')">0</button>
+                        <button class="btn btn-number" onclick="appendNumber('.')">.</button>
+                        <button class="btn btn-equals" onclick="calculate()">
+                            <i class="fas fa-equals"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="calculadora-web.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
