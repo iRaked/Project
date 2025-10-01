@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initModalPlayer("cards-section-4", data.rock_espanol);
     initModalPlayer("cards-section-5", data.mega_mix);
     initModalPlayer("cards-section-6", data.after_party);
-    initModalPlayer("cards-section-6", data.pop_electronico);
+    initModalPlayer("cards-section-7", data.pop_electronico);
 
 
   } catch (error) {
