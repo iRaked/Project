@@ -8,6 +8,13 @@
     "seccion": "hits"
   },
   {
+    "caratula": "assets/covers/Ricardo-Arjona-Adentro.jpg",
+    "artista": "Ricardo Arjona",
+    "nombre": "Adiós melancolía",
+    "enlace": "https://www.dropbox.com/scl/fi/4e5n37a6jkoxz55tty4fg/Ricardo-Arjona-Adi-s-melancol-a.mp3?rlkey=nhkzcvgx24gzybz5f65spy76j&st=9n19hgr6&dl=0&raw=1",
+    "seccion": "hits"
+  },
+  {
     "caratula": "assets/covers/Cabas-Enamorandonos.jpg",
     "artista": "Cabas",
     "nombre": "Enamorándonos",
@@ -255,6 +262,13 @@
     "nombre": "Cerquita de mi",
     "enlace": "https://www.dropbox.com/scl/fi/1l1yr85ghnlbyup66rbl6/Nigga-F-Ricky-Rick-Cerquita-de-mi.MP3?rlkey=g3pm8fhccbqy3uhqlj0sfd6oy&st=0vnxi1ba&dl=0&raw=1",
     "seccion": "viva_latino"
+  },
+  {
+    "caratula": "assets/covers/Andy-Rivera-Dame-un-beso.jpg",
+    "artista": "Andy Rivera",
+    "nombre": "Dame un beso",
+    "enlace": "https://www.dropbox.com/scl/fi/mrq0pmzysscokc737dmrb/Andy-Rivera-Dame-un-beso.MP3?rlkey=yr2ixyprdzrrduqgt31n8zear&st=t7ebgi20&dl=0&raw=1",
+    "seccion": "viva_latino"
   }
 ],
 "rock_espanol": [
@@ -464,10 +478,31 @@
     "seccion": "mega_mix"
   },
   {
+    "caratula": "assets/covers/Lola-Indigo-Mojaita.jpg",
+    "artista": "Lola Indigo",
+    "nombre": "Mojaita",
+    "enlace": "https://www.dropbox.com/scl/fi/ehc91ot6sw2vbagjoxarn/Lola-Indigo-Mojaita.MP3?rlkey=kivzsxu5n3tlz1p1p0x7qv5jh&st=nrsepaa2&dl=0&raw=1",
+    "seccion": "mega_mix"
+  },
+  {
     "caratula": "assets/covers/Becky-G-Sin-pijama-[R].jpg",
     "artista": "Becky G & Natty Natasha",
     "nombre": "Sin pijama",
     "enlace": "https://www.dropbox.com/scl/fi/g4hgd8gsycdywq81c6tcb/Becky-G-Natty-Natasha-Sin-pijama-R.mp3?rlkey=gaqatj3axj7um4v9klil2x4xz&st=9l72sxrc&dl=0&raw=1",
+    "seccion": "mega_mix"
+  },
+  {
+    "caratula": "assets/covers/Uno70-Grecia-Gon-No-se-enamora.jpg",
+    "artista": "Uno 70 & Grecia Gon",
+    "nombre": "No se enamora",
+    "enlace": "https://www.dropbox.com/scl/fi/atkqp0ltq1bdyeuuqj8g1/Uno70-Grecia-Gon-No-se-enamora.MP3?rlkey=ojb6g1s7j2xt2wo9t7oodq04i&st=tqu3s7ny&dl=0&raw=1",
+    "seccion": "mega_mix"
+  },
+  {
+    "caratula": "assets/covers/Valentina-Marquez-Aneley-A-veces-a-besos.jpg",
+    "artista": "Valentina Márquez & Aneley",
+    "nombre": "A veces a besos",
+    "enlace": "https://www.dropbox.com/scl/fi/p7u1vqrhhyofrzoz93wcv/Valentina-M-rquez-Aneley-A-veces-a-besos.MP3?rlkey=dspqltmd2gw3jlcgs199p41ug&st=9xuiixma&dl=0&raw=1",
     "seccion": "mega_mix"
   },
   {
@@ -496,6 +531,13 @@
     "artista": "Grupo Frontera",
     "nombre": "No se va",
     "enlace": "https://www.dropbox.com/scl/fi/s708cwuzb0yngvt9cml8y/Grupo-Frontera-No-se-va-R.mp3?rlkey=o7yu1ooyh9p7zppvi8zzi19tk&st=fc053szp&dl=0&raw=1",
+    "seccion": "mega_mix"
+  },
+  {
+    "caratula": "assets/covers/Cumbiaton-Tu-principe-(Remix).png",
+    "artista": "Cumbiaton ft. Thom B.",
+    "nombre": "Tu príncipe",
+    "enlace": "https://www.dropbox.com/scl/fi/0dsu2dfk1xq85iogca7xn/Cumbiaton-Tu-pr-ncipe-Remix.MP3?rlkey=7s7gkvhn1gw9twj4747vk5yl3&st=17vjslc4&dl=0&raw=1",
     "seccion": "mega_mix"
   },
   {
