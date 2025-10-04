@@ -19,6 +19,7 @@ html {
 /* ✍️ Fuente principal */
 body {
   font-family: 'Rubik', sans-serif;
+    background-color: #101010;
 }
 
 /* 🚫 Evita scroll horizontal no deseado */
