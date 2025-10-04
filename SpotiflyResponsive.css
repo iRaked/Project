@@ -1,0 +1,142 @@
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* 📱 Responsive refinado — sin scroll, con botones activos | Vista Previa en 768px */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+@media screen and (max-width: 430px) {
+  .mobile-430 {
+    display: block;
+  }
+
+  /* Oculta sidebar y topbar */
+  .navbar,
+  .topbar {
+    display: none !important;
+  }
+
+  /* Nuevo menú superior */
+  .responsive-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #121212;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  }
+
+  .responsive-menu a,
+  .responsive-menu button {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+  }
+
+  .responsive-menu i {
+    font-size: 1.6rem;
+  }
+
+  /* Layout sin sidebar */
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+  }
+
+  /* Cards sin scroll horizontal */
+  .cards-container {
+    width: 100%;
+    padding: 0 1rem;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    width: 100%;
+    transition: transform 0.5s ease;
+  }
+
+  /* Botones de navegación activos */
+  .nav-btn {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #222;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+  }
+
+  .nav-prev {
+    left: 1.5rem;
+  }
+
+  .nav-next {
+    right: 1.5rem;
+  }
+
+  /* Footer restaurado */
+  .banner-bottom {
+    width: 100%;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.5);
+    position: relative;
+  }
+
+  .footer-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .footer-counter img {
+    max-width: 20px;
+    height: auto;
+  }
+}
+
+/* Variante compacta */
+@media screen and (max-width: 400px) {
+  .mobile-400 {
+    display: block;
+  }
+
+  .responsive-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .responsive-menu a,
+  .responsive-menu button {
+    font-size: 1.2rem;
+  }
+}
