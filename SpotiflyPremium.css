@@ -373,7 +373,7 @@ a {
 .cards-container {
   width: 1152px;
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   padding: 0 2rem;
   max-width: 100vw;
 }
