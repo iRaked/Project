@@ -5,12 +5,13 @@
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!--  BLOCK -->
+        <!--  BLOCK 
     <script type="text/javascript">
         document.addEventListener("contextmenu", function (e) {
-        e.preventDefault(); // Bloquea el menú contextual en todo el documento
+        e.preventDefault();
         });
-    </script>
+    </script>-->
+        <meta name="author" content="Rick">
 		<title>Spotifly Premium</title>
 		<link rel="stylesheet" href="SpotiflyPremium.css"/>
         <link rel="stylesheet" href="SpotiflyResponsive.css"/>
@@ -41,7 +42,7 @@
         <a href="https://iraked.github.io/ExtasisRadio/Repro.html" target="_blank" rel="noopener noreferrer">
           <button class="btn-radio"><i class="fa-solid fa-radio"></i>Radio</button>
         </a>
-        <a href="#" class="btn-karaoke-link">
+        <a href="https://iraked.github.io/ExtasisRadio/Repro15.html" target="_blank" class="btn-karaoke-link">
           <button class="btn-karaoke">
             <i class="fa-solid fa-microphone-lines"></i>
             Karaoke
@@ -137,6 +138,25 @@
         <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
       </div>
     </div>
+      
+    <div class="section-8">
+      <h1 class="section-title">Baladas</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-8"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+      
+    <div class="section-9">
+      <h1 class="section-title">Essentials</h1>
+      <div class="cards-container">
+        <button class="nav-btn nav-prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <div class="cards" id="cards-section-9"></div>
+        <button class="nav-btn nav-next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
   </div>
 
   <!-- Reproductor global -->
@@ -203,9 +223,9 @@
 
       <!-- Navegación entre pistas -->
       <div class="modal-nav">
-        <button id="btn-prev" class="nav-btn">⟵</button>
-        <button id="btn-next" class="nav-btn">⟶</button>
-      </div>
+      <button id="btn-prev" class="nav-btn modal-nav-btn">⟵</button>
+      <button id="btn-next" class="nav-btn modal-nav-btn">⟶</button>
+    </div>
 
       <!-- Controles extendidos -->
       <div class="modal-controls">

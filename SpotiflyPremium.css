@@ -261,6 +261,8 @@ body, html {
 }
 
 .btn-language {
+    position: absolute;
+    bottom: 10px;
   border: 1px solid #727272;
   background: none;
   color: #fff;
@@ -312,13 +314,14 @@ a {
 .spotify {
   grid-row: 1/3;
   grid-column: 2/-1;
-
   background-color: #121212;
   padding: 2.5rem;
-
   display: flex;
   flex-direction: column;
   gap: 3rem;
+
+  min-height: calc(100vh - 6rem); /* altura total menos el footer fijo */
+  padding-bottom: 8rem; /* espacio ritual para evitar colisión visual */
 }
 
 /* 🏷️ Título de cada sección */
@@ -337,9 +340,12 @@ a {
 .section-1,
 .section-2,
 .section-3,
+.section-4,
 .section-5,
 .section-6,
-.section-7 {
+.section-7,
+.section-8,
+.section-9 {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -365,6 +371,20 @@ a {
 .section-5 .cover img {
   border-radius: 0;
   box-shadow: none;
+}
+
+/* 🌀 Estilo circular para sección 9 */
+.section-9 .cover img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 🧘 Margen extra para la última sección */
+.section-9 {
+  padding-bottom: 2rem; /* espacio ritual antes del footer */
 }
 
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -617,7 +637,6 @@ a {
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 /* 🪞 P5 — Footer visual, banner final y glow ceremonial           */
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
-
 /* 🧮 Contador y logo en el footer */
 .footer-counter {
   display: flex;
@@ -652,7 +671,7 @@ a {
   bottom: 0;
   z-index: 20;
   width: 100%;
-  height: 8rem;
+  height: 6rem;
 }
 
 /* 📜 Contenido textual del banner */
@@ -706,6 +725,7 @@ a {
 
 /* 📦 Contenido del modal */
 .modal-content {
+    position: absolute;
   background: #111;
   padding: 2rem;
   border-radius: 1rem;
@@ -778,18 +798,18 @@ a {
 
 /* ⬅️➡️ Navegación entre pistas */
 .modal-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: relative;
   width: 100%;
-  padding: 1rem 0;
-  gap: 1rem;
-  min-width: 300px;
+  height: 0; /* ancla invisible */
+  padding: 0.5rem 0;
+  max-width: 400px;
+  margin: 0 auto;
+  z-index: 1;
 }
 
-.nav-btn {
-  visibility: visible !important;
-  opacity: 1;
+.modal-nav-btn {
+  position: absolute;
+  top: -330px; /* positivo, cerca del borde superior */
   background: #222;
   color: white;
   border: none;
@@ -797,6 +817,15 @@ a {
   font-size: 1.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
+  z-index: 10;
+}
+
+#btn-prev.modal-nav-btn {
+  left: 0.5rem;
+}
+
+#btn-next.modal-nav-btn {
+  right: 0.5rem;
 }
 
 .nav-btn:disabled {
@@ -890,6 +919,7 @@ a {
 .cover img.animate {
   transform: scale(1.05);
 }
+
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
 /* 📱 Final — Responsividad móvil para el reproductor modal        */
 /* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
@@ -897,10 +927,19 @@ a {
 @media (max-width: 768px) {
   /* 📦 Modal compacto */
   .modal-content {
+    position: relative; /* ← altar visual para botones */
     padding: 1rem;
     font-size: 0.9rem;
     max-width: 90%;
     border-radius: 0.75rem;
+    overflow: visible; /* ← permite que los botones floten */
+  }
+
+  /* 🧭 Contenedor posicional para los botones */
+  .modal-nav {
+    position: relative;
+    height: 0;
+    overflow: visible;
   }
 
   /* 🖼️ Carátula centrada */
@@ -908,25 +947,88 @@ a {
     max-width: 160px;
     height: auto;
     margin: 0 auto;
+    display: block;
   }
 
-  /* 🎛️ Controles extendidos en columna */
+  /* 🎛️ Controles extendidos refinados */
   .modal-controls {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  /* ▶️ Reproductor en columna */
-  .custom-player {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  /* ⬅️➡️ Navegación espaciada */
-  .modal-nav {
+    display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 0.5rem 0;
+    gap: 0.75rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-controls label {
+    flex: 1 1 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #loop-toggle,
+  #mute-toggle {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  /* 🎛️ Reproductor centrado horizontalmente */
+  .custom-player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  /* ▶️ Botón P/P al costado izquierdo */
+  .play-btn {
+    font-size: 1.4rem;
+    padding: 0.5rem 0.75rem;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  /* 📊 Barra de progreso más compacta */
+  .progress-container {
+    width: 100%;
+    max-width: 300px;
+    height: 6px;
+    background: #333;
+    border-radius: 2px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+
+  .progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #1db954;
+    transition: width 0.2s ease;
+  }
+
+  /* ⬅️➡️ Botones clavados al costado de la carátula */
+  .modal-nav-btn {
+    position: absolute;
+    top: 6.5rem; /* ajusta según altura de la carátula */
+    font-size: 1.4rem;
+    padding: 0.5rem 0.75rem;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    z-index: 10;
+  }
+
+  #btn-prev.modal-nav-btn {
+    left: 0.5rem;
+  }
+
+  #btn-next.modal-nav-btn {
+    right: 0.5rem;
   }
 
   /* 📜 Cola visual más compacta */
@@ -934,18 +1036,6 @@ a {
     max-height: 30vh;
     font-size: 0.85rem;
     padding: 0.5rem;
-  }
-
-  /* 📊 Barra de progreso adaptativa */
-  .progress-container {
-    width: 100%;
-    height: 6px;
-  }
-
-  /* ▶️ Botón de reproducción táctil */
-  .play-btn {
-    font-size: 1.4rem;
-    padding: 0.75rem 1.25rem;
   }
 
   /* ⬅️➡️ Botones de navegación táctil */

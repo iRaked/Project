@@ -16,6 +16,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderCards("mega_mix", "cards-section-5", data);
     renderCards("after_party", "cards-section-6", data);
     renderCards("pop_electronico", "cards-section-7", data);
+    renderCards("baladas", "cards-section-8", data);
+    renderCards("essentials", "cards-section-9", data);
 
     // ✅ Activar reproducción continua por contenedor
     initPlaybackPerContainer("cards-section-1");
@@ -25,6 +27,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     initPlaybackPerContainer("cards-section-5");
     initPlaybackPerContainer("cards-section-6");
     initPlaybackPerContainer("cards-section-7");
+    initPlaybackPerContainer("cards-section-8");
+    initPlaybackPerContainer("cards-section-9");
 
     // ✅ Activar carrusel por contenedor
     initCarousel("cards-section-1");
@@ -34,6 +38,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     initCarousel("cards-section-5");
     initCarousel("cards-section-6");
     initCarousel("cards-section-7");
+    initCarousel("cards-section-8");
+    initCarousel("cards-section-9");
       
     initModalPlayer("cards-section-1", data.hits);
     initModalPlayer("cards-section-2", data.regional_mexicano);
@@ -42,6 +48,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     initModalPlayer("cards-section-5", data.mega_mix);
     initModalPlayer("cards-section-6", data.after_party);
     initModalPlayer("cards-section-7", data.pop_electronico);
+    initModalPlayer("cards-section-8", data.baladas);
+    initModalPlayer("cards-section-9", data.essentials);
 
 
   } catch (error) {

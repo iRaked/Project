@@ -852,5 +852,330 @@
     "enlace": "https://www.dropbox.com/scl/fi/9vewg0dcf3cejp17fhk2k/Playa-Limbo-As-fue-R.mp3?rlkey=exrg970di89tf5esj0gi71hvt&st=1moyce73&dl=0&raw=1",
     "seccion": "pop_electronico"
   }
+],
+"baladas": [
+  {
+    "caratula": "assets/covers/Sin-Bandera-Entra-en-mi-vida.jpg",
+    "artista": "Sin Bandera",
+    "nombre": "Entra en mi vida",
+    "enlace": "https://www.dropbox.com/scl/fi/0oh7bjer8l6b4ytin7d5d/Sin-Bandera-Entra-en-mi-vida.mp3?rlkey=e51jgs5jkgbfqmjrbz16lypzx&st=v3bl5a2j&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "4:03"
+  },
+  {
+    "caratula": "assets/covers/Alex-Ubago-Estar-contigo.jpg",
+    "artista": "Alex Ubago",
+    "nombre": "Estar contigo",
+    "enlace": "https://www.dropbox.com/scl/fi/0wop1a4fol0l4lt21dxm6/Alex-Ubago-Estar-contigo.mp3?rlkey=8ya8r6sfutemxn8lqt66fivdn&st=3a9v0kgg&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "3:52"
+  },
+  {
+    "caratula": "assets/covers/Reyli-Barba-Amor-del-bueno.jpg",
+    "artista": "Reyli Barba",
+    "nombre": "Amor del bueno",
+    "enlace": "https://www.dropbox.com/scl/fi/ndoyrngagudcij6bnuzl8/Reyli-Barba-Amor-del-bueno.mp3?rlkey=0o871s13l34v6f31i19hr74pc&st=2nv66c4x&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:02"
+  },
+  {
+    "caratula": "assets/covers/Camila-Besame.jpg",
+    "artista": "Camila",
+    "nombre": "Bésame",
+    "enlace": "https://www.dropbox.com/scl/fi/y1q3fji5u1rgv38z0gvrx/Camila-Besame.mp3?rlkey=d45mm63s420bajwok0hr44vo7&st=9v0bq9n4&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "pop latino",
+    "duracion": "4:12"
+  },
+  {
+    "caratula": "assets/covers/Enrique-Iglesias-Por-amarte.jpg",
+    "artista": "Enrique Iglesias",
+    "nombre": "Por amarte",
+    "enlace": "https://www.dropbox.com/scl/fi/9lc2we7tyktgefga5fpwd/Enrique-Iglesias-Por-amarte.mp3?rlkey=qlfuaa1e2kfywf654etjplwbv&st=j1wym4z1&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:04"
+  },
+  {
+    "caratula": "assets/covers/Eros-Ramazzotti-La-cosa-mas-bella.jpg",
+    "artista": "Eros Ramazzotti",
+    "nombre": "La cosa más bella",
+    "enlace": "https://www.dropbox.com/scl/fi/dpkhahsotskuerlbe9hse/Eros-Ramazzotti-La-cosa-mas-bella.mp3?rlkey=x658yeovasbqjn4e7erum46tu&st=19xun4gu&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:27"
+  },
+  {
+    "caratula": "assets/covers/Thalia-Amore-mio.jpg",
+    "artista": "Thalía",
+    "nombre": "Amore mío",
+    "enlace": "https://www.dropbox.com/scl/fi/vur75e1askwt4jq86vktt/Thalia-Amore-mio.mp3?rlkey=4qua09q5ljjql8xa0bb6i8wfk&st=nxqjffjr&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "pop latino",
+    "duracion": "3:47"
+  },
+  {
+    "caratula": "assets/covers/Chayanne-Yo-te-amo.jpg",
+    "artista": "Chayanne",
+    "nombre": "Yo te amo",
+    "enlace": "https://www.dropbox.com/scl/fi/hs25il3nfyj8iu8n0938m/Chayanne-Yo-te-amo.mp3?rlkey=n7ycoo7nj3i27iip5wzuhyht6&st=typvdexc&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:50"
+  },
+  {
+    "caratula": "assets/covers/Luis-Miguel-La-incondicional.jpg",
+    "artista": "Luis Miguel",
+    "nombre": "La incondicional",
+    "enlace": "https://www.dropbox.com/scl/fi/rizmrtx9z453rgojgoi5k/Luis-Miguel-La-incondicional.mp3?rlkey=zsx2ttc3cyfp2cv8x6le80d0w&st=bo309a0a&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "bolero",
+    "duracion": "4:23"
+  },
+  {
+    "caratula": "assets/covers/Ha-Ash-Melendi-Destino-o-casualidad.jpg",
+    "artista": "Ha*Ash & Melendi",
+    "nombre": "Destino o casualidad",
+    "enlace": "https://www.dropbox.com/scl/fi/pb9qs3oij4wc4pde0svz9/Ha-Ash-Melendi-Destino-o-casualidad.MP3?rlkey=xd3hjsznmpg58e9e3ywlql4hd&st=o818mi3y&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "pop latino",
+    "duracion": "4:19"
+  },
+
+
+
+  {
+    "caratula": "assets/covers/Shakira-Tu.png",
+    "artista": "Shakira",
+    "nombre": "Tú",
+    "enlace": "https://www.dropbox.com/scl/fi/blao69eenootvvl503j7j/Shakira-Tu.mp3?rlkey=9qfm9gnqvxcgkxhy5xbxxu9o&st=tg2wq59j&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:36"
+  },
+  {
+    "caratula": "assets/covers/La-Oreja-De-Van-Gogh-Jueves.jpg",
+    "artista": "La Oreja De Van Gogh",
+    "nombre": "Jueves",
+    "enlace": "https://www.dropbox.com/scl/fi/w84zno9k46qxw3ccs7frd/La-Oreja-De-Van-Gogh-Jueves.mp3?rlkey=j3beh5k629ke4iihkbilp0md2&st=rbxdohg7&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:59"
+  },
+  {
+    "caratula": "assets/covers/Laura-Paussini-Miguel-Bose-Te-amare.png",
+    "artista": "Laura Pausini & Miguel Bosé",
+    "nombre": "Te amaré",
+    "enlace": "https://www.dropbox.com/scl/fi/5m66ql15ivif3sdyf92sc/Laursa-Paussini-Miguel-Bose-Te-amare.mp3?rlkey=ew5ri09u0ov4cg3xw0hvo20w3&st=23pw7asq&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "5:15"
+  },
+  {
+    "caratula": "assets/covers/Alex-Campos-Tu-poeta.jpg",
+    "artista": "Alex Campos",
+    "nombre": "Tú poeta",
+    "enlace": "https://www.dropbox.com/scl/fi/25xmy7x2fzynd5rwjmngf/Alex-Campos-Tu-poeta.mp3?rlkey=xfrd1xzqmzkjjf1oua411cddm&st=x0u4k9ky&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "3:53"
+  },
+  {
+    "caratula": "assets/covers/Ricardo-Arjona-Fuiste-tu.jpg",
+    "artista": "Ricardo Arjona & Gaby Moreno",
+    "nombre": "Fuiste tú",
+    "enlace": "https://www.dropbox.com/scl/fi/g9jc7np5311qcpqw1xcj3/Ricardo-Arjona-Fuiste-tu.mp3?rlkey=cpe78066anly05gcsccas4twv&st=b11zo4sa&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "pop latino",
+    "duracion": "4:25"
+  },
+  {
+    "caratula": "assets/covers/Santiago-Cruz-Para-volverte-un-recuerdo.png",
+    "artista": "Santiago Cruz",
+    "nombre": "Para volverte un recuerdo",
+    "enlace": "https://www.dropbox.com/scl/fi/58z5m667xea0s7l19nuk2/Santiago-Cruz-Para-volverte-un-recuerdo.mp3?rlkey=xe0ihbsqpmj88wivjnlnx0weu&st=7zw56eej&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "3:53"
+  },
+  {
+    "caratula": "assets/covers/Tranzas-Un-nuevo-amor.jpg",
+    "artista": "Tranzas",
+    "nombre": "Un nuevo amor",
+    "enlace": "https://www.dropbox.com/scl/fi/lcbawlzlkvr7tdn5arqjr/Tranzas-Un-nuevo-amor.mp3?rlkey=avv6xqlsk9wcxudesuvz942xq&st=35qyzlle&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:26"
+  },
+  {
+    "caratula": "assets/covers/Luck-Ra-Juro-que-me-dolio.jpg",
+    "artista": "Luck Ra",
+    "nombre": "Juro que me dolió",
+    "enlace": "https://www.dropbox.com/scl/fi/1pcqoccxntiv6jbwckh5v/Luck-Ra-Juro-que-me-dolio.MP3?rlkey=8a7z6oc91h66geerdvtblkfy7&st=4v720g0n&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "pop latino",
+    "duracion": "3:05"
+  },
+  {
+    "caratula": "assets/covers/Griss-Romero-C-Kan-Antes-de-apagarnos.jpg",
+    "artista": "Griss Romero & C-Kan",
+    "nombre": "Antes de apagarnos",
+    "enlace": "https://www.dropbox.com/scl/fi/983rcyi9oh2bz06mstvlq/Griss-Romero-C-Kan-Antes-de-apagarnos.mp3?rlkey=zqnqqdfj0foq6efpyrzgbn3m7&st=hzrvonq6&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:05"
+  },
+  {
+    "caratula": "assets/covers/Jose-Madeo-Zaira-Jabnell-Zero.jpg",
+    "artista": "José Madero & Zaira Jabnell",
+    "nombre": "Zero",
+    "enlace": "https://www.dropbox.com/scl/fi/a6jtb1o7t43gbk9fndow0/Jose-Madeo-Zaira-Jabnell-Zero.MP3?rlkey=sf3vypim8ajrj855nuoax0vmv&st=38c5zlbx&dl=0&raw=1",
+    "seccion": "baladas",
+    "genero": "rock alternativo",
+    "duracion": "4:32"
+  }
+
+
+],
+"essentials": [
+  {
+    "caratula": "assets/covers/Cher-Believe.jpg",
+    "artista": "Cher",
+    "nombre": "Believe",
+    "enlace": "https://www.dropbox.com/scl/fi/qhg0td7marap7y4xbbpih/Cher-Believe.MP3?rlkey=87uh6wn6gig0w3fqae92ymoq6&st=yvde37jd&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "3:58"
+  },
+  {
+    "caratula": "assets/covers/Yeah-Yeah-Yeahs-Heads-will-roll.jpg",
+    "artista": "Yeah Yeah Yeahs",
+    "nombre": "Heads Will Roll",
+    "enlace": "https://www.dropbox.com/scl/fi/ue6zmnvy7jpzsin8fq6vt/Yeah-Yeah-Yeahs-Heads-will-roll.MP3?rlkey=83w2ceigwr3prn7112k4kxph7&st=0gtwqmb2&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "synthpop",
+    "duracion": "3:41"
+  },
+  {
+    "caratula": "assets/covers/Sia-Sean-Paul-Cheap-thrills.jpg",
+    "artista": "Sia & Sean Paul",
+    "nombre": "Cheap Thrills",
+    "enlace": "https://www.dropbox.com/scl/fi/ojdipn2qvc75446auwx2s/Sia-Sean-Paul-Cheap-thrills.mp3?rlkey=syjzpq005bu3fmkx9bxpklphv&st=3beab60m&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "dancehall",
+    "duracion": "3:44"
+  },
+  {
+    "caratula": "assets/covers/Madonna-Sorry.jpg",
+    "artista": "Madonna",
+    "nombre": "Sorry",
+    "enlace": "https://www.dropbox.com/scl/fi/y4vl9aqhyx5o8q56auzsh/Madonna-Sorry.MP3?rlkey=iq5suxrmj83htm853zhxzgllz&st=yjpa2qs6&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "pop electrónico",
+    "duracion": "4:43"
+  },
+  {
+    "caratula": "assets/covers/Chocolate-Puma-Colonel-Red-Back-home.jpg",
+    "artista": "Chocolate Puma & Colonel Red",
+    "nombre": "Back Home",
+    "enlace": "https://www.dropbox.com/scl/fi/yfavbkav3ycwxpuljxyyz/Chocolate-Puma-Colonel-Red-Back-home.mp3?rlkey=ujgrjweh9oph3umx2l7zcqxn8&st=sjdqvmkc&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "house",
+    "duracion": "6:40"
+  },
+  {
+    "caratula": "assets/covers/Temporada-equivocada-DJ-Minglong.png",
+    "artista": "秋原依",
+    "nombre": "Temporada equivocada",
+    "enlace": "https://www.dropbox.com/scl/fi/cl2w2wvvbxdx1jlrh5qry/Temporada-equivocada-DJ-Minglong.mp3?rlkey=upmdoatl3wthv6lgqev0j20mg&st=ft3qdu9t&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "synthpop",
+    "duracion": "3:57"
+  },
+{
+    "caratula": "assets/covers/The-Black-Eyed-Peas-I-gotta-feeling.jpg",
+    "artista": "The Black Eyed Peas",
+    "nombre": "I Gotta Feeling",
+    "enlace": "https://www.dropbox.com/scl/fi/2z99xnd4kehy5rage4fvt/The-Black-Eyed-Peas-I-gotta-feeling.MP3?rlkey=cibi9k738owhscoyxn35f87fx&st=l0nknur2&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "4:49"
+  },
+  {
+    "caratula": "assets/covers/Dimitri-Vegas-Tiesto-Thank-you.webp",
+    "artista": "Dimitri Vegas & Tiësto",
+    "nombre": "Thank You (Not So Bad)",
+    "enlace": "https://www.dropbox.com/scl/fi/amp1zsvk4zy98zs0xaww8/Dimitri-Vegas-Tiesto-Thank-you.MP3?rlkey=iz79ewvmztjgopx18oosoxsot&st=ffnjy4tn&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "electrónica",
+    "duracion": "2:20"
+  },
+  {
+    "caratula": "assets/covers/Evanescense-Bring-me-to-life.jpg",
+    "artista": "Evanescence",
+    "nombre": "Bring Me to Life",
+    "enlace": "https://www.dropbox.com/scl/fi/iqnao4biyga8hxxsgnytn/Evanescense-Bring-me-to-life.MP3?rlkey=vhyw0kicxci18dcnvpr16rj22&st=dqjrnw6e&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "metal",
+    "duracion": "3:57"
+  },
+  {
+    "caratula": "assets/covers/Anti-Funk-Everybody-jump.jpg",
+    "artista": "Anti Funky",
+    "nombre": "Everybody Jump",
+    "enlace": "https://www.dropbox.com/scl/fi/33qkq3h6hbgbronm1ni1n/Anti-Funk-Everybody-jump.mp3?rlkey=321ig004lhx3hwdifwfjbxuol&st=x1qutyjk&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "house",
+    "duracion": "3:34"
+  },
+  {
+    "caratula": "assets/covers/Vengaboys-Boom-Boom-Boom-Boom.jpg",
+    "artista": "Vengaboys",
+    "nombre": "Boom Boom Boom Boom",
+    "enlace": "https://www.dropbox.com/scl/fi/18qeo36ujn4n39kdkrsbs/Vengaboys-Boom-Boom-Boom-Boom.mp3?rlkey=f0qb89vud54bb5cnio5lcnrxy&st=x6dza9j2&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "3:22"
+  },
+  {
+    "caratula": "assets/covers/DJ-Sammy-Heaven.jpg",
+    "artista": "DJ Sammy",
+    "nombre": "Heaven",
+    "enlace": "https://www.dropbox.com/scl/fi/r99mu4vtx9cfptyknn17k/DJ-Sammy-Heaven.mp3?rlkey=a47nyevafm3xo0fseylykj8sq&st=n0axm2xg&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "trance",
+    "duracion": "3:55"
+  },
+  {
+    "caratula": "assets/covers/Eiffel-65-Blue.jpg",
+    "artista": "Eiffel 65",
+    "nombre": "Blue (Da Ba Dee)",
+    "enlace": "https://www.dropbox.com/scl/fi/piyim7c8z9hnp9qhyd9ls/Eiffel-65-Blue.mp3?rlkey=mqvaya19m2hov2b7gz63cl2dn&st=qd0jghfb&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "4:42"
+  },
+  {
+    "caratula": "assets/covers/Corona-Rhythm-of-the-night.jpg",
+    "artista": "Corona",
+    "nombre": "Rhythm of the Night",
+    "enlace": "https://www.dropbox.com/scl/fi/0yodn8t45dzlo5gn0rsfo/Corona-Rhythm-of-the-night.mp3?rlkey=9k9fuzavz95l00ncqdm7mwz4h&st=3mbf8lvz&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "4:20"
+  },
+  {
+    "caratula": "assets/covers/David-Tavare-Summer-love.jpg",
+    "artista": "David Tavare",
+    "nombre": "Summer Love",
+    "enlace": "https://www.dropbox.com/scl/fi/nvohlpncgjgj5mluns1i4/David-Tavare-Summer-love.mp3?rlkey=e1fduijwnkl7a6qikfxcy1q7r&st=6ijsl5kb&dl=0&raw=1",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "3:18"
+  }
+
 ]
 }
