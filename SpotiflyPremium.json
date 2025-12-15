@@ -1,89 +1,311 @@
 {
   "hits": [
-  {
-    "caratula": "assets/covers/Daaz - I like you mucho.png",
-    "artista": "Daaz",
-    "nombre": "I like you mucho",
-    "enlace": "https://www.dropbox.com/scl/fi/k9c36b6ntkcyk8kmrbvmj/Daaz-I-like-you-mucho.MP3?rlkey=mjv11davrewdpesloj1pxtdj0&st=1pwzc9jw&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Ricardo-Arjona-Adentro.jpg",
-    "artista": "Ricardo Arjona",
-    "nombre": "Adiós melancolía",
-    "enlace": "https://www.dropbox.com/scl/fi/4e5n37a6jkoxz55tty4fg/Ricardo-Arjona-Adi-s-melancol-a.mp3?rlkey=nhkzcvgx24gzybz5f65spy76j&st=9n19hgr6&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Cabas-Enamorandonos.jpg",
-    "artista": "Cabas",
-    "nombre": "Enamorándonos",
-    "enlace": "https://www.dropbox.com/scl/fi/gjk7u0q2gdf9f47gzoncd/Cabas-Enamor-ndonos.mp3?rlkey=6cmcj0zhmygytac5c5qbphbrq&st=tqh4r0cb&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Camilo-Indigo.jpg",
-    "artista": "Camilo Evaluna Montaner",
-    "nombre": "Índigo",
-    "enlace": "https://www.dropbox.com/scl/fi/1tgteeufiwu134o6xo3um/Camilo-ndigo.mp3?rlkey=h5bkasha8wvngo9o6ndt0bphn&st=36n41rbu&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Kanny-Garcia-Aguita-e-coco.jpg",
-    "artista": "Kany García",
-    "nombre": "Agüita e coco",
-    "enlace": "https://www.dropbox.com/scl/fi/vxa3to74rqwytogvm5vn8/Kanny-Garc-a-Ag-ita-e-coco.mp3?rlkey=8ik5ab2cv98ulc9iadgxpdhsd&st=ugyf7qr4&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Becky-G-Manuel-Turizo-Que-haces.png",
-    "artista": "Becky G & Manuel Turizo",
-    "nombre": "Qué haces",
-    "enlace": "https://www.dropbox.com/scl/fi/t1tt04cs5md7e63intqgn/Becky-G-Manuel-Turizo-Qu-haces.MP3?rlkey=sjh9lerngaj9g9mpnbf0zwkob&st=jxqrvtwr&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Beret-&-Morat-Porfa-no-te-vayas.jpg",
-    "artista": "Beret & Morat",
-    "nombre": "Porfa no te vayas",
-    "enlace": "https://www.dropbox.com/scl/fi/xa0dn79gpfwz8j864ieuk/Beret-Morat-Porfa-no-te-vayas.mp3?rlkey=9d2g2p57go9axqjsft56g2bil&st=urpi2ppv&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Juanes-Me-enamora.jpg",
-    "artista": "Juanes",
-    "nombre": "Me enamora",
-    "enlace": "https://www.dropbox.com/scl/fi/iaz6zrposv0a4a93xcmro/Juanes-Me-enamora.mp3?rlkey=whhk9iyvdqp6cij1kybw7sb4h&st=rnhhhtpq&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Julio-Garcia-Jah-Love-Eres-tu.jpg",
-    "artista": "Julio García & Jah Love",
-    "nombre": "Eres tú",
-    "enlace": "https://www.dropbox.com/scl/fi/osx3ftwbo0nvmj3k0cstc/Julio-Garc-a-Eres-t-F-Jah-Love.mp3?rlkey=mx2zmzjbah1xdy28puqyotnp7&st=n2z1dlkw&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Rusherking-&-Dread-Mar-Perfecta.jpg",
-    "artista": "Rusherking & Dread Mar",
-    "nombre": "Perfecta",
-    "enlace": "https://www.dropbox.com/scl/fi/er0mwwrcqsplqiblz7cjs/Rusherking-Dread-Mar-I-Perfecta.mp3?rlkey=6n11lw0hujz0gdjdeqhmvgjrg&st=c22upzoj&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Miranda-Maria-Becerra-&-FMK-Perfecta.jpg",
-    "artista": "Miranda, Maria Becerra & FMK",
-    "nombre": "Perfecta",
-    "enlace": "https://www.dropbox.com/scl/fi/otm7mwgpgcq6mrffochqh/Miranda-Maria-Becerra-FMK-Perfecta.mp3?rlkey=dcp0peupckwketd7m88u95c7z&st=2nf93g5g&dl=0&raw=1",
-    "seccion": "hits"
-  },
-  {
-    "caratula": "assets/covers/Rio-Roma-CNCO-Princesa.jpg",
-    "artista": "Río Roma & CNCO",
-    "nombre": "Princesa",
-    "enlace": "https://www.dropbox.com/scl/fi/34s6b39fa96fqybzs14c6/R-o-Roma-Princesa-F-CNCO.mp3?rlkey=njby7269xli107celq1qzo5a0&st=334evf03&dl=0&raw=1",
-    "seccion": "hits"
-  }
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Daaz-Chance.jpg",
+      "artista": "Daaz",
+      "nombre": "I like you mucho",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Daaz-I-like-you-mucho.MP3",
+      "seccion": "hits",
+      "duracion": "2:33",
+      "genero": "rap"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Bombai-Bebe-Solo-si-es-contigo.jpg",
+      "artista": "Bombai & Bebe",
+      "nombre": "Solo si es contigo",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Bombai-Bebe-Solo-si-es-contigo.mp3",
+      "seccion": "hits",
+      "duracion": "3:28",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Austin-Palao-Flavia-Laos-Estar-contigo.jpg",
+      "artista": "Austin Palao & Flavia Laos",
+      "nombre": "Estar contigo",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Austin-Palao-Flavia-Laos-Estar-contigo.mp3",
+      "seccion": "hits",
+      "duracion": "2:49",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Afortunado-Lucah.jpg",
+      "artista": "Lucah",
+      "nombre": "Afortunado",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Afortunado-Lucah.mp3",
+      "seccion": "hits",
+      "duracion": "3:11",
+      "genero": "balada pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Ricardo-Arjona-Adentro.jpg",
+      "artista": "Ricardo Arjona",
+      "nombre": "Adiós melancolía",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Ricardo-Arjona-Adios-melancolia.mp3",
+      "seccion": "hits",
+      "duracion": "4:55",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Gusi-Mi-amor-bonito.jpg",
+      "artista": "Gusi",
+      "nombre": "Mi amor bonito",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Gusi-Mi-amor-bonito.mp3",
+      "seccion": "hits",
+      "duracion": "2:54",
+      "genero": "tropi pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Cabas-Enamorandonos.jpg",
+      "artista": "Cabas",
+      "nombre": "Enamorándonos",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Cabas-Enamorandonos.mp3",
+      "seccion": "hits",
+      "duracion": "3:00",
+      "genero": "tropi pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Camilo-Indigo.jpg",
+      "artista": "Camilo & Evaluna Montaner",
+      "nombre": "Índigo",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Camilo-Indigo.mp3",
+      "seccion": "hits",
+      "duracion": "3:31",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Kanny-Garcia-Aguita-e-coco.jpg",
+      "artista": "Kany García",
+      "nombre": "Agüita e coco",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Kany-Garcia-Aguita-e-coco.mp3",
+      "seccion": "hits",
+      "duracion": "2:56",
+      "genero": "tropi pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Yotuel-Me-gusta.jpg",
+      "artista": "Yotuel",
+      "nombre": "Me gusta",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Yotuel-Me-gusta.mp3",
+      "seccion": "hits",
+      "duracion": "3:27",
+      "genero": "reguetón"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Koko-Valiente.jpg",
+      "artista": "Koko Stambuk",
+      "nombre": "Valiente",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Koko-Valiente.mp3",
+      "seccion": "hits",
+      "duracion": "3:13",
+      "genero": "pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alvaro-De-Luna-Nuestra-cancion.jpg",
+      "artista": "Álvaro de Luna",
+      "nombre": "Nuestra canción",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alvaro-De-Luna-Nuestra-cancion.mp3",
+      "seccion": "hits",
+      "duracion": "3:03",
+      "genero": "pop rock"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Morat-Tini-Tu-voz.jpg",
+      "artista": "Morat & Tini",
+      "nombre": "Tu voz",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Morat-Tini-Tu-voz.mp3",
+      "seccion": "hits",
+      "duracion": "2:54",
+      "genero": "balada pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Beret-&-Morat-Porfa-no-te-vayas.jpg",
+      "artista": "Beret & Morat",
+      "nombre": "Porfa no te vayas",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Beret-Morat-Porfa-no-te-vayas.mp3",
+      "seccion": "hits",
+      "duracion": "3:23",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Timo-Luz.jpg",
+      "artista": "TIMØ",
+      "nombre": "Luz",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Timo-Luz.mp3",
+      "seccion": "hits",
+      "duracion": "3:10",
+      "genero": "pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Juanes-Me-enamora.jpg",
+      "artista": "Juanes",
+      "nombre": "Me enamora",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Juanes-Me-enamora.mp3",
+      "seccion": "hits",
+      "duracion": "3:05",
+      "genero": "pop rock"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Enrique-Iglesias-Juan-Luis-Guerra-Cuando-me-enamoro.jpg",
+      "artista": "Enrique Iglesias & Juan Luis Guerra",
+      "nombre": "Cuando me enamoro",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Enrique-Iglesias-Juan-Luis-Guerra-Cuando-me-enamoro.mp3",
+      "seccion": "hits",
+      "duracion": "3:13",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sofia-Arlette-Descubreme.jpg",
+      "artista": "Sofía Arlette",
+      "nombre": "Descúbreme",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sofia-Arlette-Descubreme.MP3",
+      "seccion": "hits",
+      "duracion": "2:52",
+      "genero": "balada pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Greeicy-Los-besos.png",
+      "artista": "Greeicy",
+      "nombre": "Los besos",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Greeicy-Los-besos.MP3",
+      "seccion": "hits",
+      "duracion": "3:21",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Julio-Garcia-Jah-Love-Eres-tu.jpg",
+      "artista": "Julio García & Jah Love",
+      "nombre": "Eres tú",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Jah-Love-Julio-Garcia-Eres-tu.mp3",
+      "seccion": "hits",
+      "duracion": "3:30",
+      "genero": "reggae"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Rusherking-&-Dread-Mar-Perfecta.jpg",
+      "artista": "Rusherking & Dread Mar I",
+      "nombre": "Perfecta",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Rusherking-Dread-Mar-Perfecta.mp3",
+      "seccion": "hits",
+      "duracion": "2:49",
+      "genero": "reggae"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/MYA-Dvicio-4-Meses.png",
+      "artista": "MYA & Dvicio",
+      "nombre": "4 Meses",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/MYA-Dvicio-4-Meses.mp3",
+      "seccion": "hits",
+      "duracion": "3:14",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Miranda-Maria-Becerra-&-FMK-Perfecta.jpg",
+      "artista": "Miranda! & María Becerra & FMK",
+      "nombre": "Perfecta",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Miranda-Maria-Becerra-FMK-Perfecta.mp3",
+      "seccion": "hits",
+      "duracion": "3:44",
+      "genero": "pop electrónico"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Rio-Roma-CNCO-Princesa.jpg",
+      "artista": "Río Roma & CNCO",
+      "nombre": "Princesa",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Rio-Roma-CNCO-Princesa.mp3",
+      "seccion": "hits",
+      "duracion": "3:43",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Chispa-Quiero-estar-bien.jpg",
+      "artista": "Chispa",
+      "nombre": "Quiero estar bien",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Chispa-Quiero-estar-bien.mp3",
+      "seccion": "hits",
+      "duracion": "2:58",
+      "genero": "cumbia"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Beret-El-dia-menos-pensado.jpg",
+      "artista": "Beret",
+      "nombre": "El día menos pensado",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Beret-El-dia-menos-pensado.mp3",
+      "seccion": "hits",
+      "duracion": "3:41",
+      "genero": "pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Jafu-Enamorado.jpg",
+      "artista": "Jafú",
+      "nombre": "Enamorado",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Jafu-Enamorado.mp3",
+      "seccion": "hits",
+      "duracion": "2:36",
+      "genero": "pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Lasso-Ojos-marrones.jpg",
+      "artista": "Lasso",
+      "nombre": "Ojos marrones",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Lasso-Ojos-marrones.mp3",
+      "seccion": "hits",
+      "duracion": "3:13",
+      "genero": "pop"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sebastian-Yatra-Tacones-rojos.jpg",
+      "artista": "Sebastián Yatra",
+      "nombre": "Tacones rojos",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sebastian-Yatra-Tacones-rojos.mp3",
+      "seccion": "hits",
+      "duracion": "3:04",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Mau-Ricky-Pasado-mañana.png",
+      "artista": "Mau & Ricky",
+      "nombre": "Pasado mañana",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Mau-Ricky-Pasado-mañana.mp3",
+      "seccion": "hits",
+      "duracion": "2:06",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Abraham-Mateo-Sebastian-Yatra-Sigues-pasando.jpg",
+      "artista": "Abraham Mateo & Sebastián Yatra",
+      "nombre": "XQ Sigues Pasando",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Abraham-Mateo-Sebastian-Yatra-Sigues-pasando.mp3",
+      "seccion": "hits",
+      "duracion": "3:48",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sebastian-Llosa-Los-mejores-años.jpg",
+      "artista": "Sebastián Llosa",
+      "nombre": "Los mejores años",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sebastian-Llosa-Los-mejores-años.mp3",
+      "seccion": "hits",
+      "duracion": "2:31",
+      "genero": "pop rock"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alex-Ponce-Plan.jpg",
+      "artista": "Alex Ponce",
+      "nombre": "Plan",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alex-Ponce-Plan.mp3",
+      "seccion": "hits",
+      "duracion": "2:56",
+      "genero": "pop latino"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Kenia-OS-Malas-decisiones.jpg",
+      "artista": "Kenia OS",
+      "nombre": "Malas decisiones",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Kenia-OS-Malas-decisiones.mp3",
+      "seccion": "hits",
+      "duracion": "2:20",
+      "genero": "pop electrónico"
+    }
 ],
 "regional_mexicano": [
   {
@@ -1178,4 +1400,5 @@
   }
 
 ]
+
 }
