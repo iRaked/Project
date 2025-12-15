@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 	<head>
-        <link rel="icon" type="image/x-icon" href="assets/SG.ico" />
+        <link rel="icon" type="image/x-icon" href="https://santi-graphics.vercel.app/assets/SG.ico" />
 		<meta charset="UTF-8"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <!--  BLOCK -->
+        <!--  BLOCK 
     <script type="text/javascript">
         document.addEventListener("contextmenu", function (e) {
         e.preventDefault();
         });
-    </script>
+    </script>-->
         <meta name="author" content="Rick">
 		<title>Spotifly Premium</title>
 		<link rel="stylesheet" href="SpotiflyPremium.css"/>
+        <link rel="stylesheet" href="SpotiflyPremiumDynamic.css"/>
         <link rel="stylesheet" href="SpotiflyResponsive.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
@@ -28,27 +29,33 @@
       </div>
 
       <ul class="nav-main">
-        <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
-        <li><a href="https://open.spotify.com/search/"><i class="fa-solid fa-magnifying-glass"></i>Buscar</a></li>
-        <li><a href="#"><i class="fa-solid fa-bookmark"></i>Tu biblioteca</a></li>
-      </ul>
+      <li><a href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
+      <li><a href="https://open.spotify.com/search/"><i class="fa-solid fa-magnifying-glass"></i>Buscar</a></li>
+      <!-- Favoritos reemplaza a Tu biblioteca -->
+      <li><a href="#"><i class="fa-solid fa-heart"></i>Favoritos</a></li>
+    </ul>
 
-      <div class="extra-options">
-        <button class="btn-create-list"><i class="fa-solid fa-plus"></i>Crear Lista</button>
-        <button class="btn-favorite-songs"><i class="fa-solid fa-heart"></i>Favoritas</button>
-        <a href="https://www.ivoox.com/podcast-sesiones_sq_f12464020_1.html" target="_blank" rel="noopener noreferrer">
-          <button class="btn-podcast"><i class="fa-solid fa-podcast"></i>Podcast</button>
-        </a>
-        <a href="https://iraked.github.io/ExtasisRadio/Repro32.html" target="_blank" rel="noopener noreferrer">
-          <button class="btn-radio"><i class="fa-solid fa-radio"></i>Radio</button>
-        </a>
-        <a href="https://iraked.github.io/ExtasisRadio/Repro36.html" target="_blank" class="btn-karaoke-link">
-          <button class="btn-karaoke">
-            <i class="fa-solid fa-microphone-lines"></i>
-            Karaoke
-          </button>
-        </a>
-      </div>
+    <div class="extra-options">
+      <button class="btn-create-list"><i class="fa-solid fa-plus"></i>Crear Lista</button>
+
+      <!-- Wrapped -->
+    <button class="btn-wrapped">
+      <i class="fa-solid fa-gift"></i>Wrapped
+    </button>
+
+      <a href="https://www.ivoox.com/podcast-sesiones_sq_f12464020_1.html" target="_blank" rel="noopener noreferrer">
+        <button class="btn-podcast"><i class="fa-solid fa-podcast"></i>Podcast</button>
+      </a>
+      <a href="https://radio-tekileros.vercel.app/Repro32.html" target="_blank" rel="noopener noreferrer">
+        <button class="btn-radio"><i class="fa-solid fa-radio"></i>Radio</button>
+      </a>
+      <a href="https://radio-tekileros.vercel.app/Repro36.html" target="_blank" class="btn-karaoke-link">
+        <button class="btn-karaoke">
+          <i class="fa-solid fa-microphone-lines"></i>
+          Karaoke
+        </button>
+      </a>
+    </div>
 
       <div class="container-links">
         <div class="container-links-legal">
@@ -182,11 +189,13 @@
     </div>
   </div>
 </main>
-    </div> <!-- Cierre de .layout -->
+</div> <!-- Cierre de .layout -->
 
-    <!-- Scripts -->
+    <!-- ━━━━━━━━━━━━━━━━━━━━━━━━━ Scripts ━━━━━━━━━━━━━━━━━━━━━━━━ -->
     <script src="https://kit.fontawesome.com/81581fb069.js" crossorigin="anonymous"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script src="SpotiflyPremium.js"></script>
+    <script src="SpotiflyPremiumDynamic.js"></script>
   </body>
 
   <!-- Reproductor Modal Universal -->
@@ -247,19 +256,150 @@
       </div>
     </div>
   </div>
-    
-   <div class="responsive-menu">
-      <a href="#"><i class="fa-solid fa-house"></i>Inicio</a>
-      <a href="https://open.spotify.com/search/"><i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
-      <a href="#"><i class="fa-solid fa-bookmark"></i>Biblioteca</a>
-      <button><i class="fa-solid fa-plus"></i>Crear Lista</button>
-      <button><i class="fa-solid fa-heart"></i>Favoritas</button>
-      <a href="https://www.ivoox.com/podcast-sesiones_sq_f12464020_1.html" target="_blank"><button><i class="fa-solid fa-podcast"></i>Podcast</button></a>
-      <a href="https://iraked.github.io/ExtasisRadio/Repro.html" target="_blank"><button><i class="fa-solid fa-radio"></i>Radio</button></a>
-      <a href="#"><button><i class="fa-solid fa-microphone-lines"></i>Karaoke</button></a>
-       <div class="responsive-logo">
-          <img src="https://i.ibb.co/dJDPkt0y/Logo-Spotifly-FX.png" alt="Spotifly Logo" />
+
+    <!-- ━━━━━━━━━━━━━━━━━━━━ Modal Wrapped ━━━━━━━━━━━━━━━━━━━━ -->
+    <div id="wrappedModal" class="modal-wrapped">
+        <div class="wrapped-content">
+            <button class="close-wrapped" type="button">×</button>
+            <div class="wrapped-dynamic"></div>
         </div>
     </div>
+
+    <!-- ==================== CARD 1 ==================== -->
+    <template id="wrapped-template-list-summary">
+        <div class="wrapped-tarjeta" data-card-name="Resumen-Semanal">
+            <div class="tarjeta-overlay">
+
+                <div class="tarjeta-header">
+                    <img data-inject="caratula" src="" alt="Carátula Favorita" class="header-cover"/>
+                    <p class="header-subtitle">Tu Track más escuchado:</p>
+                    <h2 class="track-title" data-inject="main-focus"></h2>
+                </div>
+
+                <div class="tarjeta-main">
+                    <div class="tarjeta-top-left">
+                        <h2 data-inject="list-title-1"></h2>
+                        <div data-inject="list-1"></div>
+                    </div>
+
+                    <div class="tarjeta-top-right">
+                        <h2 data-inject="list-title-2"></h2>
+                        <div data-inject="list-2"></div>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="footer-top">
+                        <p data-inject="footer-stat-1"></p>
+                    </div>
+                    <div class="footer-bottom">
+                        <img src="https://i.ibb.co/dJDPkt0y/Logo-Spotifly-FX.png" alt="Spotifly" class="footer-logo">
+                        <p class="footer-url">spotiflypremium.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+    <!-- ==================== CARD 2 ==================== -->
+    <template id="wrapped-template-metrics-achievement">
+        <div class="wrapped-tarjeta" data-card-name="Estadisticas-Semanal">
+            <div class="tarjeta-overlay stats-overlay">
+
+                <!-- HEADER FIJO Y PERPETUO -->
+                <div class="tarjeta-header">
+                    <h1 class="card2-header-title">
+                        ESTADÍSTICAS
+                        <span class="card2-header-week" data-inject="header-week-number">(SEMANA XX)</span>
+                    </h1>
+                </div>
+
+                <!-- MAIN FIJO Y PERPETUO -->
+                <div class="tarjeta-main">
+                    <div class="center-content-stats">
+
+                        <!-- BLOQUE 1: TIEMPO -->
+                        <div id="stats-contador-real">
+                            <p class="stats-label">DIAS:HORAS:MINUTOS:SEGUNDOS</p>
+                            <p class="big-number" data-inject="stats-tiempo">00:00:00:00</p>
+                            <p class="stats-sub">ESCUCHADOS</p>
+                        </div>
+
+                        <!-- BLOQUE 2: TRACKS -->
+                        <div id="stats-tracks-conteo">
+                            <p class="stats-label-pink">TRACKS REPRODUCIDOS</p>
+                            <p class="stats-big-number-small" data-inject="stats-tracks">0</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- FOOTER FIJO Y PERPETUO -->
+                <div class="tarjeta-footer">
+                    <div class="footer-bottom">
+                        <img src="https://i.ibb.co/dJDPkt0y/Logo-Spotifly-FX.png" alt="Spotifly" class="footer-logo">
+                        <p class="footer-url">spotiflypremium.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+    <!-- ==================== CARD 3 ==================== -->
+    <template id="wrapped-template-achievement">
+        <div class="wrapped-tarjeta" data-card-name="Logro-Semanal">
+            <div class="tarjeta-overlay achievement-overlay">
+
+                <div class="tarjeta-header">
+                    <img data-inject="insignia-logro" src="" alt="Insignia de Logro" class="badge-image"/>
+                    <h1 class="card3-header-title" data-inject="main-title">¡LOGRO DESBLOQUEADO!</h1>
+                </div>
+
+                <div class="tarjeta-main">
+                    <div data-inject="achievement-content">
+                        <h2 class="achievement-title" data-inject="achievement-name"></h2>
+                        <p class="achievement-description" data-inject="achievement-description"></p>
+                        <p class="achievement-counter" data-inject="achievement-counter"></p>
+                    </div>
+                </div>
+
+                <div class="tarjeta-footer">
+                    <div class="footer-top">
+                        <p>Continúa escuchando Spotifly para desbloquear más logros</p>
+                    </div>
+                    <div class="footer-bottom">
+                        <img src="https://i.ibb.co/dJDPkt0y/Logo-Spotifly-FX.png" alt="Spotifly" class="footer-logo">
+                        <p class="footer-url">spotiflypremium.com</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </template>
+
+       <!-- MENU RESPONSIVO -->
+       <div class="responsive-menu">
+            <a href="#"><i class="fa-solid fa-house"></i>Inicio</a>
+            <a href="https://open.spotify.com/search/"><i class="fa-solid fa-magnifying-glass"></i>Buscar</a>
+            <a href="#"><i class="fa-solid fa-heart"></i>Favoritas</a> 
+
+            <button class="btn-create-list"><i class="fa-solid fa-plus"></i>Crear Lista</button>
+            <button class="btn-wrapped"><i class="fa-solid fa-gift"></i>Wrapped</button>
+            <a href="https://www.ivoox.com/podcast-sesiones_sq_f12464020_1.html" target="_blank" rel="noopener noreferrer">
+            <button class="btn-podcast"><i class="fa-solid fa-podcast"></i>Podcast</button>
+            </a>
+            <a href="https://iraked.github.io/ExtasisRadio/Repro.html" target="_blank" rel="noopener noreferrer">
+            <button class="btn-radio"><i class="fa-solid fa-radio"></i>Radio</button>
+            </a>
+            <a href="https://radio-tekileros.vercel.app/Repro36.html" target="_blank" class="btn-karaoke-link">
+            <button class="btn-karaoke"><i class="fa-solid fa-microphone-lines"></i>Karaoke</button>
+            </a>
+
+            <div class="responsive-logo">
+            <img src="https://i.ibb.co/dJDPkt0y/Logo-Spotifly-FX.png" alt="Spotifly Logo" />
+            </div>
+        </div>
     
 </html>
