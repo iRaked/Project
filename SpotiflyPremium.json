@@ -309,8 +309,9 @@
 ],
 
 
-  
-"regional_mexicano": [
+
+
+  "regional_mexicano": [
     {
       "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Grupo-Frontera-Carin-Leon-Mutuo.jpg",
       "artista": "Grupo Frontera & Carín León",
@@ -864,7 +865,7 @@
     "seccion": "viva_latino",
     "genero": "electro flow",
     "duracion": "3:08"
-  },
+  }
 ],
 
 
@@ -1867,5 +1868,6 @@
 ]
 
 }
+
 
 
