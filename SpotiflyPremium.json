@@ -307,6 +307,9 @@
       "genero": "pop electrónico"
     }
 ],
+
+
+  
 "regional_mexicano": [
     {
       "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Grupo-Frontera-Carin-Leon-Mutuo.jpg",
@@ -1129,6 +1132,9 @@
     "duracion": "3:30"
   }
 ],
+
+
+  
 "mega_mix": [
   {
     "caratula": "assets/covers/Shakira-Papatinho-Estoy-aqui-[R].jpg",
@@ -1861,4 +1867,5 @@
 ]
 
 }
+
 
