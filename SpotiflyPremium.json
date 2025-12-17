@@ -1008,7 +1008,7 @@
   },
   {
     "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/La-Mosca-Tse-Tse-Baila-para-mi.jpg",
-    "artista": "La Mosca Tse Tse",
+    "artista": "La Mosca Tsé Tsé",
     "nombre": "Baila para mi",
     "enlace": "https://radio-tekileros.vercel.app/assets/audio/La-Mosca-Tse-Tse-Baila-para-mi.mp3",
     "seccion": "rock_espanol",
@@ -1135,599 +1135,1206 @@
 ],
 
 
-  
+
 "mega_mix": [
   {
-    "caratula": "assets/covers/Shakira-Papatinho-Estoy-aqui-[R].jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Shakira-Papatinho-Estoy-aqui.jpg",
     "artista": "Shakira & Papatinho",
     "nombre": "Estoy aquí",
-    "enlace": "https://www.dropbox.com/scl/fi/s8vzy0yb7kxg2p7wxl8n7/Shakira-Papatinho-Estoy-aqu-Remix.MP3?rlkey=megaay5wkx8uanpqhi6qp97ag&st=n7vcpwtj&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Shakira-Papatinho-Estoy-aqui.MP3",
+    "seccion": "mega_mix",
+    "genero": "pop latino",
+    "duracion": "2:58"
   },
   {
-    "caratula": "assets/covers/Tranzas-Guepa-Mori.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Tranzas-Guepa-Mori.jpg",
     "artista": "Tranzas & Güepa",
     "nombre": "Morí",
-    "enlace": "https://www.dropbox.com/scl/fi/h8eke4aff2prqmtysijo7/Tranzas-x-G-epa-Mor.mp3?rlkey=3mzvoc4zy0q31jorkujcqlck4&st=wyce3c44&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Tranzas-Guepa-Mori.mp3",
+    "seccion": "mega_mix",
+    "genero": "tropi pop",
+    "duracion": "3:42"
   },
   {
-    "caratula": "assets/covers/Julieta-Venegas-Eres-para-mi-[R].jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Lucia-De-La-Puerta-Jayxme-Si-no-te-cuida.jpg",
+    "artista": "Lucia De La Puerta & Jayxme",
+    "nombre": "Si no te cuida",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Lucia-De-La-Puerta-Jayxme-Si-no-te-cuida.MP3",
+    "seccion": "mega_mix",
+    "genero": "Techno",
+    "duracion": "3:36"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Julieta-Venegas-Eres-para-mi.jpg",
     "artista": "Julieta Venegas",
     "nombre": "Eres para mi",
-    "enlace": "https://www.dropbox.com/scl/fi/68z6cza7x299bs6a8qkgm/Julieta-Venegas-Eres-para-mi-R.mp3?rlkey=qflvc4v7y2g3f1fsnotpxc0zh&st=s3vf50ac&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Julieta-Venegas-Eres-para-mi.mp3",
+    "seccion": "mega_mix",
+    "genero": "rock alternativo",
+    "duracion": "6:29"
   },
   {
-    "caratula": "assets/covers/Fanny-Lu-JKing- Maximan-Celos.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Fanny-Lu-JKing-Maximan-Celos.jpg",
     "artista": "Fanny Lu, King & Maximan",
     "nombre": "Celos",
-    "enlace": "https://www.dropbox.com/scl/fi/1zkwmdn5dwc51nyhbxrw4/Fanny-Lu-Celos-F-J-King-Maximan.mp3?rlkey=4e3jedy5zf2sf6wy8sy9ogv90&st=izxmlbvw&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Fanny-Lu-JKin-Celos.mp3",
+    "seccion": "mega_mix",
+    "genero": "Cumbia",
+    "duracion": "3:44"
   },
   {
-    "caratula": "assets/covers/Lola-Indigo-Mojaita.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Lola-Indigo-Mojaita.jpg",
     "artista": "Lola Indigo",
     "nombre": "Mojaita",
-    "enlace": "https://www.dropbox.com/scl/fi/ehc91ot6sw2vbagjoxarn/Lola-Indigo-Mojaita.MP3?rlkey=kivzsxu5n3tlz1p1p0x7qv5jh&st=nrsepaa2&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Lola-Indigo-Mojaita.MP3",
+    "seccion": "mega_mix",
+    "genero": "Wepa",
+    "duracion": "2:26"
   },
   {
-    "caratula": "assets/covers/Becky-G-Sin-pijama-[R].jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sofia-Reyes-Danna-Paola-TQUM.jpg",
+    "artista": "Sofia Reyes & Danna Paola",
+    "nombre": "TQUM",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sofia-Reyes-Danna-Paola-TQUM.mp3",
+    "seccion": "mega_mix",
+    "genero": "Pop Electrónico",
+    "duracion": "2:38"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Becky-G-Sin-pijama.jpg",
     "artista": "Becky G & Natty Natasha",
     "nombre": "Sin pijama",
-    "enlace": "https://www.dropbox.com/scl/fi/g4hgd8gsycdywq81c6tcb/Becky-G-Natty-Natasha-Sin-pijama-R.mp3?rlkey=gaqatj3axj7um4v9klil2x4xz&st=9l72sxrc&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Becky-G-Natty-Natasha-Sin-pijama.mp3",
+    "seccion": "mega_mix",
+    "genero": "cumbia",
+    "duracion": "3:20"
   },
   {
-    "caratula": "assets/covers/Uno70-Grecia-Gon-No-se-enamora.jpg",
-    "artista": "Uno 70 & Grecia Gon",
-    "nombre": "No se enamora",
-    "enlace": "https://www.dropbox.com/scl/fi/atkqp0ltq1bdyeuuqj8g1/Uno70-Grecia-Gon-No-se-enamora.MP3?rlkey=ojb6g1s7j2xt2wo9t7oodq04i&st=tqu3s7ny&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Una-Vaina-Loca-Rendy-Fuego.jpg",
+    "artista": "Rendy & Fuego",
+    "nombre": "Fuego",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Una-Vaina-Loca-Rendy-Fuego.mp3",
+    "seccion": "mega_mix",
+    "genero": "Dembow",
+    "duracion": "2:01"
   },
   {
-    "caratula": "assets/covers/Valentina-Marquez-Aneley-A-veces-a-besos.jpg",
-    "artista": "Valentina Márquez & Aneley",
-    "nombre": "A veces a besos",
-    "enlace": "https://www.dropbox.com/scl/fi/p7u1vqrhhyofrzoz93wcv/Valentina-M-rquez-Aneley-A-veces-a-besos.MP3?rlkey=dspqltmd2gw3jlcgs199p41ug&st=9xuiixma&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Yaga-Mackie-Bailando.jpg",
+    "artista": "Yaga & Mackie",
+    "nombre": "Bailando",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Yaga-Mackie-Bailando.mp3",
+    "seccion": "mega_mix",
+    "genero": "House",
+    "duracion": "4:39"
   },
   {
-    "caratula": "assets/covers/Los-Angeles-Azules-Pepe-Aguilar-Amigos-nada-mas.jpg",
-    "artista": "Los Ánegeles Azules & Pepé Aguilar",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Los-Angeles-Azules-Pepe-Aguilar-Amigos-nada-mas.jpg",
+    "artista": "Los Ángeles Azules & Pepe Aguilar",
     "nombre": "Amigos nada más",
-    "enlace": "https://www.dropbox.com/scl/fi/z9zn6bts8gvfoavawyugp/Los-ngeles-Azules-Amigos-nada-m-s-F-Pepe-Aguilar-R.mp3?rlkey=8wythjwfado0tzd98ofqxlycf&st=33rq6oqd&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Los-Angeles-Azules-Pepe-Aguilar-Amigos-nada-mas.mp3",
+    "seccion": "mega_mix",
+    "genero": "cumbia",
+    "duracion": "3:46"
   },
   {
-    "caratula": "assets/covers/Los-Angeles-Azules-Santa-Fe-Klan-Cazzu-Tu-y-tu.jpg",
-    "artista": "Los Ánegeles Azules, Santa Fe Klan & Cazzu",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Los-Angeles-Azules-Santa-Fe-Klan-Cazzu-Tu-y-tu.jpg",
+    "artista": "Los Ángeles Azules, Santa Fe Klan & Cazzu",
     "nombre": "Tú y tú",
-    "enlace": "https://www.dropbox.com/scl/fi/9shjrl5vx5qnxjrk8g2sa/ngeles-Azules-T-y-t-F-Santa-Fe-Klan-x-Cazzu.mp3?rlkey=hqzhmcd8h2xf7wcdc79cg4nqd&st=tcod6xp9&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Los-Angeles-Azules-Santa-Fe-Klan-Cazzu-Tu-y-tu.mp3",
+    "seccion": "mega_mix",
+    "genero": "cumbia",
+    "duracion": "3:34"
   },
   {
-    "caratula": "assets/covers/ICC-Aleks-Syntek-Donde-estaras.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/ICC-Aleks-Syntek-Donde-estaras.jpg",
     "artista": "ICC & Aleks Syntek",
     "nombre": "Dónde estarás",
-    "enlace": "https://www.dropbox.com/scl/fi/3bp7dklf4zn6g9nfdw4v5/ICC-D-nde-estar-s-F-Aleks-Syntek.MP3?rlkey=ltqwb0zvwjztnglws9uckrdp2&st=cdsb8661&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/ICC-Aleks-Syntek-Donde-estaras.MP3",
+    "seccion": "mega_mix",
+    "genero": "Dembow",
+    "duracion": "3:57"
   },
   {
-    "caratula": "assets/covers/Grupo-Frontera-No-se-va-[R].jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Joey-Montana-El-cumbion.jpg",
+    "artista": "Joey Montana",
+    "nombre": "El cumbión",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Joey-Montana-El-cumbion.mp3",
+    "seccion": "mega_mix",
+    "genero": "Cumbia",
+    "duracion": "2:51"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Grupo-Frontera-No-se-va-[R].jpg",
     "artista": "Grupo Frontera",
     "nombre": "No se va",
-    "enlace": "https://www.dropbox.com/scl/fi/s708cwuzb0yngvt9cml8y/Grupo-Frontera-No-se-va-R.mp3?rlkey=o7yu1ooyh9p7zppvi8zzi19tk&st=fc053szp&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Grupo-Frontera-No-se-va.mp3",
+    "seccion": "mega_mix",
+    "genero": "regional mexicano",
+    "duracion": "2:51"
   },
   {
-    "caratula": "assets/covers/Cumbiaton-Tu-principe-(Remix).png",
-    "artista": "Cumbiaton ft. Thom B.",
-    "nombre": "Tu príncipe",
-    "enlace": "https://www.dropbox.com/scl/fi/0dsu2dfk1xq85iogca7xn/Cumbiaton-Tu-pr-ncipe-Remix.MP3?rlkey=7s7gkvhn1gw9twj4747vk5yl3&st=17vjslc4&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Uno70-Grecia-Gon-No-se-enamora.jpg",
+    "artista": "Uno 70 & Grecia Gon",
+    "nombre": "No se enamora",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Uno70-Grecia-Gon-No-se-enamora.MP3",
+    "seccion": "mega_mix",
+    "genero": "Rumba",
+    "duracion": "3:07"
   },
   {
-    "caratula": "assets/covers/Marama-Emanero-&-Rafaga-Todo-comenzo-bailando.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Marama-Emanero-&-Rafaga-Todo-comenzo-bailando.jpg",
     "artista": "Marama, Emanero & Ráfaga",
     "nombre": "Todo comenzó bailando",
-    "enlace": "https://www.dropbox.com/scl/fi/bzn96s9l1h0nnf9futa64/Marama-Emanero-R-faga-Todo-comenz-bailando-R.mp3?rlkey=57pwd2tdcirmloc1bnrignh8d&st=0o6anfhr&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Marama-Emanero-Rafaga-Todo-comenzo-bailando.mp3",
+    "seccion": "mega_mix",
+    "genero": "cheta",
+    "duracion": "2:42"
   },
   {
-    "caratula": "assets/covers/Pijama-Party-Cande-Buasso-Comerte-a-besos.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Pijama-Party-Cande-Buasso-Comerte-a-besos.jpg",
     "artista": "Pijama Party & Cande Buasso",
     "nombre": "Comerte a besos",
-    "enlace": "https://www.dropbox.com/scl/fi/6om986uq3uz5vte4h1ta2/Pijama-Party-F-Cande-Buasso-Comerte-a-besos.mp3?rlkey=lzqbujhk0u6nutj8vuox8gvyz&st=43qpjhvd&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Pijama-Party-Cande-Buasso-Comerte-a-besos.mp3",
+    "seccion": "mega_mix",
+    "genero": "cheta",
+    "duracion": "2:50"
   },
   {
-    "caratula": "assets/covers/Meri-Deal-Marka-Akme-Lil-Cake-Solo-necesito.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Meri-Deal-Marka-Akme-Lil-Cake-Solo-necesito.jpg",
     "artista": "Meri Deal, Marka Akme & Lil Cake",
-    "nombre": "Sólo necesito",
-    "enlace": "https://www.dropbox.com/scl/fi/7a4g5cq6z3yq7enebs68q/Meri-Deal-Marka-Akme-Lil-Cake-Solo-necesito-R.mp3?rlkey=7hghpr5mou7gz84x95z82j8qr&st=8w6qc7hr&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "nombre": "Solo necesito",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Meri-Deal-Marka-Akme-Lil-Cake-Solo-necesito.mp3",
+    "seccion": "mega_mix",
+    "genero": "cheta",
+    "duracion": "2:45"
   },
   {
-    "caratula": "assets/covers/Rusherking-&-Marama-Besos-con-fernet.webp",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Rusherking-&-Marama-Besos-con-fernet.webp",
     "artista": "Rusherking & Marama",
     "nombre": "Besos con fernet",
-    "enlace": "https://www.dropbox.com/scl/fi/chx2lrsjknnufmx31qoog/Rusherking-Marama-Besos-con-fernet.mp3?rlkey=104v4wgby5n3fkmj7y3mut0lj&st=j0tams9j&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Rusherking-Marama-Besos-con-fernet.mp3",
+    "seccion": "mega_mix",
+    "genero": "cheta",
+    "duracion": "2:25"
   },
   {
-    "caratula": "assets/covers/Vi-Em-Nicolas-Mayorca-Corazon-de-carton.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Vi-Em-Nicolas-Mayorca-Corazon-de-carton.jpg",
     "artista": "Vi-Em & Nicolas Mayorca",
     "nombre": "Corazón de cartón",
-    "enlace": "https://www.dropbox.com/scl/fi/ldnvnfd0mrg5us3041dj8/Vi-Em-x-Nicolas-Mayorca-Coraz-n-de-cart-n-R.MP3?rlkey=kvv801nmlugfxiesqgqd746ri&st=aoecdlna&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Vi-Em-Nicolas-Mayorca-Corazon-de-carton.MP3",
+    "seccion": "mega_mix",
+    "genero": "Rumba",
+    "duracion": "3:31"
   },
   {
-    "caratula": "assets/covers/Luck-Ra-Nicki-Nicole-Rusherking-&-FMK-Culpable.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Luck-Ra-Que-Sed.jpg",
     "artista": "Luck Ra, Nicki Nicole, Rusherking & FMK",
     "nombre": "Culpable",
-    "enlace": "https://www.dropbox.com/scl/fi/noy4e0bzduq3dt9ufcwty/Luck-Ra-Nicki-Nicole-Rusherking-FMK-Culpable.mp3?rlkey=nr8u2cosw67pikpbcahc1cmc8&st=oy58kawr&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Luck-Ra-Nicki-Nicole-Rusherking-FMK-Culpable.mp3",
+    "seccion": "mega_mix",
+    "genero": "cuarteto",
+    "duracion": "3:30"
   },
   {
-    "caratula": "assets/covers/Luck-Ra-Maluma-&-Khea-Hola-perdida.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Luck-Ra-Maluma-&-Khea-Hola-perdida.jpg",
     "artista": "Luck Ra, Maluma & Khea",
     "nombre": "Hola perdida",
-    "enlace": "https://www.dropbox.com/scl/fi/xr8smz9gqqht4u05xojj5/Luck-Ra-Maluma-Khea-Hola-perdida-R.mp3?rlkey=fgq6kad9wfqpy7qj0e1tn41nv&st=4ccvlu54&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Luck-Ra-Maluma-Khea-Hola-perdida.mp3",
+    "seccion": "mega_mix",
+    "genero": "cuarteto",
+    "duracion": "3:20"
   },
   {
-    "caratula": "assets/covers/Nene-Malo-Bailan -rochas-y-chetas.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Nene-Malo-Bailan -rochas-y-chetas.jpg",
     "artista": "Nene Malo",
     "nombre": "Bailan rochas y chetas",
-    "enlace": "https://www.dropbox.com/scl/fi/6rp98jnot2ebkt19wehvs/Bailan-rochas-y-chetas.mp3?rlkey=akjfh7k3bn1re3gmeaffj8toz&st=5djbe2de&dl=0&raw=1",
-    "seccion": "mega_mix"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Nene-Malo-Bailan-rochas-y-chetas.mp3",
+    "seccion": "mega_mix",
+    "genero": "cheta",
+    "duracion": "3:00"
   },
   {
-    "caratula": "assets/covers/Mesa-que-mas-aplauda-(Fem-Version).jpg",
-    "artista": "Clímax, Bellakat",
-    "nombre": "Mesa que mas aplauda (Za, za, za)",
-    "enlace": "https://www.dropbox.com/scl/fi/6a9efv7do67mpumfo4yot/Mesa-que-mas-aplauda-Remix-Fem-Version.MP3?rlkey=lz9e34vz9cb64ylbigchdrc3n&st=d16kw5wr&dl=0&raw=1",
-    "seccion": "mega_mix"
-  }
-],
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sonido-Satanas-Santa-Tere.jpg",
+    "artista": "Sonido Satanás",
+    "nombre": "Santa Tere",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sonido-Satanas-Santa-Tere.mp3",
+    "seccion": "mega_mix",
+    "genero": "Cumbia",
+    "duracion": "4:10"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/El-Dusty-PartyCero.png",
+    "artista": "El Dusty",
+    "nombre": "PartyCero",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/El-Dusty-PartyCero.mp3",
+    "seccion": "mega_mix",
+    "genero": "Wepa",
+    "duracion": "3:31"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Las-Culisueltas-Mega-culisueltas.jpg",
+    "artista": "Las Culisueltas",
+    "nombre": "Mega culisueltas",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Las-Culisueltas-Mega-culisueltas.mp3",
+    "seccion": "mega_mix",
+    "genero": "Cheta",
+    "duracion": "4:02"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/La-Nueva-Ola-De-La-Cumbia-Doble-Play-Riki-ran.jpg",
+    "artista": "La Nueva Ola De La Cumbia Doble Play",
+    "nombre": "Riki ran",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/La-Nueva-Ola-De-La-Cumbia-Doble-Play-Riki-ran.MP3",
+    "seccion": "mega_mix",
+    "genero": "Wepa",
+    "duracion": "2:56"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Yamana-Ven-a-bailar.jpg",
+    "artista": "Yamana",
+    "nombre": "Ven a bailar",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Yamana-Ven-a-bailar.MP3",
+    "seccion": "mega_mix",
+    "genero": "Rumba",
+    "duracion": "3:00"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/La-Rumba-Club-Mix-Los-Compadres.jpg",
+    "artista": "La Rumba Club Mix",
+    "nombre": "Los compadres",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/La-Rumba-Club-Mix-Los-Compadres.mp3",
+    "seccion": "mega_mix",
+    "genero": "Rumba",
+    "duracion": "7:25"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Impacto-MC-Punta-electronica-Centroamerica.jpg",
+    "artista": "Impacto MC",
+    "nombre": "Punta electrónica Centroamérica",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Impacto-MC-Punta-electronica-Centroamerica.mp3",
+    "seccion": "mega_mix",
+    "genero": "Punta",
+    "duracion": "4:40"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Max-Pizzolante-Beto-Perez-Vive-y-baila.jpg",
+    "artista": "Max Pizzolante & Beto Perez",
+    "nombre": "Vive y baila",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Max-Pizzolante-Beto-Perez-Vive-y-baila.mp3",
+    "seccion": "mega_mix",
+    "genero": "Rumba",
+    "duracion": "4:01"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Aisack-Llego-el-verano.jpg",
+    "artista": "Aisack",
+    "nombre": "Llegó el verano",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Aisack-Llego-el-verano.mp3",
+    "seccion": "mega_mix",
+    "genero": "Punta",
+    "duracion": "3:03"
+  },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Mesa-que-mas-aplauda-(Fem-Version).jpg",
+      "artista": "Clímax & Bellakat",
+      "nombre": "Mesa que más aplauda (Za, za, za)",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/Climax-Bellakat-Mesa-que-mas-aplauda-(Za-za-za).MP3",
+      "seccion": "mega_mix",
+      "genero": "Wepa",
+      "duracion": "5:30"
+    },
+    {
+      "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/DJ-Pucho-Saxo-suelta.jpg",
+      "artista": "DJ Pucho",
+      "nombre": "Saxo suelta",
+      "enlace": "https://radio-tekileros.vercel.app/assets/audio/DJ-Pucho-Saxo-suelta.mp3",
+      "seccion": "mega_mix",
+      "genero": "Wepa",
+      "duracion": "3:09"
+    }
+  ],
+
+
+
 "after_party": [
   {
-    "caratula": "assets/covers/Daaz-&-ElArturo-La-plebada.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Daaz-&-ElArturo-La-plebada.jpg",
     "artista": "Daaz & ElArturo",
     "nombre": "La plebada",
-    "enlace": "https://www.dropbox.com/scl/fi/yw4yewktoxd2oveqqmhvk/Daaz-ElArturo-La-plebada.mp3?rlkey=78tafwgkt5hkp1gpne2w53mjk&st=352jvvit&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Daaz-ElArturo-La-plebada.mp3",
+    "seccion": "after_party",
+    "genero": "corrido tumbado",
+    "duracion": "2:42"
   },
   {
-    "caratula": "assets/covers/C-Kan-Guapa-esta-noche.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/C-Kan-Guapa-esta-noche.jpg",
     "artista": "C-Kan",
     "nombre": "Guapa esta noche",
-    "enlace": "https://www.dropbox.com/scl/fi/dinqy0e4oncqb7jhts9zb/C-Kan-Guapa-esta-noche.mp3?rlkey=rie4u0jd40dtu6i54ndjk6gy5&st=qkdlgc7l&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/C-Kan-Guapa-esta-noche.mp3",
+    "seccion": "after_party",
+    "genero": "rap",
+    "duracion": "4:10"
   },
   {
-    "caratula": "assets/covers/MC-Davo-Los-Esquivel-&-Joaquin-Medina-Se-armo-la-peda.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/MC-Davo-Los-Esquivel-&-Joaquin-Medina-Se-armo-la-peda.jpg",
     "artista": "MC Davo, Los Esquivel & Joaquin Medina",
     "nombre": "Se armó la peda",
-    "enlace": "https://www.dropbox.com/scl/fi/srx2jcyjcuxtl0v0019vb/MC-Davo-Los-Esquivel-Joaquin-Medina-Se-arm-la-peda.mp3?rlkey=bgb7uz7i8h8jai2jf3h6hti4i&st=dz7lir56&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/MC-Davo-Los-Esquivel-Joaquin-Medina-Se-armo-la-peda.mp3",
+    "seccion": "after_party",
+    "genero": "corrido tumbado",
+    "duracion": "2:22"
   },
   {
-    "caratula": "assets/covers/Hector-Del-Norte-W-Corona-Tumbado-style.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alex-Ponce-Plan.jpg",
+    "artista": "Alex Ponce",
+    "nombre": "Plan",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alex-Ponce-Plan.mp3",
+    "seccion": "after_party",
+    "genero": "Pop Electrónico",
+    "duracion": "2:56"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/3BallMTY-El-Bebeto-De-las-12-a-las-12.jpg",
+    "artista": "3BallMTY & El Bebeto",
+    "nombre": "De las 12 a las 12",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/3BallMTY-El-Bebeto-De-las-12-a-las-12.mp3",
+    "seccion": "after_party",
+    "genero": "Tribal",
+    "duracion": "2:40"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/12-60-Boy-El-ritmo-de-la-matraka.jpg",
+    "artista": "12-60 Boy",
+    "nombre": "El ritmo de la matraka",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/12-60-Boy-El-ritmo-de-la-matraka.mp3",
+    "seccion": "after_party",
+    "genero": "Dembow",
+    "duracion": "5:42"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Banda-Los-Recoditos-S-Cool...ito.jpg",
+    "artista": "Banda Los Recoditos",
+    "nombre": "S Cool...ito",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Banda-Los-Recoditos-S-Cool...ito.mp3",
+    "seccion": "after_party",
+    "genero": "Corrido Bélico",
+    "duracion": "2:25"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Esau-Ortiz-Triple-lavada.jpg",
+    "artista": "Esau Ortiz",
+    "nombre": "Triple lavada",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Esau-Ortiz-Triple-lavada.MP3",
+    "seccion": "after_party",
+    "genero": "Corrido Bélico",
+    "duracion": "2:45"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Millonario-WCorona-Pedisimo.jpg",
+    "artista": "Millonario & WCorona",
+    "nombre": "Pedísimo",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Millonario-WCorona-Pedisimo.mp3",
+    "seccion": "after_party",
+    "genero": "Rap",
+    "duracion": "3:02"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Cartel-De-Santa-La-Kelly-Shorty-party.jpg",
+    "artista": "Cartel De Santa & La Kelly",
+    "nombre": "Shorty party",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Cartel-De-Santa-La-Kelly-Shorty-party.mp3",
+    "seccion": "after_party",
+    "genero": "Rap",
+    "duracion": "4:23"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Kalako-Parga-Techno-Rap-Vol.1.jpg",
+    "artista": "Kalako Parga",
+    "nombre": "Techno Rap Vol. 1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Kalako-Parga-Techno-Rap-Vol.1.mp3",
+    "seccion": "after_party",
+    "genero": "Rap",
+    "duracion": "3:09"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Hector-Del-Norte-W-Corona-Tumbado-style.jpg",
     "artista": "Hector Del Norte & W. Corona",
     "nombre": "Tumbado style",
-    "enlace": "https://www.dropbox.com/scl/fi/thzluchasltjjiixk2me4/Hector-Del-Norte-Ft.-W-Corona-Tumbado-Style.mp3?rlkey=0ow1j0te9dgj82nlobqprqehg&st=ldjbks7f&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Hector-Del-Norte-WCorona-Tumbado-style.mp3",
+    "seccion": "after_party",
+    "genero": "corrido belico",
+    "duracion": "2:03"
   },
   {
-    "caratula": "assets/covers/Deorro-Eslabon-Armado-Peso-Pluma-Ella-baila-sola.jpg",
-    "artista": "Peso Pluma, Deodorro & Eslabón Armado",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Deorro-Alex-Favela-Ushuaia.jpg",
+    "artista": "Deorro & Alex Favela",
+    "nombre": "Ushuaia",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Deorro-Alex-Favela-Ushuaia.MP3",
+    "seccion": "after_party",
+    "genero": "Techno",
+    "duracion": "2:51"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Deorro-Eslabon-Armado-Peso-Pluma-Ella-baila-sola.jpg",
+    "artista": "Peso Pluma, Deorro & Eslabón Armado",
     "nombre": "Ella baila sola",
-    "enlace": "https://www.dropbox.com/scl/fi/q04a51agcx5f7kxuk5wam/Deorro-x-Eslabon-Armado-x-Peso-Pluma-Ella-baila-sola-R.mp3?rlkey=w8r1arwkxnsi9jnpbwowcr0ud&st=dwzavu2a&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Deorro-Eslabon-Armado-Peso-Pluma-Ella-baila-sola.mp3",
+    "seccion": "after_party",
+    "genero": "corrido tumbado",
+    "duracion": "4:31"
   },
   {
-    "caratula": "assets/covers/Alex-Favela-Grupo-Marca-Registrada-Joaquin-Medina-Elovrga.jpg",
-    "artista": "Alex Favela, Grupo Marca Registrada & Joaquin Medina",
-    "nombre": "Elovrga",
-    "enlace": "https://www.dropbox.com/scl/fi/h2dhn16mk2p9liz04d28m/Alex-Favela-Grupo-Marca-Registrada-Joaquin-Medina-Elovrga.mp3?rlkey=d4jp3t4gis38x1k6iuuopddvd&st=m29ll4jw&dl=0&raw=1",
-    "seccion": "after_party"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/LuisR-Conriquez-Jose-Guicho-Tito-DoubleP-La-fiesta.jpg",
+    "artista": "Luis R Conriquez, Jose Guicho & Tito DoubleP",
+    "nombre": "La fiesta",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/LuisR-Conriquez-Jose-Guicho-Tito-DoubleP-La-fiesta.mp3",
+    "seccion": "after_party",
+    "genero": "Corrido Bélico",
+    "duracion": "2:29"
   },
   {
-    "caratula": "assets/covers/El-Emcut-Y-Los-Primos-Fresita.webp",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Manuelvezz-Tito-DoubleP-Joaquin-Medina-ALV-(Remix).jpg",
+    "artista": "Manuelvezz, Tito DoubleP & Joaquin Medina",
+    "nombre": "ALV (Remix)",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Manuelvezz-Tito-DoubleP-Joaquin-Medina-ALV-(Remix).mp3",
+    "seccion": "after_party",
+    "genero": "Techno",
+    "duracion": "2:56"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/El-Emcut-Y-Los-Primos-Fresita.webp",
     "artista": "El Emcut & Los Primos",
     "nombre": "Fresita",
-    "enlace": "https://www.dropbox.com/scl/fi/s2md6f1v8e67yueerxhcb/El-Emcut-Y-Los-Primos-Fresita.mp3?rlkey=1ehb8ktev6zphw74yxmu0tt75&st=hlvp74b8&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/El-Emcut-Los-Primos-Fresita.mp3",
+    "seccion": "after_party",
+    "genero": "corrido belico",
+    "duracion": "2:19"
   },
   {
-    "caratula": "assets/covers/Gabito-Gomez-Ya-es-de-madrugada.jpg",
-    "artista": "Gabito Gomez",
-    "nombre": "Ya es de madrugada",
-    "enlace": "https://www.dropbox.com/scl/fi/0ldg22t5v5i0fqm7drvab/Gabito-Gomez-Ya-es-de-madrugada.mp3?rlkey=1fevcjgs8i6o2lmdj3sthoynw&st=x67cdidx&dl=0&raw=1",
-    "seccion": "after_party"
-  },
-  {
-    "caratula": "assets/covers/Grupo-Firme-&-Demi-Lovato-Chula.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Grupo-Firme-&-Demi-Lovato-Chula.jpg",
     "artista": "Grupo Firme & Demi Lovato",
     "nombre": "Chula",
-    "enlace": "https://www.dropbox.com/scl/fi/js5o046wcs08z4odasitu/Grupo-Firme-Demi-Lovato-Chula.mp3?rlkey=j15v3phg1gh2fh753us4qguo3&st=9ojqgppi&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Grupo-Firme-Demi-Lovato-Chula.mp3",
+    "seccion": "after_party",
+    "genero": "regional mexicano",
+    "duracion": "2:17"
   },
   {
-    "caratula": "assets/covers/Sebastian-Esquivel-Blessd-&-Eugenio-Esquivel-Exceso.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alex-Favela-Grupo-Marca-Registrada-Joaquin-Medina-Elovrga.jpg",
+    "artista": "Alex Favela, Grupo Marca Registrada & Joaquin Medina",
+    "nombre": "Elovrga",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alex-Favela-Grupo-Marca-Registrada-Joaquin-Medina-Elovrga.mp3",
+    "seccion": "after_party",
+    "genero": "corrido belico",
+    "duracion": "2:58"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/YeraiR-Fresas-polvo-y-champagne.jpg",
+    "artista": "YeraiR",
+    "nombre": "Fresas, polvo y champagne",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/YeraiR-Fresas-polvo-y-champagne.mp3",
+    "seccion": "after_party",
+    "genero": "Corrido Bélico",
+    "duracion": "3:12"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Gabito-Gomez-Ya-es-de-madrugada.jpg",
+    "artista": "Gabito Gomez",
+    "nombre": "Ya es de madrugada",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Gabito-Gomez-Ya-es-de-madrugada.mp3",
+    "seccion": "after_party",
+    "genero": "corrido belico",
+    "duracion": "2:39"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Beto-Sierra-Diferente-Nivel-Merca-Xin-El-fieston.jpg",
+    "artista": "Beto Sierra, Diferente Nivel & Merca Xin",
+    "nombre": "El fiestón",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Beto-Sierra-Diferente-Nivel-Merca-Xin-El-fieston.mp3",
+    "seccion": "after_party",
+    "genero": "corrido belico",
+    "duracion": "3:22"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sebastian-Esquivel-Blessd-&-Eugenio-Esquivel-Exceso.jpg",
     "artista": "Sebastian Esquivel, Blessd & Eugenio Esquivel",
     "nombre": "Exceso",
-    "enlace": "https://www.dropbox.com/scl/fi/zi3f8lp55uzesdbirhxjb/Sebastian-Esquivel-Blessd-Eugenio-Esquivel-Exceso.mp3?rlkey=wx7553k05hocdxo1irqqv9xq6&st=y5u50mft&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sebastian-Esquivel-Blessd-Eugenio-Esquivel-Exceso.mp3",
+    "seccion": "after_party",
+    "genero": "corrido belico",
+    "duracion": "2:18"
   },
   {
-    "caratula": "assets/covers/DJ-Snake-&-Peso-Pluma-Teka.jpg",
-    "artista": "DJ Snake & Peso Pluma",
-    "nombre": "Teka",
-    "enlace": "https://www.dropbox.com/scl/fi/nhhgbrl1qvqt0y5r0v27y/DJ-Snake-Peso-Pluma-Teka.mp3?rlkey=m5a0q2xq4hsaircdvvhu4z3cy&st=bebjomnn&dl=0&raw=1",
-    "seccion": "after_party"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Kevin-AMF-Rich-Kid.jpg",
+    "artista": "Kevin AMF",
+    "nombre": "Rich Kid",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Kevin-AMF-Rich-Kid.mp3",
+    "seccion": "after_party",
+    "genero": "Corrido Bélico",
+    "duracion": "2:53"
   },
   {
-    "caratula": "assets/covers/Esau-Ortiz-Larry-Hernandez-Los-Dareyes-De-La-Sierra-C-armo.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Esau-Ortiz-Larry-Hernandez-Los-Dareyes-De-La-Sierra-C-armo.jpg",
     "artista": "Esau Ortiz, Larry Hernández & Los Dareyes De La Sierra",
     "nombre": "C armó",
-    "enlace": "https://www.dropbox.com/scl/fi/7puom3bl7dws62du0akj7/Esau-Ortiz-x-Larry-Hern-ndez-x-Los-Dareyes-De-La-Sierra-C-arm.mp3?rlkey=gha25aqotyqnoocb0cb8o9rpk&st=nwl2yhi3&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Esau-Ortiz-Larry-Hernandez-Los-Dareyes-De-La-Sierra-C-armo.mp3",
+    "seccion": "after_party",
+    "genero": "regional mexicano",
+    "duracion": "3:01"
   },
   {
-    "caratula": "assets/covers/Beto-Sierra-Diferente-Nivel-Merca-Xin-El-fieston.jpg",
-    "artista": "Beto Sierra, Diferente Nivel & Merca Xin",
-    "nombre": "El fieston",
-    "enlace": "https://www.dropbox.com/scl/fi/6fpndfio80owvrc8nhteh/Beto-Sierra-x-Diferente-Nivel-x-Merca-Xin-El-fieston.mp3?rlkey=y2oxbah9rvmd5jk1ub1nchkyq&st=2pu6fe0w&dl=0&raw=1",
-    "seccion": "after_party"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/DJ-Snake-&-Peso-Pluma-Teka.jpg",
+    "artista": "DJ Snake & Peso Pluma",
+    "nombre": "Teka",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/DJ-Snake-Peso-Pluma-Teka.mp3",
+    "seccion": "after_party",
+    "genero": "corrido tumbado",
+    "duracion": "2:43"
   },
   {
-    "caratula": "assets/covers/Dik-Lewis-Arriba-arriba.jpg",
-    "artista": "Dik Lewis",
-    "nombre": "Arriba arriba",
-    "enlace": "https://www.dropbox.com/scl/fi/gtonc8j1n0d3xwjn3x080/Dik-Lewis-Arriba-arriba.mp3?rlkey=3keoeinlycq7hompswbegwzjc&st=2n6btjbd&dl=0&raw=1",
-    "seccion": "after_party"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/KarolG-Peso-Pluma-Qlona.jpg",
+    "artista": "Karol G & Peso Pluma",
+    "nombre": "Qlona",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/KarolG-Peso-Pluma-Qlona.MP3",
+    "seccion": "after_party",
+    "genero": "Dembow",
+    "duracion": "2:24"
   },
   {
-    "caratula": "assets/covers/Herly-RG-Nenuka.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Herly-RG-Nenuka.jpg",
     "artista": "Herly RG",
     "nombre": "Nenuka",
-    "enlace": "https://www.dropbox.com/scl/fi/yf438y9leg6uk8dpxk7hv/Herly-RG-Nenuka.mp3?rlkey=ds0yivrtdy9kj4znan6xshhf9&st=1z83mtn3&dl=0&raw=1",
-    "seccion": "after_party"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Herly-RG-Nenuka.mp3",
+    "seccion": "after_party",
+    "genero": "rumba",
+    "duracion": "3:07"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Jhong-Pepas.jpg",
+    "artista": "Jhong",
+    "nombre": "Pepas",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Jhong-Pepas.mp3",
+    "seccion": "after_party",
+    "genero": "Techno",
+    "duracion": "4:13"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Poncho-De-Nigris-Wendy-Guevara-Mamalon.jpg",
+    "artista": "Poncho De Nigris & Wendy Guevara",
+    "nombre": "Mamalón",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Poncho-De-Nigris-Wendy-Guevara-Mamalon.mp3",
+    "seccion": "after_party",
+    "genero": "Corrido Bélico",
+    "duracion": "3:18"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Dik-Lewis-Arriba-arriba.jpg",
+    "artista": "Dik Lewis",
+    "nombre": "Arriba arriba",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Dik-Lewis-Arriba-arriba.mp3",
+    "seccion": "after_party",
+    "genero": "rumba",
+    "duracion": "3:11"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Rafa-Villalba-Chiquetere.jpg",
+    "artista": "Rafa Villalba",
+    "nombre": "Chiquetere",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Rafa-Villalba-Chiquetere.mp3",
+    "seccion": "after_party",
+    "genero": "Dance",
+    "duracion": "2:17"
   }
 ],
+
+
+
 "pop_electronico": [
   {
-    "caratula": "assets/covers/Miranda-&-Lali-Yo-Te-Dire.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Miranda-&-Lali-Yo-Te-Dire.jpg",
     "artista": "Miranda & Lali",
     "nombre": "Yo te diré",
-    "enlace": "https://www.dropbox.com/scl/fi/yweaklf9q75f30aroovf4/Miranda-Yo-te-dir-F-Lali.MP3?rlkey=xe9jnc8vh48lhp14nrv47qptg&st=txkzbkqk&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Miranda-Lali-Yo-te-dire.MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:24"
   },
   {
-    "caratula": "assets/covers/Cotti-Julieta-Venegas-&-Paulina-Rubio-Nada-fue-un-error.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Cotti-Julieta-Venegas-&-Paulina-Rubio-Nada-fue-un-error.jpg",
     "artista": "Cotti, Julieta Venegas & Paulina Rubio",
     "nombre": "Nada fue un error",
-    "enlace": "https://www.dropbox.com/scl/fi/zk65alft4rbsevc0tapas/Cotti-Julieta-Venegas-Paulina-Rubio-Nada-fue-un-error-R.mp3?rlkey=qm6x6hku3cn1skz9euzwx3n98&st=o3vsc04c&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Cotti-Julieta-Venegas-Paulina-Rubio-Nada-fue-un-error.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "3:49"
   },
   {
-    "caratula": "assets/covers/Belinda-Dopamina.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Belinda-Dopamina.jpg",
     "artista": "Belinda",
     "nombre": "Dopamina",
-    "enlace": "https://www.dropbox.com/scl/fi/xuuu4qm5weqlcq216eomw/Belinda-Dopamina.mp3?rlkey=xlccpwdf6srf7dmrr5uffkfcz&st=0yd4cu10&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Belinda-Dopamina.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:12"
   },
   {
-    "caratula": "assets/covers/Belanova-Baila-mi-corazon.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Belanova-Baila-mi-corazon.jpg",
     "artista": "Belanova",
     "nombre": "Baila mi corazón",
-    "enlace": "https://www.dropbox.com/scl/fi/yxi5tmgi3ahxipbddndq3/Belanova-Baila-mi-coraz-n-R.mp3?rlkey=91bw55blwjimk13eurobh6d04&st=wq66dr0u&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Belanova-Baila-mi-corazon.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "5:45"
   },
   {
-    "caratula": "assets/covers/Sentidos-Opuestos-Donde-estan.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Jesse-Y-Joy-Dueles.jpg",
+    "artista": "Jesse & Joy",
+    "nombre": "Dueles",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Jesse-Y-Joy-Dueles.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "5:19"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/La-Oreja-De-Van-Gogh-Rosas.jpg",
+    "artista": "La Oreja De Van Gogh",
+    "nombre": "Rosas",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/La-Oreja-De-Van-Gogh-Rosas.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:45"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sentidos-Opuestos-Donde-estan.jpg",
     "artista": "Sentidos Opuestos",
     "nombre": "Dónde están",
-    "enlace": "https://www.dropbox.com/scl/fi/gjsyugppqz5mjryektx62/Sentidos-Opuestos-D-nde-est-n-R.mp3?rlkey=gm4u8f3jjxjxrngi1t0jolvsp&st=sehqovnp&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sentidos-Opuestos-Donde-estan.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:49"
   },
   {
-    "caratula": "assets/covers/Laura-Pausini-Se-fue.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Laura-Paussini-Se-fue.jpg",
     "artista": "Laura Pausini",
     "nombre": "Se fue",
-    "enlace": "https://www.dropbox.com/scl/fi/psayo1zlckve0wp1kk5z8/Laura-Pausini-Se-fue-R.mp3?rlkey=0obi3v68jcqupyfmui5m1dtry&st=dhgqyavd&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Laura-Pausini-Se-fue.mp3",
+    "seccion": "pop_electronico",
+    "genero": "dance",
+    "duracion": "5:38"
   },
   {
-    "caratula": "assets/covers/Jeans-Entre-azul-y-buenas-noches.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Rebeca-Duro-de-pelar.jpg",
+    "artista": "Rebeca",
+    "nombre": "Duro de pelar",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Rebeca-Duro-de-pelar.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:23"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Nek-Amor-inmenso.jpg",
+    "artista": "Nek",
+    "nombre": "Amor inmenso",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Nek-Amor-inmenso.MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "4:26"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Miranda-Ana-Mena-Como-amigos.jpg",
+    "artista": "Miranda & Ana Mena",
+    "nombre": "Como amigos",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Miranda-Ana-Mena-Como-amigos.MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "2:07"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Jeans-Entre-azul-y-buenas-noches.jpg",
     "artista": "Jeans",
     "nombre": "Entre azul y buenas noches",
-    "enlace": "https://www.dropbox.com/scl/fi/8k399kf93hq19vkzhwzbm/Jeans-Entre-azul-y-buenas-noches.mp3?rlkey=gxecl0dxmjcspxg36t8rpcz4s&st=ksh90av4&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Jeans-Entre-azul-y-buenas-noches.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "4:15"
   },
   {
-    "caratula": "assets/covers/Lynda-Dile.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Anahi-Corazon-de-bombon.jpg",
+    "artista": "Anahí",
+    "nombre": "Corazón de bombón",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Anahi-Corazon-de-bombon.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "2:42"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Lynda-Dile.jpg",
     "artista": "Lynda",
     "nombre": "Dile",
-    "enlace": "https://www.dropbox.com/scl/fi/qi72dzos5llf97hq9tb71/Lynda-Dile.mp3?rlkey=imolz57b8liqhu1qa19veo7ib&st=mpjbr12b&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Lynda-Dile.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:38"
   },
   {
-    "caratula": "assets/covers/Litzy-No-te-extra%C3%B1o.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Litzy-No-te-extrano.jpg",
     "artista": "Litzy",
     "nombre": "No te extraño",
-    "enlace": "https://www.dropbox.com/scl/fi/xas16k3cux6oiwc06j5r1/Litzy-No-te-extra-o.mp3?rlkey=coxtimaoqe5rvrzhpfjo21sgj&st=vfwhs294&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Litzy-No-te-extrano.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:26"
   },
   {
-    "caratula": "assets/covers/Kabah-Amigas-y-rivales.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Kabah-Amigas-y-rivales.jpg",
     "artista": "Kabah",
     "nombre": "Amigas y rivales",
-    "enlace": "https://www.dropbox.com/scl/fi/w5veakjus65anuekck22l/Kabah-Amigas-y-rivales.mp3?rlkey=79o0gfh7t6mqjix2jwn2pixew&st=ym6pbk4b&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Kabah-Amigas-y-rivales.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "4:05"
   },
   {
-    "caratula": "assets/covers/Miranda-Kenia-OS-Siempre-que-lo-beso.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Fey-Media-naranja.jpg",
+    "artista": "Fey",
+    "nombre": "Media naranja",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Fey-Media-naranja.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:41"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Miranda-Kenia-OS-Siempre-que-lo-beso.jpg",
     "artista": "Miranda & Kenia Os",
     "nombre": "Siempre que lo beso",
-    "enlace": "https://www.dropbox.com/scl/fi/wgabuyzf7e3ay5f6al2ro/Miranda-x-Kenia-OS-Siempre-que-lo-beso.mp3?rlkey=hcggkp21o8lfk5se9bqcw8r6q&st=1ka3tdks&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Miranda-Kenia-Os-Siempre-que-lo-beso.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "2:39"
   },
   {
-    "caratula": "assets/covers/Maria-Daniela-Y-Su-Sonido-Lasser-Cielo-rojo.jpg",
-    "artista": "María Daniela Y Su Sonido Laser",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Maria-Daniela-Y-Su-Sonido-Lasser-Cielo-rojo.jpg",
+    "artista": "María Daniela Y Su Sonido Lasser",
     "nombre": "Cielo rojo",
-    "enlace": "https://www.dropbox.com/scl/fi/ib4wswjcn2jw0qs5ldlgf/Mar-a-Daniela-Y-Su-Sonido-Lasser-Cielo-rojo.mp3?rlkey=u63aqzseupbasxhthtwknnhnx&st=wda6sipl&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Maria-Daniela-Y-Su-Sonido-Lasser-Cielo-rojo.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:37"
   },
   {
-    "caratula": "assets/covers/Paty-Cantu-Denisse-Guerrero-Al-mismo-kbrn-(DeSiempre).jpg",
-    "artista": "Patty Cantú & Denisse Guerrero",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Monica-Naranjo-Solo-se-vive-una-vez.jpg",
+    "artista": "Mónica Naranjo",
+    "nombre": "Solo se vive una vez",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Monica-Naranjo-Solo-se-vive-una-vez.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "4:02"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Paty-Cantu-Denisse-Guerrero-Al-mismo-kbrn-(DeSiempre).jpg",
+    "artista": "Paty Cantú & Denisse Guerrero",
     "nombre": "Al mismo kbrn (De siempre)",
-    "enlace": "https://www.dropbox.com/scl/fi/6brrmq70z3kcocrzo795i/Paty-Cant-Denisse-Guerrero-Al-mismo-kbrn-De-siempre.MP3?rlkey=80blvyf1k7qa6o3qznujz2rec&st=ljog6s27&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Paty-Cantu-Denisse-Guerrero-Al-mismo-kbrn-(De-siempre).MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "3:21"
   },
   {
-    "caratula": "assets/covers/Gloria-Trevi-Me-rio-de-ti.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Gloria-Trevi-Me-rio-de-ti.jpg",
     "artista": "Gloria Trevi",
     "nombre": "Me rió de ti",
-    "enlace": "https://www.dropbox.com/scl/fi/hx4xkti2ieop9r4x2zmz5/Gloria-Trevi-Me-ri-de-ti.mp3?rlkey=zffx6wx4g6q5udj15s2mqu0ds&st=rsnqi6wo&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Gloria-Trevi-Me-rio-de-ti.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "3:37"
   },
   {
-    "caratula": "assets/covers/Maria-Jose-Prefiero-ser-su-amante.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alejandra-Guzman-Mirala-miralo.jpg",
+    "artista": "Alejandra Guzmán",
+    "nombre": "Mírala, míralo",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alejandra-Guzman-Mirala-miralo.MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "5:10"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Maria-Jose-Prefiero-ser-su-amante.jpg",
     "artista": "María José",
     "nombre": "Prefiero ser su amante",
-    "enlace": "https://www.dropbox.com/scl/fi/lb1aiyual6x22tmhcn51k/Mar-a-Jos-Prefiero-ser-su-amante.mp3?rlkey=gzofaqfg0qpphqx3ne0wv90ld&st=ecm4kley&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Maria-Jose-Prefiero-ser-su-amante.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "3:25"
   },
   {
-    "caratula": "assets/covers/Lorena-Herrera-Yo-vivire.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Paulina-Rubio-Y-yo-sigo-aqui.jpg",
+    "artista": "Paulina Rubio",
+    "nombre": "Y yo sigo aquí",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Paulina-Rubio-Y-yo-sigo-aqui.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:57"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Shakira-Ojos-asi.jpg",
+    "artista": "Shakira",
+    "nombre": "Ojos así",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Shakira-Ojos-asi.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "10:10"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Thalia-A-quien-le-importa.jpg",
+    "artista": "Thalía",
+    "nombre": "A quién le importa",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Thalia-A-quien-le-importa.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "3:44"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Lorena-Herrera-Yo-vivire.jpg",
     "artista": "Lorena Herrera",
     "nombre": "Yo viviré",
-    "enlace": "https://www.dropbox.com/scl/fi/rn89k2j560c39zgi002z0/Lorena-Herrera-Yo-vivir.MP3?rlkey=x0v5srj7t1he2w4ljzufyzqz5&st=um8gko52&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Lorena-Herrera-Yo-vivire.MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "2:53"
   },
   {
-    "caratula": "assets/covers/Jeanette-Porque-te-vas.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Jeanette-Porque-te-vas.jpg",
     "artista": "Jeanette",
     "nombre": "Porque te vas",
-    "enlace": "https://www.dropbox.com/scl/fi/mtzzuf0l52bhqnivf0fi2/Jeanette-Porque-te-vas-R.mp3?rlkey=i8vvp4igv0o6068mxpvfcvtsr&st=t1gxt84p&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Jeanette-Porque-te-vas.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "4:39"
   },
   {
-    "caratula": "assets/covers/RBD-Solo-quedate-en-silencio.jpg",
-    "artista": "RBD",
-    "nombre": "Solo qédate en silencio",
-    "enlace": "https://www.dropbox.com/scl/fi/dfgb14otvxqav68oq6lfq/RBD-Solo-qu-date-en-silencio-R.MP3?rlkey=80507322q72btckopytrnzql1&st=7d076goo&dl=0&raw=1",
-    "seccion": "pop_electronico"
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Magneto-Vuela-vuela.jpg",
+    "artista": "Magneto",
+    "nombre": "Vuela, vuela",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Magneto-Vuela-vuela.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
+    "duracion": "4:23"
   },
   {
-    "caratula": "assets/covers/Fey-Marta-Sánchez-Azúcar-amargo.jpg",
-    "artista": "Fey & Marta Sánchez",
-    "nombre": "Azúcar amargo",
-    "enlace": "https://www.dropbox.com/scl/fi/a0q5vvod6v5xdgufrqrba/Fey-Az-car-amargo-F-Marta-S-nchez.MP3?rlkey=idb7aku13vrk0h2f2haim5gff&st=2wo5m3e7&dl=0&raw=1",
-    "seccion": "pop_electronico"
-  },
-  {
-    "caratula": "https://iraked.github.io/Project/assets/covers/Playa-Limbo-Asi-fue.jpg",
-    "artista": "Playa Limbo",
-    "nombre": "Así fue",
-    "enlace": "https://www.dropbox.com/scl/fi/9vewg0dcf3cejp17fhk2k/Playa-Limbo-As-fue-R.mp3?rlkey=exrg970di89tf5esj0gi71hvt&st=1moyce73&dl=0&raw=1",
-    "seccion": "pop_electronico"
-  }
-],
-"baladas": [
-  {
-    "caratula": "assets/covers/Sin-Bandera-Entra-en-mi-vida.jpg",
-    "artista": "Sin Bandera",
-    "nombre": "Entra en mi vida",
-    "enlace": "https://www.dropbox.com/scl/fi/0oh7bjer8l6b4ytin7d5d/Sin-Bandera-Entra-en-mi-vida.mp3?rlkey=e51jgs5jkgbfqmjrbz16lypzx&st=v3bl5a2j&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada pop",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/OV7-Enloqueceme.jpg",
+    "artista": "OV7",
+    "nombre": "Enloquéceme",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/OV7-Enloqueceme.mp3",
+    "seccion": "pop_electronico",
+    "genero": "pop electronico",
     "duracion": "4:03"
   },
   {
-    "caratula": "assets/covers/Alex-Ubago-Estar-contigo.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/RBD-Solo-quedate-en-silencio.jpg",
+    "artista": "RBD",
+    "nombre": "Solo quédate en silencio",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/RBD-Solo-quedate-en-silencio.MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "3:52"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Fey-Marta-Sanchez-Azucar-amargo.jpg",
+    "artista": "Fey & Marta Sánchez",
+    "nombre": "Azúcar amargo",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Fey-Marta-Sanchez-Azucar-amargo.MP3",
+    "seccion": "pop_electronico",
+    "genero": "pop",
+    "duracion": "4:32"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Playa-Limbo-Asi-fue.jpg",
+    "artista": "Playa Limbo",
+    "nombre": "Así fue",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Playa-Limbo-Asi-fue.mp3",
+    "seccion": "pop_electronico",
+    "genero": "balada pop",
+    "duracion": "4:22"
+  }
+],
+
+
+
+"baladas": [
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sin-Bandera-Entra-en-mi-vida.jpg",
+    "artista": "Sin Bandera",
+    "nombre": "Entra en mi vida",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sin-Bandera-Entra-en-mi-vida.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "4:05"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alex-Ubago-Estar-contigo.jpg",
     "artista": "Alex Ubago",
     "nombre": "Estar contigo",
-    "enlace": "https://www.dropbox.com/scl/fi/0wop1a4fol0l4lt21dxm6/Alex-Ubago-Estar-contigo.mp3?rlkey=8ya8r6sfutemxn8lqt66fivdn&st=3a9v0kgg&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alex-Ubago-Estar-contigo.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:19"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Reyli-Barba-Amor-del-bueno.jpg",
+    "artista": "Reyli Barba",
+    "nombre": "Amor del bueno",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Reyli-Barba-Amor-del-bueno.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "3:57"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Reik-Sabes.jpg",
+    "artista": "Reik",
+    "nombre": "Sabes",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Reik-Sabes.MP3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:40"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Camila-Besame.jpg",
+    "artista": "Camila",
+    "nombre": "Bésame",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Camila-Besame.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:08"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Enrique-Iglesias-Por-amarte.jpg",
+    "artista": "Enrique Iglesias",
+    "nombre": "Por amarte",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Enrique-Iglesias-Por-amarte.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "4:00"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Eros-Ramazzotti-La-cosa-mas-bella.jpg",
+    "artista": "Eros Ramazzotti",
+    "nombre": "La cosa más bella",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Eros-Ramazzotti-La-cosa-mas-bella.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "4:25"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Andrea-Bocelli-Karol-G-Vivo-por-ella.jpg",
+    "artista": "Andrea Bocelli & Karol G",
+    "nombre": "Vivo por ella",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Andrea-Bocelli-Karol-G-Vivo-por-ella.MP3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:21"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Thalia-Amore-mio.jpg",
+    "artista": "Thalía",
+    "nombre": "Amore mío",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Thalia-Amore-mio.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:50"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Rio-Roma-Mi-persona-favorita.jpg",
+    "artista": "Río Roma",
+    "nombre": "Mi persona favorita",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Rio-Roma-Mi-persona-favorita.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:10"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Chayanne-Yo-te-amo.jpg",
+    "artista": "Chayanne",
+    "nombre": "Yo te amo",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Chayanne-Yo-te-amo.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "5:38"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Luis-Miguel-La-incondicional.jpg",
+    "artista": "Luis Miguel",
+    "nombre": "La incondicional",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Luis-Miguel-La-incondicional.mp3",
+    "seccion": "baladas",
+    "genero": "bolero",
+    "duracion": "4:17"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Ha-Ash-Melendi-Destino-o-casualidad.jpg",
+    "artista": "Ha-Ash & Melendi",
+    "nombre": "Destino o casualidad",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Ha-Ash-Melendi-Destino-o-casualidad.MP3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "4:20"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Shakira-Tu.png",
+    "artista": "Shakira",
+    "nombre": "Tú",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Shakira-Tu.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "3:32"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Griss-Romero-Cuando-tu-me-besas.jpg",
+    "artista": "Griss Romero",
+    "nombre": "Cuando tú me besas",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Griss-Romero-Cuando-tu-me-besas.MP3",
+    "seccion": "baladas",
+    "genero": "bolero",
+    "duracion": "3:11"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Carolina-Ross-Que-bueno-que-fuiste-tu.png",
+    "artista": "Carolina Ross",
+    "nombre": "Qué bueno que fuiste tú",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Carolina-Ross-Que-bueno-que-fuiste-tu.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "2:50"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/La-Oreja-De-Van-Gogh-Jueves.jpg",
+    "artista": "La Oreja De Van Gogh",
+    "nombre": "Jueves",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/La-Oreja-De-Van-Gogh-Jueves.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:54"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Laura-Paussini-Miguel-Bose-Te-amare.png",
+    "artista": "Laura Pausini & Miguel Bosé",
+    "nombre": "Te amaré",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Laura-Paussini-Miguel-Bose-Te-amare.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "5:16"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alex-Campos-Tu-poeta.jpg",
+    "artista": "Alex Campos",
+    "nombre": "Tu poeta",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alex-Campos-Tu-poeta.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "4:17"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alexander-Te-amo.jpg",
+    "artista": "Alexander Acha",
+    "nombre": "Te amo",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alexander-Te-amo.mp3",
     "seccion": "baladas",
     "genero": "balada romántica",
     "duracion": "3:52"
   },
   {
-    "caratula": "assets/covers/Reyli-Barba-Amor-del-bueno.jpg",
-    "artista": "Reyli Barba",
-    "nombre": "Amor del bueno",
-    "enlace": "https://www.dropbox.com/scl/fi/ndoyrngagudcij6bnuzl8/Reyli-Barba-Amor-del-bueno.mp3?rlkey=0o871s13l34v6f31i19hr74pc&st=2nv66c4x&dl=0&raw=1",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Manuel-Mijares-Para-amarnos-mas.jpg",
+    "artista": "Manuel Mijares",
+    "nombre": "Para amarnos más",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Manuel-Mijares-Para-amarnos-mas.mp3",
     "seccion": "baladas",
     "genero": "balada romántica",
+    "duracion": "3:22"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Ricardo-Arjona-Independiente.jpg",
+    "artista": "Ricardo Arjona & Gaby Moreno",
+    "nombre": "Fuiste tú",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Ricardo-Arjona-Fuiste-tu.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "4:20"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Santiago-Cruz-Para-volverte-un-recuerdo.png",
+    "artista": "Santiago Cruz",
+    "nombre": "Para volverte un recuerdo",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Santiago-Cruz-Para-volverte-un-recuerdo.mp3",
+    "seccion": "baladas",
+    "genero": "balada romántica",
+    "duracion": "3:47"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Ricky-Martin-Te-extrano-te-olvido-te-amo.jpg",
+    "artista": "Ricky Martin",
+    "nombre": "Te extraño, te olvido, te amo",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Ricky-Martin-Te-extrano-te-olvido-te-amo.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "4:41"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Tranzas-Un-nuevo-amor.jpg",
+    "artista": "Tranzas",
+    "nombre": "Un nuevo amor",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Tranzas-Un-nuevo-amor.mp3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "3:22"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Luck-Ra-Que-Sed.jpg",
+    "artista": "Luck Ra",
+    "nombre": "Juro que me dolió",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Luck-Ra-Juro-que-me-dolio.MP3",
+    "seccion": "baladas",
+    "genero": "balada pop",
+    "duracion": "2:30"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Ha-Ash-No-fue-lo-que-hiciste.jpg",
+    "artista": "Ha-Ash",
+    "nombre": "No fue lo que hiciste",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Ha-Ash-No-fue-lo-que-hiciste.MP3",
+    "seccion": "baladas",
+    "genero": "balada pop",
     "duracion": "4:02"
   },
   {
-    "caratula": "assets/covers/Camila-Besame.jpg",
-    "artista": "Camila",
-    "nombre": "Bésame",
-    "enlace": "https://www.dropbox.com/scl/fi/y1q3fji5u1rgv38z0gvrx/Camila-Besame.mp3?rlkey=d45mm63s420bajwok0hr44vo7&st=9v0bq9n4&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "pop latino",
-    "duracion": "4:12"
-  },
-  {
-    "caratula": "assets/covers/Enrique-Iglesias-Por-amarte.jpg",
-    "artista": "Enrique Iglesias",
-    "nombre": "Por amarte",
-    "enlace": "https://www.dropbox.com/scl/fi/9lc2we7tyktgefga5fpwd/Enrique-Iglesias-Por-amarte.mp3?rlkey=qlfuaa1e2kfywf654etjplwbv&st=j1wym4z1&dl=0&raw=1",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Griss-Romero-C-Kan-Antes-de-apagarnos.jpg",
+    "artista": "Griss Romero & C-Kan",
+    "nombre": "Antes de apagarnos",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Griss-Romero-C-Kan-Antes-de-apagarnos.mp3",
     "seccion": "baladas",
     "genero": "balada romántica",
     "duracion": "4:04"
   },
   {
-    "caratula": "assets/covers/Eros-Ramazzotti-La-cosa-mas-bella.jpg",
-    "artista": "Eros Ramazzotti",
-    "nombre": "La cosa más bella",
-    "enlace": "https://www.dropbox.com/scl/fi/dpkhahsotskuerlbe9hse/Eros-Ramazzotti-La-cosa-mas-bella.mp3?rlkey=x658yeovasbqjn4e7erum46tu&st=19xun4gu&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada romántica",
-    "duracion": "4:27"
-  },
-  {
-    "caratula": "assets/covers/Thalia-Amore-mio.jpg",
-    "artista": "Thalía",
-    "nombre": "Amore mío",
-    "enlace": "https://www.dropbox.com/scl/fi/vur75e1askwt4jq86vktt/Thalia-Amore-mio.mp3?rlkey=4qua09q5ljjql8xa0bb6i8wfk&st=nxqjffjr&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "pop latino",
-    "duracion": "3:47"
-  },
-  {
-    "caratula": "assets/covers/Chayanne-Yo-te-amo.jpg",
-    "artista": "Chayanne",
-    "nombre": "Yo te amo",
-    "enlace": "https://www.dropbox.com/scl/fi/hs25il3nfyj8iu8n0938m/Chayanne-Yo-te-amo.mp3?rlkey=n7ycoo7nj3i27iip5wzuhyht6&st=typvdexc&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada romántica",
-    "duracion": "4:50"
-  },
-  {
-    "caratula": "assets/covers/Luis-Miguel-La-incondicional.jpg",
-    "artista": "Luis Miguel",
-    "nombre": "La incondicional",
-    "enlace": "https://www.dropbox.com/scl/fi/rizmrtx9z453rgojgoi5k/Luis-Miguel-La-incondicional.mp3?rlkey=zsx2ttc3cyfp2cv8x6le80d0w&st=bo309a0a&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "bolero",
-    "duracion": "4:23"
-  },
-  {
-    "caratula": "assets/covers/Ha-Ash-Melendi-Destino-o-casualidad.jpg",
-    "artista": "Ha*Ash & Melendi",
-    "nombre": "Destino o casualidad",
-    "enlace": "https://www.dropbox.com/scl/fi/pb9qs3oij4wc4pde0svz9/Ha-Ash-Melendi-Destino-o-casualidad.MP3?rlkey=xd3hjsznmpg58e9e3ywlql4hd&st=o818mi3y&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "pop latino",
-    "duracion": "4:19"
-  },
-
-
-
-  {
-    "caratula": "assets/covers/Shakira-Tu.png",
-    "artista": "Shakira",
-    "nombre": "Tú",
-    "enlace": "https://www.dropbox.com/scl/fi/blao69eenootvvl503j7j/Shakira-Tu.mp3?rlkey=9qfm9gnqvxcgkxhy5xbxxu9o&st=tg2wq59j&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada pop",
-    "duracion": "3:36"
-  },
-  {
-    "caratula": "assets/covers/La-Oreja-De-Van-Gogh-Jueves.jpg",
-    "artista": "La Oreja De Van Gogh",
-    "nombre": "Jueves",
-    "enlace": "https://www.dropbox.com/scl/fi/w84zno9k46qxw3ccs7frd/La-Oreja-De-Van-Gogh-Jueves.mp3?rlkey=j3beh5k629ke4iihkbilp0md2&st=rbxdohg7&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada pop",
-    "duracion": "3:59"
-  },
-  {
-    "caratula": "assets/covers/Laura-Paussini-Miguel-Bose-Te-amare.png",
-    "artista": "Laura Pausini & Miguel Bosé",
-    "nombre": "Te amaré",
-    "enlace": "https://www.dropbox.com/scl/fi/5m66ql15ivif3sdyf92sc/Laursa-Paussini-Miguel-Bose-Te-amare.mp3?rlkey=ew5ri09u0ov4cg3xw0hvo20w3&st=23pw7asq&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada romántica",
-    "duracion": "5:15"
-  },
-  {
-    "caratula": "assets/covers/Alex-Campos-Tu-poeta.jpg",
-    "artista": "Alex Campos",
-    "nombre": "Tú poeta",
-    "enlace": "https://www.dropbox.com/scl/fi/25xmy7x2fzynd5rwjmngf/Alex-Campos-Tu-poeta.mp3?rlkey=xfrd1xzqmzkjjf1oua411cddm&st=x0u4k9ky&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada romántica",
-    "duracion": "3:53"
-  },
-  {
-    "caratula": "assets/covers/Ricardo-Arjona-Fuiste-tu.jpg",
-    "artista": "Ricardo Arjona & Gaby Moreno",
-    "nombre": "Fuiste tú",
-    "enlace": "https://www.dropbox.com/scl/fi/g9jc7np5311qcpqw1xcj3/Ricardo-Arjona-Fuiste-tu.mp3?rlkey=cpe78066anly05gcsccas4twv&st=b11zo4sa&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "pop latino",
-    "duracion": "4:25"
-  },
-  {
-    "caratula": "assets/covers/Santiago-Cruz-Para-volverte-un-recuerdo.png",
-    "artista": "Santiago Cruz",
-    "nombre": "Para volverte un recuerdo",
-    "enlace": "https://www.dropbox.com/scl/fi/58z5m667xea0s7l19nuk2/Santiago-Cruz-Para-volverte-un-recuerdo.mp3?rlkey=xe0ihbsqpmj88wivjnlnx0weu&st=7zw56eej&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada romántica",
-    "duracion": "3:53"
-  },
-  {
-    "caratula": "assets/covers/Tranzas-Un-nuevo-amor.jpg",
-    "artista": "Tranzas",
-    "nombre": "Un nuevo amor",
-    "enlace": "https://www.dropbox.com/scl/fi/lcbawlzlkvr7tdn5arqjr/Tranzas-Un-nuevo-amor.mp3?rlkey=avv6xqlsk9wcxudesuvz942xq&st=35qyzlle&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada pop",
-    "duracion": "3:26"
-  },
-  {
-    "caratula": "assets/covers/Luck-Ra-Juro-que-me-dolio.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Luck-Ra-Ya-no-vuelvas.jpg",
     "artista": "Luck Ra",
-    "nombre": "Juro que me dolió",
-    "enlace": "https://www.dropbox.com/scl/fi/1pcqoccxntiv6jbwckh5v/Luck-Ra-Juro-que-me-dolio.MP3?rlkey=8a7z6oc91h66geerdvtblkfy7&st=4v720g0n&dl=0&raw=1",
+    "nombre": "Ya no vuelvas",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Luck-Ra-Ya-no-vuelvas.mp3",
     "seccion": "baladas",
-    "genero": "pop latino",
-    "duracion": "3:05"
+    "genero": "balada pop",
+    "duracion": "2:21"
   },
   {
-    "caratula": "assets/covers/Griss-Romero-C-Kan-Antes-de-apagarnos.jpg",
-    "artista": "Griss Romero & C-Kan",
-    "nombre": "Antes de apagarnos",
-    "enlace": "https://www.dropbox.com/scl/fi/983rcyi9oh2bz06mstvlq/Griss-Romero-C-Kan-Antes-de-apagarnos.mp3?rlkey=zqnqqdfj0foq6efpyrzgbn3m7&st=hzrvonq6&dl=0&raw=1",
-    "seccion": "baladas",
-    "genero": "balada romántica",
-    "duracion": "4:05"
-  },
-  {
-    "caratula": "assets/covers/Jose-Madeo-Zaira-Jabnell-Zero.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Jose-Madeo-Zaira-Jabnell-Zero.jpg",
     "artista": "José Madero & Zaira Jabnell",
     "nombre": "Zero",
-    "enlace": "https://www.dropbox.com/scl/fi/a6jtb1o7t43gbk9fndow0/Jose-Madeo-Zaira-Jabnell-Zero.MP3?rlkey=sf3vypim8ajrj855nuoax0vmv&st=38c5zlbx&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Jose-Madeo-Zaira-Jabnell-Zero.MP3",
     "seccion": "baladas",
-    "genero": "rock alternativo",
-    "duracion": "4:32"
+    "genero": "balada rock",
+    "duracion": "4:30"
   }
-
-
 ],
+
+
+
 "essentials": [
   {
     "caratula": "assets/covers/Cher-Believe.jpg",
@@ -1868,6 +2475,7 @@
 ]
 
 }
+
 
 
 
