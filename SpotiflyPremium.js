@@ -1,6 +1,9 @@
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 📦 Renderizado directo desde JSON en contenedores específicos
 
+let isModalActive = false;
+let isWrappedActive = false;
+
 document.addEventListener("DOMContentLoaded", async () => {
   const globalPlayer = document.getElementById("global-player");
 
@@ -18,6 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderCards("pop_electronico", "cards-section-7", data);
     renderCards("baladas", "cards-section-8", data);
     renderCards("essentials", "cards-section-9", data);
+    renderCards("eighties", "cards-section-10", data);
 
     // ✅ Activar reproducción continua por contenedor
     initPlaybackPerContainer("cards-section-1");
@@ -29,6 +33,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initPlaybackPerContainer("cards-section-7");
     initPlaybackPerContainer("cards-section-8");
     initPlaybackPerContainer("cards-section-9");
+    initPlaybackPerContainer("cards-section-10");
 
     // ✅ Activar carrusel por contenedor
     initCarousel("cards-section-1");
@@ -40,6 +45,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initCarousel("cards-section-7");
     initCarousel("cards-section-8");
     initCarousel("cards-section-9");
+    initCarousel("cards-section-10");
       
     initModalPlayer("cards-section-1", data.hits);
     initModalPlayer("cards-section-2", data.regional_mexicano);
@@ -50,6 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     initModalPlayer("cards-section-7", data.pop_electronico);
     initModalPlayer("cards-section-8", data.baladas);
     initModalPlayer("cards-section-9", data.essentials);
+    initModalPlayer("cards-section-10", data.eighties);
 
 
   } catch (error) {
@@ -63,16 +70,19 @@ function renderCards(clave, contenedorId, data) {
   const tracks = data[clave];
   if (!container || !Array.isArray(tracks)) return;
 
-  tracks.forEach((track) => {
+  tracks.forEach((track, index) => {
     const card = document.createElement("div");
     card.classList.add("card");
 
+    // Usamos data-id único basado en la sección y el índice
     card.innerHTML = `
       <div class="cover"><img src="${track.caratula}" alt="Cover" /></div>
       <div class="info">
         <h2>${track.artista}</h2>
         <p>${track.nombre}</p>
-        <button class="btn-play" data-src="${track.enlace}">
+        <button class="btn-play" 
+                data-src="${track.enlace}" 
+                data-id="${clave}-${index}">
           <i class="fa-solid fa-play"></i>
         </button>
       </div>
@@ -81,6 +91,7 @@ function renderCards(clave, contenedorId, data) {
     container.appendChild(card);
   });
 }
+
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B2.1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🔊 Reproducción continua con evento único y estado global + prevención de colisión
@@ -258,217 +269,228 @@ function highlightCard(activeCard) {
   });
   activeCard.classList.add("active");
 }
+
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🎛️ Reproductor Modal Universal con navegación, cola, controles extendidos, progreso visual interactivo y control de colisión
 
-let isModalActive = false;
-
 function initModalPlayer(contenedorId, playlistData) {
-  const container = document.getElementById(contenedorId);
-  if (!container || !Array.isArray(playlistData)) return;
+  const container = document.getElementById(contenedorId);
+  if (!container || !Array.isArray(playlistData)) return;
 
-  const modal = document.getElementById("modal-player");
-  const modalAudio = document.getElementById("modal-audio");
-  const modalCover = document.getElementById("modal-cover");
-  const modalArtist = document.getElementById("modal-artist");
-  const modalTitle = document.getElementById("modal-title");
-  const closeBtn = document.querySelector(".close-modal");
-  const btnPrev = document.getElementById("btn-prev");
-  const btnNext = document.getElementById("btn-next");
-  const modalQueue = document.getElementById("modal-queue");
+  const modal = document.getElementById("modal-player");
+  const modalAudio = document.getElementById("modal-audio");
+  const modalCover = document.getElementById("modal-cover");
+  const modalArtist = document.getElementById("modal-artist");
+  const modalTitle = document.getElementById("modal-title");
+  const closeBtn = document.querySelector(".close-modal");
+  const btnPrev = document.getElementById("btn-prev");
+  const btnNext = document.getElementById("btn-next");
+  const modalQueue = document.getElementById("modal-queue");
 
-  const volumeControl = document.getElementById("volume-control");
-  const speedControl = document.getElementById("speed-control");
-  const loopToggle = document.getElementById("loop-toggle");
-  const muteToggle = document.getElementById("mute-toggle");
+  const volumeControl = document.getElementById("volume-control");
+  const speedControl = document.getElementById("speed-control");
+  const loopToggle = document.getElementById("loop-toggle");
+  const muteToggle = document.getElementById("mute-toggle");
 
-  const toggleBtn = document.getElementById("btn-toggle");
-  const progressBar = document.getElementById("progress-bar");
-  const progressContainer = document.querySelector(".progress-container");
+  const toggleBtn = document.getElementById("btn-toggle");
+  const progressBar = document.getElementById("progress-bar");
+  const progressContainer = document.querySelector(".progress-container");
 
-  let currentIndex = -1;
-  const localPlaylist = [...playlistData]; // 🧩 Aislamiento por sección
+  let currentIndex = -1;
+  const localPlaylist = [...playlistData]; // 🧩 Aislamiento por sección
 
-  function showModal(track) {
-    isModalActive = true;
+  function showModal(track) {
+    // La variable 'isModalActive' ahora se usa sin 'let' ya que es global
+    isModalActive = true; 
 
-    modalCover.src = track.caratula;
-    modalArtist.textContent = track.artista;
-    modalTitle.textContent = track.nombre;
+    modalCover.src = track.caratula;
+    modalArtist.textContent = track.artista;
+    modalTitle.textContent = track.nombre;
 
-    modalAudio.pause();
-    modalAudio.removeAttribute("src");
-    modalAudio.src = track.enlace;
-    modalAudio.load();
+    modalAudio.pause();
+    modalAudio.removeAttribute("src");
+    modalAudio.src = track.enlace;
+    modalAudio.load();
 
-    modal.classList.remove("hidden");
+    modal.classList.remove("hidden");
 
-    modalCover.classList.add("animate");
-    setTimeout(() => modalCover.classList.remove("animate"), 400);
+    modalCover.classList.add("animate");
+    setTimeout(() => modalCover.classList.remove("animate"), 400);
 
-    modalAudio.oncanplay = () => {
-      modalAudio.play().catch(err => {
-        console.warn("⚠️ Error al reproducir:", err.name);
-      });
-      const icon = toggleBtn?.querySelector("i");
-      if (icon) {
-        icon.classList.remove("fa-play");
-        icon.classList.add("fa-pause");
-      }
-    };
-  }
+    modalAudio.oncanplay = () => {
+      modalAudio.play().catch(err => {
+        console.warn("⚠️ Error al reproducir:", err.name);
+      });
+      const icon = toggleBtn?.querySelector("i");
+      if (icon) {
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+      }
+    };
+  }
 
-  function playTrack(index) {
-  if (index < 0 || index >= localPlaylist.length) return;
+  function playTrack(index) {
+  if (index < 0 || index >= localPlaylist.length) return;
 
-  currentIndex = index;
-  showModal(localPlaylist[index]);
+  currentIndex = index;
+  showModal(localPlaylist[index]);
 
-  if (btnNext) {
-  btnNext.onclick = () => {
-    if (currentIndex < localPlaylist.length - 1) {
-      playTrack(currentIndex + 1);
-    }
-  };
+  if (btnNext) {
+  btnNext.onclick = () => {
+    if (currentIndex < localPlaylist.length - 1) {
+      playTrack(currentIndex + 1);
+    }
+  };
 }
 
 if (btnPrev) {
-  btnPrev.onclick = () => {
-    if (currentIndex > 0) {
-      playTrack(currentIndex - 1);
-    }
-  };
-}
-//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B7 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  // 🔁 Reproducción continua contextual
-  modalAudio.onended = () => {
-    const nextIndex = currentIndex + 1;
-    if (nextIndex < localPlaylist.length) {
-      playTrack(nextIndex);
-    } else {
-      currentIndex = -1;
-      const icon = toggleBtn?.querySelector("i");
-      if (icon) {
-        icon.classList.remove("fa-pause");
-        icon.classList.add("fa-play");
-      }
-      if (progressBar) progressBar.style.width = "0%";
-    }
-  };
+  btnPrev.onclick = () => {
+    if (currentIndex > 0) {
+      playTrack(currentIndex - 1);
+    }
+  };
 }
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      isModalActive = false;
-      closeBtn.click();
-    }
-  });
 
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-      isModalActive = false;
-      closeBtn.click();
-    }
-  });
 
-  closeBtn.addEventListener("click", () => {
-    isModalActive = false;
-    modal.classList.add("hidden");
-    modalAudio.pause();
-    modalAudio.removeAttribute("src");
-    currentIndex = -1;
-    const icon = toggleBtn?.querySelector("i");
-    if (icon) {
-      icon.classList.remove("fa-pause");
-      icon.classList.add("fa-play");
-    }
-    if (progressBar) progressBar.style.width = "0%";
-  });
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B8 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🔁 Reproducción continua contextual
+  modalAudio.onended = () => {
+    const nextIndex = currentIndex + 1;
+    if (nextIndex < localPlaylist.length) {
+      playTrack(nextIndex);
+    } else {
+      currentIndex = -1;
+      const icon = toggleBtn?.querySelector("i");
+      if (icon) {
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
+      }
+      if (progressBar) progressBar.style.width = "0%";
+    }
+  };
+}
 
-  if (volumeControl) {
-    volumeControl.addEventListener("input", () => {
-      modalAudio.volume = parseFloat(volumeControl.value);
-    });
-  }
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      // 'isModalActive' ya es global
+      isModalActive = false; 
+      closeBtn.click();
+    }
+  });
 
-  if (speedControl) {
-    speedControl.addEventListener("change", () => {
-      modalAudio.playbackRate = parseFloat(speedControl.value);
-    });
-  }
+  document.addEventListener("keydown", (e) => {
+    // 🛑 PREVENCIÓN DE COLISIÓN (Wrapped): Si Wrapped está activo, NO cierres el Modal Player.
+    // 'isWrappedActive' ya es global y accesible
+    if (isWrappedActive) return; 
+   
 
-  if (loopToggle) {
-    loopToggle.addEventListener("click", () => {
-      modalAudio.loop = !modalAudio.loop;
-      loopToggle.textContent = `Loop: ${modalAudio.loop ? "On" : "Off"}`;
-    });
-  }
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      // 'isModalActive' ya es global
+      isModalActive = false; 
+      closeBtn.click();
+    }
+  });
 
-  if (muteToggle) {
-    muteToggle.addEventListener("click", () => {
-      modalAudio.muted = !modalAudio.muted;
-      muteToggle.textContent = modalAudio.muted ? "Unmute" : "Mute";
-    });
-  }
+  closeBtn.addEventListener("click", () => {
+    // 'isModalActive' ya es global
+    isModalActive = false; 
+    modal.classList.add("hidden");
+    modalAudio.pause();
+    modalAudio.removeAttribute("src");
+    currentIndex = -1;
+    const icon = toggleBtn?.querySelector("i");
+    if (icon) {
+      icon.classList.remove("fa-pause");
+      icon.classList.add("fa-play");
+    }
+    if (progressBar) progressBar.style.width = "0%";
+  });
 
-  if (toggleBtn) {
-    toggleBtn.addEventListener("click", () => {
-      const icon = toggleBtn.querySelector("i");
-      if (!icon) return;
+  if (volumeControl) {
+    volumeControl.addEventListener("input", () => {
+      modalAudio.volume = parseFloat(volumeControl.value);
+    });
+  }
 
-      if (modalAudio.paused) {
-        modalAudio.play().catch(err => {
-          console.warn("⚠️ Error al reproducir:", err.name);
-        });
-        icon.classList.remove("fa-play");
-        icon.classList.add("fa-pause");
-      } else {
-        modalAudio.pause();
-        icon.classList.remove("fa-pause");
-        icon.classList.add("fa-play");
-      }
-    });
-  }
+  if (speedControl) {
+    speedControl.addEventListener("change", () => {
+      modalAudio.playbackRate = parseFloat(speedControl.value);
+    });
+  }
 
-  modalAudio.addEventListener("timeupdate", () => {
-    if (modalAudio.duration && progressBar) {
-      const percent = (modalAudio.currentTime / modalAudio.duration) * 100;
-      progressBar.style.width = `${percent}%`;
-    }
-  });
+  if (loopToggle) {
+    loopToggle.addEventListener("click", () => {
+      modalAudio.loop = !modalAudio.loop;
+      loopToggle.textContent = `Loop: ${modalAudio.loop ? "On" : "Off"}`;
+    });
+  }
 
-  if (progressContainer && progressBar) {
-    progressContainer.addEventListener("click", (e) => {
-      const rect = progressContainer.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      const percent = clickX / rect.width;
-      modalAudio.currentTime = percent * modalAudio.duration;
-      progressBar.style.width = `${percent * 100}%`;
-    });
-  }
+  if (muteToggle) {
+    muteToggle.addEventListener("click", () => {
+      modalAudio.muted = !modalAudio.muted;
+      muteToggle.textContent = modalAudio.muted ? "Unmute" : "Mute";
+    });
+  }
 
-  container.querySelectorAll(".card").forEach((card, index) => {
-    const btn = card.querySelector(".btn-play");
-    if (!btn) return;
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      const icon = toggleBtn.querySelector("i");
+      if (!icon) return;
 
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
+      if (modalAudio.paused) {
+        modalAudio.play().catch(err => {
+          console.warn("⚠️ Error al reproducir:", err.name);
+        });
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+      } else {
+        modalAudio.pause();
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
+      }
+    });
+  }
 
-      const globalPlayer = document.getElementById("global-player");
-      if (globalPlayer && !globalPlayer.paused) globalPlayer.pause();
+  modalAudio.addEventListener("timeupdate", () => {
+    if (modalAudio.duration && progressBar) {
+      const percent = (modalAudio.currentTime / modalAudio.duration) * 100;
+      progressBar.style.width = `${percent}%`;
+    }
+  });
 
-      playTrack(index);
+  if (progressContainer && progressBar) {
+    progressContainer.addEventListener("click", (e) => {
+      const rect = progressContainer.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const percent = clickX / rect.width;
+      modalAudio.currentTime = percent * modalAudio.duration;
+      progressBar.style.width = `${percent * 100}%`;
+    });
+  }
 
-      if (modalQueue) {
-        modalQueue.innerHTML = "";
-        localPlaylist.forEach((track, i) => {
-          const li = document.createElement("li");
-          li.textContent = `${track.artista} – ${track.nombre}`;
-          li.addEventListener("click", () => playTrack(i));
-          modalQueue.appendChild(li);
-        });
-      }
-    });
-  });
+  container.querySelectorAll(".card").forEach((card, index) => {
+    const btn = card.querySelector(".btn-play");
+    if (!btn) return;
+
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+
+      const globalPlayer = document.getElementById("global-player");
+      if (globalPlayer && !globalPlayer.paused) globalPlayer.pause();
+
+      playTrack(index);
+
+      if (modalQueue) {
+        modalQueue.innerHTML = "";
+        localPlaylist.forEach((track, i) => {
+          const li = document.createElement("li");
+          li.textContent = `${track.artista} – ${track.nombre}`;
+          li.addEventListener("click", () => playTrack(i));
+          modalQueue.appendChild(li);
+        });
+      }
+    });
+  });
 }
