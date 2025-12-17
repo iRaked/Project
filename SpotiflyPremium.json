@@ -2337,145 +2337,524 @@
 
 "essentials": [
   {
-    "caratula": "assets/covers/Cher-Believe.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Cher-Believe.jpg",
     "artista": "Cher",
     "nombre": "Believe",
-    "enlace": "https://www.dropbox.com/scl/fi/qhg0td7marap7y4xbbpih/Cher-Believe.MP3?rlkey=87uh6wn6gig0w3fqae92ymoq6&st=yvde37jd&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Cher-Believe.MP3",
     "seccion": "essentials",
     "genero": "dance",
-    "duracion": "3:58"
+    "duracion": "3:59"
   },
   {
-    "caratula": "assets/covers/Yeah-Yeah-Yeahs-Heads-will-roll.jpg",
-    "artista": "Yeah Yeah Yeahs",
-    "nombre": "Heads Will Roll",
-    "enlace": "https://www.dropbox.com/scl/fi/ue6zmnvy7jpzsin8fq6vt/Yeah-Yeah-Yeahs-Heads-will-roll.MP3?rlkey=83w2ceigwr3prn7112k4kxph7&st=0gtwqmb2&dl=0&raw=1",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Ace-Of-Base-All-that-she-wants.jpg",
+    "artista": "Ace of Base",
+    "nombre": "All That She Wants",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Ace-Of-Base-All-that-she-wants.mp3",
     "seccion": "essentials",
-    "genero": "synthpop",
-    "duracion": "3:41"
+    "genero": "reggae",
+    "duracion": "3:28"
   },
   {
-    "caratula": "assets/covers/Sia-Sean-Paul-Cheap-thrills.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Your-Favorite-Garcon-Baby-work-it.jpg",
+    "artista": "Your Favorite Garçon",
+    "nombre": "Baby Work It",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Your-Favorite-Garcon-Baby-work-it.mp3",
+    "seccion": "essentials",
+    "genero": "electro flow",
+    "duracion": "4:42"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/La-Bouche-Be-my-lover.jpg",
+    "artista": "La Bouche",
+    "nombre": "Be My Lover",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/La-Bouche-Be-my-lover.mp3",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "4:00"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Sia-Sean-Paul-Cheap-thrills.jpg",
     "artista": "Sia & Sean Paul",
     "nombre": "Cheap Thrills",
-    "enlace": "https://www.dropbox.com/scl/fi/ojdipn2qvc75446auwx2s/Sia-Sean-Paul-Cheap-thrills.mp3?rlkey=syjzpq005bu3fmkx9bxpklphv&st=3beab60m&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Sia-Sean-Paul-Cheap-thrills.mp3",
     "seccion": "essentials",
     "genero": "dancehall",
-    "duracion": "3:44"
+    "duracion": "3:15"
   },
   {
-    "caratula": "assets/covers/Madonna-Sorry.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Evanescense-Bring-me-to-life.jpg",
+    "artista": "Evanescence",
+    "nombre": "Bring Me to Life",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Evanescense-Bring-me-to-life.MP3",
+    "seccion": "essentials",
+    "genero": "metal",
+    "duracion": "3:51"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Madonna-Sorry.jpg",
     "artista": "Madonna",
     "nombre": "Sorry",
-    "enlace": "https://www.dropbox.com/scl/fi/y4vl9aqhyx5o8q56auzsh/Madonna-Sorry.MP3?rlkey=iq5suxrmj83htm853zhxzgllz&st=yjpa2qs6&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Madonna-Sorry.MP3",
     "seccion": "essentials",
     "genero": "pop electrónico",
     "duracion": "4:43"
   },
   {
-    "caratula": "assets/covers/Chocolate-Puma-Colonel-Red-Back-home.jpg",
-    "artista": "Chocolate Puma & Colonel Red",
-    "nombre": "Back Home",
-    "enlace": "https://www.dropbox.com/scl/fi/yfavbkav3ycwxpuljxyyz/Chocolate-Puma-Colonel-Red-Back-home.mp3?rlkey=ujgrjweh9oph3umx2l7zcqxn8&st=sjdqvmkc&dl=0&raw=1",
-    "seccion": "essentials",
-    "genero": "house",
-    "duracion": "6:40"
-  },
-  {
-    "caratula": "assets/covers/Temporada-equivocada-DJ-Minglong.png",
-    "artista": "秋原依",
-    "nombre": "Temporada equivocada",
-    "enlace": "https://www.dropbox.com/scl/fi/cl2w2wvvbxdx1jlrh5qry/Temporada-equivocada-DJ-Minglong.mp3?rlkey=upmdoatl3wthv6lgqev0j20mg&st=ft3qdu9t&dl=0&raw=1",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Yeah-Yeah-Yeahs-Heads-will-roll.jpg",
+    "artista": "Yeah Yeah Yeahs",
+    "nombre": "Heads Will Roll",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Yeah-Yeah-Yeahs-Heads-will-roll.MP3",
     "seccion": "essentials",
     "genero": "synthpop",
-    "duracion": "3:57"
+    "duracion": "3:40"
   },
-{
-    "caratula": "assets/covers/The-Black-Eyed-Peas-I-gotta-feeling.jpg",
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Chocolate-Puma-Colonel-Red-Back-home.jpg",
+    "artista": "Chocolate Puma & Colonel Red",
+    "nombre": "Back Home",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Chocolate-Puma-Colonel-Red-Back-home.mp3",
+    "seccion": "essentials",
+    "genero": "house",
+    "duracion": "3:30"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Temporada-equivocada-DJ-Minglong.png",
+    "artista": "秋原依",
+    "nombre": "Temporada equivocada",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/DJ-Minglong-Temporada-equivocada.mp3",
+    "seccion": "essentials",
+    "genero": "electronica",
+    "duracion": "4:50"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/The-Black-Eyed-Peas-I-gotta-feeling.jpg",
     "artista": "The Black Eyed Peas",
     "nombre": "I Gotta Feeling",
-    "enlace": "https://www.dropbox.com/scl/fi/2z99xnd4kehy5rage4fvt/The-Black-Eyed-Peas-I-gotta-feeling.MP3?rlkey=cibi9k738owhscoyxn35f87fx&st=l0nknur2&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/The-Black-Eyed-Peas-I-gotta-feeling.MP3",
     "seccion": "essentials",
     "genero": "dance",
     "duracion": "4:49"
   },
   {
-    "caratula": "assets/covers/Dimitri-Vegas-Tiesto-Thank-you.webp",
-    "artista": "Dimitri Vegas & Tiësto",
-    "nombre": "Thank You (Not So Bad)",
-    "enlace": "https://www.dropbox.com/scl/fi/amp1zsvk4zy98zs0xaww8/Dimitri-Vegas-Tiesto-Thank-you.MP3?rlkey=iz79ewvmztjgopx18oosoxsot&st=ffnjy4tn&dl=0&raw=1",
-    "seccion": "essentials",
-    "genero": "electrónica",
-    "duracion": "2:20"
-  },
-  {
-    "caratula": "assets/covers/Evanescense-Bring-me-to-life.jpg",
-    "artista": "Evanescence",
-    "nombre": "Bring Me to Life",
-    "enlace": "https://www.dropbox.com/scl/fi/iqnao4biyga8hxxsgnytn/Evanescense-Bring-me-to-life.MP3?rlkey=vhyw0kicxci18dcnvpr16rj22&st=dqjrnw6e&dl=0&raw=1",
-    "seccion": "essentials",
-    "genero": "metal",
-    "duracion": "3:57"
-  },
-  {
-    "caratula": "assets/covers/Anti-Funk-Everybody-jump.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Anti-Funk-Everybody-jump.jpg",
     "artista": "Anti Funky",
     "nombre": "Everybody Jump",
-    "enlace": "https://www.dropbox.com/scl/fi/33qkq3h6hbgbronm1ni1n/Anti-Funk-Everybody-jump.mp3?rlkey=321ig004lhx3hwdifwfjbxuol&st=x1qutyjk&dl=0&raw=1",
-    "seccion": "essentials",
-    "genero": "house",
-    "duracion": "3:34"
-  },
-  {
-    "caratula": "assets/covers/Vengaboys-Boom-Boom-Boom-Boom.jpg",
-    "artista": "Vengaboys",
-    "nombre": "Boom Boom Boom Boom",
-    "enlace": "https://www.dropbox.com/scl/fi/18qeo36ujn4n39kdkrsbs/Vengaboys-Boom-Boom-Boom-Boom.mp3?rlkey=f0qb89vud54bb5cnio5lcnrxy&st=x6dza9j2&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Anti-Funk-Everybody-jump.mp3",
     "seccion": "essentials",
     "genero": "dance",
-    "duracion": "3:22"
+    "duracion": "3:29"
   },
   {
-    "caratula": "assets/covers/DJ-Sammy-Heaven.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Alice-Deejay-Better-off-alone.jpg",
+    "artista": "Alice Deejay",
+    "nombre": "Better Off Alone",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Alice-Deejay-Better-off-alone.mp3",
+    "seccion": "essentials",
+    "genero": "trance",
+    "duracion": "3:38"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Me-&-my-Baby-boy.jpg",
+    "artista": "Me & My",
+    "nombre": "Baby Boy",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Me-&-my-Baby-boy.mp3",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "3:21"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Dimitri-Vegas-Tiesto-Thank-you.webp",
+    "artista": "Dimitri Vegas & Tiësto",
+    "nombre": "Thank You (Not So Bad)",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Dimitri-Vegas-Tiesto-Thank%20-you.MP3",
+    "seccion": "essentials",
+    "genero": "trance",
+    "duracion": "2:19"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Vengaboys-Boom-Boom-Boom-Boom.jpg",
+    "artista": "Vengaboys",
+    "nombre": "Boom Boom Boom Boom",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Vengaboys-Boom-Boom-Boom-Boom.mp3",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "3:21"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Moder-Talking-Brother-Louie-98.jpg",
+    "artista": "Modern Talking",
+    "nombre": "Brother Louie '98",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Moder-Talking-Brother-Louie-98.MP3",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "3:24"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Eiffel-65-Blue.jpg",
+    "artista": "Eiffel 65",
+    "nombre": "Blue (Da Ba Dee)",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Eiffel-65-Blue.mp3",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "4:08"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/DJ-Sammy-Heaven.jpg",
     "artista": "DJ Sammy",
     "nombre": "Heaven",
-    "enlace": "https://www.dropbox.com/scl/fi/r99mu4vtx9cfptyknn17k/DJ-Sammy-Heaven.mp3?rlkey=a47nyevafm3xo0fseylykj8sq&st=n0axm2xg&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/DJ-Sammy-Heaven.mp3",
     "seccion": "essentials",
     "genero": "trance",
     "duracion": "3:55"
   },
   {
-    "caratula": "assets/covers/Eiffel-65-Blue.jpg",
-    "artista": "Eiffel 65",
-    "nombre": "Blue (Da Ba Dee)",
-    "enlace": "https://www.dropbox.com/scl/fi/piyim7c8z9hnp9qhyd9ls/Eiffel-65-Blue.mp3?rlkey=mqvaya19m2hov2b7gz63cl2dn&st=qd0jghfb&dl=0&raw=1",
-    "seccion": "essentials",
-    "genero": "dance",
-    "duracion": "4:42"
-  },
-  {
-    "caratula": "assets/covers/Corona-Rhythm-of-the-night.jpg",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Corona-Rhythm-of-the-night.jpg",
     "artista": "Corona",
     "nombre": "Rhythm of the Night",
-    "enlace": "https://www.dropbox.com/scl/fi/0yodn8t45dzlo5gn0rsfo/Corona-Rhythm-of-the-night.mp3?rlkey=9k9fuzavz95l00ncqdm7mwz4h&st=3mbf8lvz&dl=0&raw=1",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Corona-Rhythm-of-the-night.mp3",
     "seccion": "essentials",
     "genero": "dance",
-    "duracion": "4:20"
+    "duracion": "3:49"
   },
   {
-    "caratula": "assets/covers/David-Tavare-Summer-love.jpg",
-    "artista": "David Tavare",
-    "nombre": "Summer Love",
-    "enlace": "https://www.dropbox.com/scl/fi/nvohlpncgjgj5mluns1i4/David-Tavare-Summer-love.mp3?rlkey=e1fduijwnkl7a6qikfxcy1q7r&st=6ijsl5kb&dl=0&raw=1",
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Antony-Well-Yo-soy-sexy.jpg",
+    "artista": "Antony Well",
+    "nombre": "Yo Soy Sexy",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Antony-Well-Yo-soy-sexy.mp3",
+    "seccion": "essentials",
+    "genero": "techno",
+    "duracion": "3:45"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Haddaway-What-is-love.jpg",
+    "artista": "Haddaway",
+    "nombre": "What Is Love",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Haddaway-What-is-love.mp3",
     "seccion": "essentials",
     "genero": "dance",
-    "duracion": "3:18"
+    "duracion": "4:27"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/David-Tavare-Summer-love.jpg",
+    "artista": "David Tavare",
+    "nombre": "Summer Love",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/David-Tavare-Summer-love.mp3",
+    "seccion": "essentials",
+    "genero": "dance",
+    "duracion": "4:14"
   }
+],
 
+
+
+"eighties": [
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Berlin-Take-my-breath-away.jpg",
+    "artista": "Berlin",
+    "nombre": "Take My Breath Away",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Berlin-Take-my-breath-away.mp3",
+    "seccion": "eighties",
+    "genero": "synth pop",
+    "duracion": "4:13"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Olivia-Newton-John-Hopelessly-devoted-to-you-(Grease).jpg",
+    "artista": "Olivia Newton-John",
+    "nombre": "Hopelessly Devoted to You",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Olivia-Newton-John-Hopelessly-devoted-to-you-(Grease).mp3",
+    "seccion": "eighties",
+    "genero": "country",
+    "duracion": "3:05"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/George-Michael-Careless-whispers.jpg",
+    "artista": "George Michael",
+    "nombre": "Careless Whisper",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/George-Michael-Careless-whispers.mp3",
+    "seccion": "eighties",
+    "genero": "R&B",
+    "duracion": "4:52"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/The-Archies-Sugar-sugar.jpg",
+    "artista": "The Archies",
+    "nombre": "Sugar Sugar",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/The-Archies-Sugar-sugar.mp3",
+    "seccion": "eighties",
+    "genero": "synth pop",
+    "duracion": "2:45"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Madonna-Material-girl.jpg",
+    "artista": "Madonna",
+    "nombre": "Material Girl",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Madonna-Material-girl.mp3",
+    "seccion": "eighties",
+    "genero": "new wave",
+    "duracion": "3:49"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Michael-Jackson-The-way-you-make-me-feel.jpg",
+    "artista": "Michael Jackson",
+    "nombre": "The Way You Make Me Feel",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Michael-Jackson-The-way-you-make-me-feel.mp3",
+    "seccion": "eighties",
+    "genero": "R&B",
+    "duracion": "4:49"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Starship-Nothings-gonna-stop-us-now.jpg",
+    "artista": "Starship",
+    "nombre": "Nothing's Gonna Stop Us Now",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Starship-Nothings-gonna-stop-us-now.mp3",
+    "seccion": "eighties",
+    "genero": "soft rock",
+    "duracion": "4:25"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Cyndi-Lauper-Girls-just-wanna-have-fun.jpg",
+    "artista": "Cyndi Lauper",
+    "nombre": "Girls Just Wanna Have Fun",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Cyndi-Lauper-Girls-just-wanna-have-fun.mp3",
+    "seccion": "eighties",
+    "genero": "new wave",
+    "duracion": "3:58"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Bad-Manners-Cant-take-my-eyes-off-you.jpg",
+    "artista": "Bad Manners",
+    "nombre": "Can't Take My Eyes Off You",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Bad-Manners-Cant-take-my-eyes-off-you.mp3",
+    "seccion": "eighties",
+    "genero": "ska",
+    "duracion": "3:26"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/The-Cure-Boys-dont-cry.jpg",
+    "artista": "The Cure",
+    "nombre": "Boys Don't Cry",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/The-Cure-Boys-dont-cry.mp3",
+    "seccion": "eighties",
+    "genero": "post punk",
+    "duracion": "2:36"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/The-Specials-Hooligans.jpg",
+    "artista": "The Specials",
+    "nombre": "Hooligans",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/The-Specials-Hooligans.mp3",
+    "seccion": "eighties",
+    "genero": "rocksteady",
+    "duracion": "2:29"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Madness-One-step-beyond.jpg",
+    "artista": "Madness",
+    "nombre": "One Step Beyond",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Madness-One-step-beyond.mp3",
+    "seccion": "eighties",
+    "genero": "rocksteady",
+    "duracion": "3:31"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Queen-Crazy-little-thing-called-love.jpg",
+    "artista": "Queen",
+    "nombre": "Crazy Little Thing Called Love",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Queen-Crazy-little-thing-called-love.mp3",
+    "seccion": "eighties",
+    "genero": "rockabilly",
+    "duracion": "2:40"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Elo-Last-train-to-London.jpg",
+    "artista": "Electric Light Orchestra",
+    "nombre": "Last Train to London",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Elo-Last-train-to-London.MP3",
+    "seccion": "eighties",
+    "genero": "disco",
+    "duracion": "4:30"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Patrick-Hernandez-Born-to-be-alive.jpg",
+    "artista": "Patrick Hernandez",
+    "nombre": "Born to Be Alive",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Patrick-Hernandez-Born-to-be-alive.MP3",
+    "seccion": "eighties",
+    "genero": "disco",
+    "duracion": "5:54"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/KC-The-Sunshine-Band-Thats-the-way-(I-like-it).jpg",
+    "artista": "KC & The Sunshine Band",
+    "nombre": "That's the Way (I Like It)",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/KC-The-Sunshine-Band-Thats-the-way-(I-like-it).MP3",
+    "seccion": "eighties",
+    "genero": "disco",
+    "duracion": "3:05"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Wham!-Wake-me-up-before-you-go-go.jpg",
+    "artista": "Wham!",
+    "nombre": "Wake Me Up Before You Go-Go",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Wham!-Wake-me-up-before-you-go-go.mp3",
+    "seccion": "eighties",
+    "genero": "synth pop",
+    "duracion": "3:46"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Gloria-Gaynor-I-will-survive.jpg",
+    "artista": "Gloria Gaynor",
+    "nombre": "I Will Survive",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Gloria-Gaynor-I-will-survive.MP3",
+    "seccion": "eighties",
+    "genero": "disco",
+    "duracion": "3:18"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Queen-I-want-to-break-free.jpg",
+    "artista": "Queen",
+    "nombre": "I Want to Break Free",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Queen-I-want-to-break-free.mp3",
+    "seccion": "eighties",
+    "genero": "pop rock",
+    "duracion": "3:55"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/4-Non-Blondes-Whats-up.jpg",
+    "artista": "4 Non Blondes",
+    "nombre": "What's Up",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/4-Non-Blondes-Whats-up.mp3",
+    "seccion": "eighties",
+    "genero": "pop rock",
+    "duracion": "4:14"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/The-Outfield-Your-love.jpg",
+    "artista": "The Outfield",
+    "nombre": "Your Love",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/The-Outfield-Your-love.mp3",
+    "seccion": "eighties",
+    "genero": "euro-disco",
+    "duracion": "3:41"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/The-Break-Up-Song-The-greg-kihn-band.jpg",
+    "artista": "The Greg Kihn Band",
+    "nombre": "The Breakup Song",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/The-Break-Up-Song-The-greg-kihn-band.mp3",
+    "seccion": "eighties",
+    "genero": "pop rock",
+    "duracion": "2:46"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Blondie-Maria.jpg",
+    "artista": "Blondie",
+    "nombre": "Maria",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Blondie-Maria.mp3",
+    "seccion": "eighties",
+    "genero": "rock alternativo",
+    "duracion": "4:06"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Queen-Dont-stop-me-now.jpg",
+    "artista": "Queen",
+    "nombre": "Don't Stop Me Now",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Queen-Dont-stop-me-now.mp3",
+    "seccion": "eighties",
+    "genero": "pop rock",
+    "duracion": "3:37"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Rod-Stewart-Young-turks.jpg",
+    "artista": "Rod Stewart",
+    "nombre": "Young Turks",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Rod-Stewart-Young-turks.mp3",
+    "seccion": "eighties",
+    "genero": "new wave",
+    "duracion": "4:29"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/A-Ha-Take-on-me.jpg",
+    "artista": "A-Ha",
+    "nombre": "Take On Me",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/A-Ha-Take-on-me.mp3",
+    "seccion": "eighties",
+    "genero": "synth pop",
+    "duracion": "3:45"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/BoneyM-Rios-de-Babilonia.jpg",
+    "artista": "Boney M",
+    "nombre": "Ríos de Babilonia",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/BoneyM-Rios-de-Babilonia.mp3",
+    "seccion": "eighties",
+    "genero": "disco",
+    "duracion": "4:09"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Culture-Club-Karma-chameleon.jpg",
+    "artista": "Culture Club",
+    "nombre": "Karma Chameleon",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Culture-Club-Karma-chameleon.mp3",
+    "seccion": "eighties",
+    "genero": "R&B",
+    "duracion": "4:10"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Michael-Sembello-Maniac.jpg",
+    "artista": "Michael Sembello",
+    "nombre": "Maniac",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Michael-Sembello-Maniac.mp3",
+    "seccion": "eighties",
+    "genero": "synth pop",
+    "duracion": "3:57"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Laura-Branigan-Gloria.jpg",
+    "artista": "Laura Branigan",
+    "nombre": "Gloria",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Laura-Branigan-Gloria.mp3",
+    "seccion": "eighties",
+    "genero": "euro-disco",
+    "duracion": "4:47"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/Square-Rooms-Al-corley.jpg",
+    "artista": "Al Corley",
+    "nombre": "Square Rooms",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/Square-Rooms-Al-corley.mp3",
+    "seccion": "eighties",
+    "genero": "synth pop",
+    "duracion": "3:35"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/David-Words-Dont-come-easy.jpg",
+    "artista": "F. R. David",
+    "nombre": "Words (Don't Come Easy)",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/David-Words-Dont-come-easy.mp3",
+    "seccion": "eighties",
+    "genero": "synth pop",
+    "duracion": "3:23"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/REM-Losing-my-religion.jpg",
+    "artista": "R.E.M.",
+    "nombre": "Losing My Religion",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/REM-Losing-my-religion.mp3",
+    "seccion": "eighties",
+    "genero": "rock alternativo",
+    "duracion": "4:24"
+  },
+  {
+    "caratula": "https://iraked.github.io/SantiGraphics/assets/covers/The-Police-Every-breath-you-take.jpg",
+    "artista": "The Police",
+    "nombre": "Every Breath You Take",
+    "enlace": "https://radio-tekileros.vercel.app/assets/audio/The-Police-Every-breath-you-take.mp3",
+    "seccion": "eighties",
+    "genero": "soft rock",
+    "duracion": "4:09"
+  }
 ]
 
+
 }
-
-
-
-
