@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://santi-graphics.vercel.app/assets/SG.ico" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Rick">
+  <title>Logros Spotifly</title>
+  <!-- Estilos principales -->
+  <link rel="author" href="https://santi-graphics.vercel.app/copyright.html">
+  <style>
+    :root {
+      --bg: #020617;
+      --panel: #020617;
+      --panel-soft: #020617;
+      --accent: #22c55e;
+      --accent-2: #38bdf8;
+      --text: #f9fafb;
+      --muted: #9ca3af;
+      --border: rgba(148, 163, 184, 0.5);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background:
+        radial-gradient(circle at 0% 0%, #1d283a 0, transparent 55%),
+        radial-gradient(circle at 100% 100%, #0f766e 0, transparent 55%),
+        radial-gradient(circle at 0% 100%, #4c1d95 0, transparent 55%),
+        #020617;
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .app {
+      width: 100%;
+      max-width: 960px;
+      background: radial-gradient(circle at 0 0, rgba(15,23,42,0.7), rgba(15,23,42,0.98));
+      border-radius: 24px;
+      box-shadow:
+        0 24px 80px rgba(15, 23, 42, 0.95),
+        0 0 0 1px rgba(148, 163, 184, 0.4);
+      padding: 1.8rem 1.6rem 1.6rem;
+      backdrop-filter: blur(24px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .app::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background-image:
+        radial-gradient(circle at 10% 20%, rgba(56,189,248,0.16) 0, transparent 55%),
+        radial-gradient(circle at 90% 80%, rgba(74,222,128,0.14) 0, transparent 55%);
+      opacity: 0.9;
+      pointer-events: none;
+      z-index: -1;
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 2.4vw, 2.1rem);
+      margin: 0 0 0.35rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+    }
+
+    h1 span.badge {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      padding: 0.15rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.6);
+      color: var(--muted);
+      letter-spacing: 0.14em;
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+      color: var(--muted);
+      max-width: 640px;
+      line-height: 1.5;
+      margin-bottom: 1.2rem;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: radial-gradient(circle at 0 0, rgba(56,189,248,0.28), transparent 60%),
+                  linear-gradient(135deg, #020617, #020617);
+      color: var(--text);
+      padding: 0.55rem 1.1rem;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.16s ease-out;
+      box-shadow: 0 0 0 0 rgba(56,189,248,0.5);
+      white-space: nowrap;
+    }
+
+    button span.icon {
+      font-size: 1.05rem;
+    }
+
+    button:hover {
+      transform: translateY(-1px) scale(1.01);
+      border-color: rgba(74,222,128,0.9);
+      box-shadow:
+        0 16px 40px rgba(15,23,42,0.9),
+        0 0 0 1px rgba(56,189,248,0.6);
+    }
+
+    button:active {
+      transform: translateY(0) scale(0.99);
+      box-shadow: 0 0 0 0 rgba(56,189,248,0.4);
+    }
+
+    .hint {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .table-wrapper {
+      max-height: min(60vh, 520px);
+      overflow: auto;
+      border-radius: 18px;
+      border: 1px solid rgba(148,163,184,0.45);
+      background: radial-gradient(circle at 0 0, rgba(15,23,42,0.5), rgba(15,23,42,0.96));
+      box-shadow: inset 0 0 0 1px rgba(15,23,42,0.8);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    thead {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: linear-gradient(to bottom, rgba(15,23,42,0.98), rgba(15,23,42,0.96));
+      backdrop-filter: blur(10px);
+    }
+
+    th, td {
+      padding: 0.6rem 0.7rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(30,41,59,0.95);
+    }
+
+    th {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(15,23,42,0.85);
+    }
+
+    tbody tr:hover {
+      background: rgba(15,23,42,0.95);
+    }
+
+    td:nth-child(1) {
+      color: var(--accent-2);
+      white-space: nowrap;
+    }
+
+    td:nth-child(2) {
+      font-weight: 600;
+      color: #e5e7eb;
+    }
+
+    td:nth-child(3) {
+      color: #facc15;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 640px) {
+      .app {
+        padding: 1.4rem 1.1rem 1.2rem;
+        border-radius: 18px;
+      }
+      th:nth-child(4),
+      td:nth-child(4) {
+        display: none;
+      }
+      h1 {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .controls {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+  </style>
+
+</head>
+<body>
+3 horas de reproducción	Beat Inicial	Cuarzo	Primeras 3 horas escuchando música en Spotifly.
+5 horas de reproducción	Oído Fino	Topacio	5 horas acumuladas escuchando música en Spotifly.
+8 horas de reproducción	Pulso Interior	Ámbar	8 horas acumuladas escuchando música en Spotifly.
+4 horas continuas de reproducción	Corona Melódica	Corona	4 horas continuas de reproducción en Spotifñy.
+6 horas continuas de reproducción	Legado Monarca	Corona	6 horas continuas de reproducción en Spotifñy.
+8 horas continuas de reproducción	Trono Supremo	Corona	8 horas continuas de reproducción en Spotifñy.
+3 días consecutivos con reproducción	Ritmo Diario	Reloj Análogo	Escuchando música 3 días seguidos.
+7 días consecutivos con reproducción	Semana Gloriosa	Reloj Análogo	Música todos los días durante una semana.
+10 horas de reproducción	Iniciador	Bronce	10 horas de reproducción acumuladas.
+20 horas de reproducción	Oyente	Plata	20 horas de reproducción acumuladas.
+30 horas de reproducción	Sintonizador	Oro	30 horas de reproducción acumuladas.
+40 horas de reproducción	Conocedor	Zafiro	40 horas de reproducción acumuladas.
+50 horas de reproducción	Coleccionista	Esmeralda	50 horas de reproducción acumuladas.
+60 horas de reproducción	Experto	Rubí	60 horas de reproducción acumuladas.
+70 horas de reproducción	Amatista Sonora	Amatista	70 horas de reproducción acumuladas.
+80 horas de reproducción	Perla Acústica	Perla	80 horas de reproducción acumuladas.
+90 horas de reproducción	Ópalo Rítmico	Ópalo	90 horas de reproducción acumuladas.
+100 horas de reproducción	Maestro Del Stream	Cristal	100 horas de reproducción acumuladas.
+200 horas de reproducción	Comandante Del Stream	Granate	200 horas de reproducción acumuladas.
+300 horas de reproducción	Emperador Del Stream	Lapislázuli	300 horas de reproducción acumuladas.
+400 horas de reproducción	Coloso Del Stream	Marmól ó Acero Forjado	400 horas de reproducción acumuladas.
+500 horas de reproducción	Titán Del Stream	Roca Basáltica 	500 horas de reproducción acumuladas.
+1,000 horas de reproducción	Audífono Platino	Platino	1,000 horas de reproducción acumuladas.
+2,000 horas de reproducción	Audífono Diamante	Diamante	2,000 horas de reproducción acumuladas.
+4 semanas con registro en la bitácora	Ritmo Constante	Metronomo - Cristal de Peridoto	Registro continuo durante 4 semanas.
+Mismo track favorito por 3 semanas	Track Sónico	Vinilo - Cristal de Turmalina Negra	Mismo track favorito durante 3 semanas.
+Mismo artista por 3 semanas	Presidente Del Club De Fans	Medalla con silueta de artista - Citrino	Mismo artista favorito durante 3 semanas.
+Aumento del 50% en tiempo de reproducción	Turbo Play	Boton de Play (YouTube) - Cristal de Obsidiana Plateada	Incremento del 50% en tiempo de reproducción.
+Reproducción en un día festivo	Wrapped Festivo	Ópalo Iridiscente	Logro por reproducir música en un día festivo.
+Playlist Completa Hits	Deejay de los Hits	Escarapela	
+Playlist Completa Regional Mexicano	Charro Mexicano	Escarapela	
+Playlist Completa Viva Latino	Festival Latino	Escarapela	
+Playlist Completa Rock en Español	Rockstar	Escarapela	
+Playlist Completa Mega Mix	Ingeniero del Ritmo	Escarapela	
+Playlist Completa After Party	Espíritu de la Fiesta	Escarapela	
+Playlist Completa Pop Electrónico	Rey del Pop	Escarapela	
+Playlist Completa Baladas	Corazón Romántico	Escarapela	
+Playlist Completa Essentials	Esencia Musical	Escarapela	
+Playlist Completa Eighties		Escarapela	
+Playlis Descatacada Novedades		Escarapela	Logro obtenido por escuchar todos los tracks de dicha playlist
+			
+			
+30 días continuos de reproducción	Mes Magistral	Reloj Análogo	
+	Legendario
+
+</body>
+</html>
