@@ -4,6 +4,38 @@
 let isModalActive = false;
 let isWrappedActive = false;
 
+// ✅ VARIABLES GLOBALES PARA EL MODAL (NUEVO)
+let globalModalPlaylist = [];
+let globalModalIndex = 0;
+
+// ✅ FUNCIÓN GLOBAL playTrack() (NUEVO)
+function playTrack(index) {
+  globalModalIndex = index;
+  const track = globalModalPlaylist[index];
+  if (!track) return;
+
+  const modal = document.getElementById("modal-player");
+  const modalAudio = document.getElementById("modal-audio");
+  const modalCover = document.getElementById("modal-cover");
+  const modalArtist = document.getElementById("modal-artist");
+  const modalTitle = document.getElementById("modal-title");
+
+  const enlace = track.enlace || track.dropbox_url;
+
+  modalCover.src = track.caratula;
+  modalArtist.textContent = track.artista;
+  modalTitle.textContent = track.nombre;
+
+  modalAudio.pause();
+  modalAudio.removeAttribute("src");
+  modalAudio.src = enlace;
+  modalAudio.load();
+
+  modal.classList.remove("hidden");
+
+  modalAudio.oncanplay = () => modalAudio.play();
+}
+
 document.addEventListener("DOMContentLoaded", async () => {
   const globalPlayer = document.getElementById("global-player");
 
@@ -24,16 +56,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     renderCards("eighties", "cards-section-10", data);
 
     // ✅ Activar reproducción continua por contenedor
-    initPlaybackPerContainer("cards-section-1");
-    initPlaybackPerContainer("cards-section-2");
-    initPlaybackPerContainer("cards-section-3");
-    initPlaybackPerContainer("cards-section-4");
-    initPlaybackPerContainer("cards-section-5");
-    initPlaybackPerContainer("cards-section-6");
-    initPlaybackPerContainer("cards-section-7");
-    initPlaybackPerContainer("cards-section-8");
-    initPlaybackPerContainer("cards-section-9");
-    initPlaybackPerContainer("cards-section-10");
+    initModalPlayer();
 
     // ✅ Activar carrusel por contenedor
     initCarousel("cards-section-1");
@@ -58,7 +81,6 @@ document.addEventListener("DOMContentLoaded", async () => {
     initModalPlayer("cards-section-9", data.essentials);
     initModalPlayer("cards-section-10", data.eighties);
 
-
   } catch (error) {
     console.error("Error al cargar el JSON:", error);
   }
@@ -74,14 +96,15 @@ function renderCards(clave, contenedorId, data) {
     const card = document.createElement("div");
     card.classList.add("card");
 
-    // Usamos data-id único basado en la sección y el índice
+    const enlace = track.enlace || track.dropbox_url;
+
     card.innerHTML = `
       <div class="cover"><img src="${track.caratula}" alt="Cover" /></div>
       <div class="info">
         <h2>${track.artista}</h2>
         <p>${track.nombre}</p>
         <button class="btn-play" 
-                data-src="${track.enlace}" 
+                data-src="${enlace}" 
                 data-id="${clave}-${index}">
           <i class="fa-solid fa-play"></i>
         </button>
@@ -92,6 +115,141 @@ function renderCards(clave, contenedorId, data) {
   });
 }
 
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// ⭐ LISTAS DESTACADAS (JSON independientes)
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+const listasDestacadas = [
+  { nombre: "Novedades",       archivo: "https://radio-tekileros.vercel.app/Actual.json" },
+  { nombre: "Éxitos",       archivo: "https://radio-tekileros.vercel.app/Exitos.json" },
+  { nombre: "Hardcore",     archivo: "https://radio-tekileros.vercel.app/HardCore.json" },
+  { nombre: "Baladas Rock", archivo: "https://radio-tekileros.vercel.app/BaladasRock.json" },
+  { nombre: "Rumba Caliente",        archivo: "https://radio-tekileros.vercel.app/Rumba.json" },
+  { nombre: "Bandida",      archivo: "https://radio-tekileros.vercel.app/Bandida.json" }
+];
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("cards-section-11");
+
+  const covers = [
+    "https://santi-graphics.vercel.app/assets/covers/Cover3.png",
+    "https://santi-graphics.vercel.app/assets/covers/Cover1.png",
+    "https://santi-graphics.vercel.app/assets/covers/Cover11.png",
+    "https://santi-graphics.vercel.app/assets/covers/Cover8.png",
+    "https://santi-graphics.vercel.app/assets/covers/Cover2.png",
+    "https://santi-graphics.vercel.app/assets/covers/Cover4.png"
+  ];
+
+  listasDestacadas.forEach((lista, index) => {
+    const card = document.createElement("div");
+    card.classList.add("card", "destacada-card");
+    card.dataset.json = lista.archivo;
+
+    const cover = covers[index % covers.length];
+
+    card.innerHTML = `
+      <div class="cover">
+        <img src="${cover}" alt="Cover" />
+      </div>
+
+      <div class="info">
+        <h2>${lista.nombre}</h2>
+        <p>Playlist destacada</p>
+
+        <div class="destacada-actions">
+          <button class="btn-open" data-json="${lista.archivo}">
+            <i class="fa-solid fa-folder-open"></i>
+          </button>
+
+          <button class="btn-play btn-play-destacada"
+                  data-json="${lista.archivo}">
+            <i class="fa-solid fa-play"></i>
+          </button>
+        </div>
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+});
+
+
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 🎵 REPRODUCCIÓN / APERTURA EN LISTAS DESTACADAS (SOLO MODAL)
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+document.getElementById("cards-section-11").addEventListener("click", async (e) => {
+  const playBtn = e.target.closest(".btn-play-destacada");
+  const openBtn = e.target.closest(".btn-open");
+
+  // 🗂 ABRIR PLAYLIST EN MODAL (SIN RENDER EN LA SECCIÓN)
+  if (openBtn) {
+    const archivo = openBtn.dataset.json;
+    const response = await fetch(archivo);
+    const json = await response.json();
+
+    const clave = Object.keys(json)[0];
+    const playlist = json[clave];
+
+    // ✅ Limpia cualquier playlist anterior en el modal y carga esta
+    globalModalPlaylist = [...playlist];
+
+    // ✅ Asegúrate de que el modal esté inicializado para esta playlist
+    initModalPlayer("cards-section-11", playlist);
+
+    // No reproducimos automáticamente, solo dejamos la cola lista
+    return;
+  }
+
+  // ▶️ REPRODUCIR PRIMER TRACK DIRECTAMENTE EN MODAL
+  if (playBtn) {
+    const archivo = playBtn.dataset.json;
+    const response = await fetch(archivo);
+    const json = await response.json();
+
+    const clave = Object.keys(json)[0];
+    const playlist = json[clave];
+
+    // ✅ Siempre sobrescribe la playlist global del modal
+    globalModalPlaylist = [...playlist];
+
+    // ✅ Inicializa el modal para esta playlist (por si no estaba enlazado aún)
+    initModalPlayer("cards-section-11", playlist);
+
+    // ✅ Reproduce el primer track (solo en modal, sin tocar cards-section-11)
+    playTrack(0);
+  }
+});
+
+
+// COMPATIBLE CON DROPBOX
+function renderCards(clave, contenedorId, data) {
+  const container = document.getElementById(contenedorId);
+  const tracks = data[clave];
+  if (!container || !Array.isArray(tracks)) return;
+
+  tracks.forEach((track, index) => {
+    const card = document.createElement("div");
+    card.classList.add("card");
+
+    const enlace = track.enlace || track.dropbox_url;
+
+    card.innerHTML = `
+      <div class="cover"><img src="${track.caratula}" alt="Cover" /></div>
+      <div class="info">
+        <h2>${track.artista}</h2>
+        <p>${track.nombre}</p>
+        <button class="btn-play" 
+                data-src="${enlace}" 
+                data-id="${clave}-${index}">
+          <i class="fa-solid fa-play"></i>
+        </button>
+      </div>
+    `;
+
+    container.appendChild(card);
+  });
+}
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B2.1 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🔊 Reproducción continua con evento único y estado global + prevención de colisión
@@ -272,225 +430,298 @@ function highlightCard(activeCard) {
 
 //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B6 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 // 🎛️ Reproductor Modal Universal con navegación, cola, controles extendidos, progreso visual interactivo y control de colisión
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+// 🎧 MODAL PLAYER UNIVERSAL — VERSIÓN FINAL
+//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-function initModalPlayer(contenedorId, playlistData) {
-  const container = document.getElementById(contenedorId);
-  if (!container || !Array.isArray(playlistData)) return;
+function initModalPlayer() {
+  const modal = document.getElementById("modal-player");
+  const modalAudio = document.getElementById("modal-audio");
+  const modalCover = document.getElementById("modal-cover");
+  const modalArtist = document.getElementById("modal-artist");
+  const modalTitle = document.getElementById("modal-title");
 
-  const modal = document.getElementById("modal-player");
-  const modalAudio = document.getElementById("modal-audio");
-  const modalCover = document.getElementById("modal-cover");
-  const modalArtist = document.getElementById("modal-artist");
-  const modalTitle = document.getElementById("modal-title");
-  const closeBtn = document.querySelector(".close-modal");
-  const btnPrev = document.getElementById("btn-prev");
-  const btnNext = document.getElementById("btn-next");
-  const modalQueue = document.getElementById("modal-queue");
+  const closeBtn = document.querySelector(".close-modal");
+  const btnPrev = document.getElementById("btn-prev");
+  const btnNext = document.getElementById("btn-next");
+  const toggleBtn = document.getElementById("btn-toggle");
 
-  const volumeControl = document.getElementById("volume-control");
-  const speedControl = document.getElementById("speed-control");
-  const loopToggle = document.getElementById("loop-toggle");
-  const muteToggle = document.getElementById("mute-toggle");
+  const modalQueue = document.getElementById("modal-queue");
+  const progressBar = document.getElementById("progress-bar");
+  const progressContainer = document.querySelector(".progress-container");
 
-  const toggleBtn = document.getElementById("btn-toggle");
-  const progressBar = document.getElementById("progress-bar");
-  const progressContainer = document.querySelector(".progress-container");
+  const volumeControl = document.getElementById("volume-control");
+  const speedControl = document.getElementById("speed-control");
+  const loopToggle = document.getElementById("loop-toggle");
+  const muteToggle = document.getElementById("mute-toggle");
 
-  let currentIndex = -1;
-  const localPlaylist = [...playlistData]; // 🧩 Aislamiento por sección
+  if (!modal || !modalAudio || !modalCover || !modalArtist || !modalTitle) return;
 
-  function showModal(track) {
-    // La variable 'isModalActive' ahora se usa sin 'let' ya que es global
-    isModalActive = true; 
+  let localPlaylist = [];
+  let localIndex = -1;
 
-    modalCover.src = track.caratula;
-    modalArtist.textContent = track.artista;
-    modalTitle.textContent = track.nombre;
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🔁 Helpers internos
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-    modalAudio.pause();
-    modalAudio.removeAttribute("src");
-    modalAudio.src = track.enlace;
-    modalAudio.load();
+  function loadTrack(index) {
+    const track = localPlaylist[index];
+    if (!track) return;
 
-    modal.classList.remove("hidden");
+    localIndex = index;
 
-    modalCover.classList.add("animate");
-    setTimeout(() => modalCover.classList.remove("animate"), 400);
+    const enlace = track.enlace || track.dropbox_url;
+    if (!enlace) return;
 
-    modalAudio.oncanplay = () => {
-      modalAudio.play().catch(err => {
-        console.warn("⚠️ Error al reproducir:", err.name);
-      });
-      const icon = toggleBtn?.querySelector("i");
-      if (icon) {
-        icon.classList.remove("fa-play");
-        icon.classList.add("fa-pause");
-      }
-    };
-  }
+    modalCover.src = track.caratula || "";
+    modalArtist.textContent = track.artista || "";
+    modalTitle.textContent = track.nombre || "";
 
-  function playTrack(index) {
-  if (index < 0 || index >= localPlaylist.length) return;
+    modalAudio.pause();
+    modalAudio.removeAttribute("src");
+    modalAudio.src = enlace;
+    modalAudio.load();
+  }
 
-  currentIndex = index;
-  showModal(localPlaylist[index]);
+  function playCurrent() {
+    const globalPlayer = document.getElementById("global-player");
+    if (globalPlayer && !globalPlayer.paused) globalPlayer.pause();
 
-  if (btnNext) {
-  btnNext.onclick = () => {
-    if (currentIndex < localPlaylist.length - 1) {
-      playTrack(currentIndex + 1);
-    }
-  };
-}
+    modal.classList.remove("hidden");
 
-if (btnPrev) {
-  btnPrev.onclick = () => {
-    if (currentIndex > 0) {
-      playTrack(currentIndex - 1);
-    }
-  };
-}
+    modalAudio.oncanplay = () => {
+      modalAudio.play().catch(err => console.warn("Error al reproducir modal:", err));
+      const icon = toggleBtn?.querySelector("i");
+      if (icon) {
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+      }
+    };
+  }
 
+  function buildQueue() {
+    if (!modalQueue) return;
+    modalQueue.innerHTML = "";
 
+    localPlaylist.forEach((track, i) => {
+      const li = document.createElement("li");
+      li.textContent = `${track.artista || ""} – ${track.nombre || ""}`;
+      li.addEventListener("click", () => {
+        loadTrack(i);
+        playCurrent();
+      });
+      modalQueue.appendChild(li);
+    });
+  }
 
-//━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ B8 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  // 🔁 Reproducción continua contextual
-  modalAudio.onended = () => {
-    const nextIndex = currentIndex + 1;
-    if (nextIndex < localPlaylist.length) {
-      playTrack(nextIndex);
-    } else {
-      currentIndex = -1;
-      const icon = toggleBtn?.querySelector("i");
-      if (icon) {
-        icon.classList.remove("fa-pause");
-        icon.classList.add("fa-play");
-      }
-      if (progressBar) progressBar.style.width = "0%";
-    }
-  };
-}
+  function resetModal() {
+    modal.classList.add("hidden");
+    modalAudio.pause();
+    modalAudio.removeAttribute("src");
+    localIndex = -1;
+    if (progressBar) progressBar.style.width = "0%";
+    const icon = toggleBtn?.querySelector("i");
+    if (icon) {
+      icon.classList.remove("fa-pause");
+      icon.classList.add("fa-play");
+    }
+  }
 
-  modal.addEventListener("click", (e) => {
-    if (e.target === modal) {
-      // 'isModalActive' ya es global
-      isModalActive = false; 
-      closeBtn.click();
-    }
-  });
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🖱️ Click global: secciones normales + Destacadas
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-  document.addEventListener("keydown", (e) => {
-    // 🛑 PREVENCIÓN DE COLISIÓN (Wrapped): Si Wrapped está activo, NO cierres el Modal Player.
-    // 'isWrappedActive' ya es global y accesible
-    if (isWrappedActive) return; 
-   
+  document.addEventListener("click", (e) => {
+    const playBtn = e.target.closest(".btn-play");
+    if (!playBtn) return;
 
-    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
-      // 'isModalActive' ya es global
-      isModalActive = false; 
-      closeBtn.click();
-    }
-  });
+    const isDestacada = playBtn.classList.contains("btn-play-destacada");
+    const card = playBtn.closest(".card");
 
-  closeBtn.addEventListener("click", () => {
-    // 'isModalActive' ya es global
-    isModalActive = false; 
-    modal.classList.add("hidden");
-    modalAudio.pause();
-    modalAudio.removeAttribute("src");
-    currentIndex = -1;
-    const icon = toggleBtn?.querySelector("i");
-    if (icon) {
-      icon.classList.remove("fa-pause");
-      icon.classList.add("fa-play");
-    }
-    if (progressBar) progressBar.style.width = "0%";
-  });
+    // 🟢 LISTAS DESTACADAS (usa JSON externo)
+    if (isDestacada && playBtn.dataset.json) {
+      const archivo = playBtn.dataset.json;
 
-  if (volumeControl) {
-    volumeControl.addEventListener("input", () => {
-      modalAudio.volume = parseFloat(volumeControl.value);
-    });
-  }
+      fetch(archivo)
+        .then(r => r.json())
+        .then(json => {
+          const clave = Object.keys(json)[0];
+          const playlist = json[clave];
+          if (!Array.isArray(playlist) || playlist.length === 0) return;
 
-  if (speedControl) {
-    speedControl.addEventListener("change", () => {
-      modalAudio.playbackRate = parseFloat(speedControl.value);
-    });
-  }
+          localPlaylist = playlist.map(track => ({
+            artista: track.artista,
+            nombre: track.nombre,
+            caratula: track.caratula,
+            enlace: track.enlace || track.dropbox_url,
+            dropbox_url: track.dropbox_url
+          }));
 
-  if (loopToggle) {
-    loopToggle.addEventListener("click", () => {
-      modalAudio.loop = !modalAudio.loop;
-      loopToggle.textContent = `Loop: ${modalAudio.loop ? "On" : "Off"}`;
-    });
-  }
+          localIndex = 0;
+          loadTrack(0);
+          buildQueue();
+          playCurrent();
+        })
+        .catch(err => console.error("Error cargando playlist destacada:", err));
 
-  if (muteToggle) {
-    muteToggle.addEventListener("click", () => {
-      modalAudio.muted = !modalAudio.muted;
-      muteToggle.textContent = modalAudio.muted ? "Unmute" : "Mute";
-    });
-  }
+      return;
+    }
 
-  if (toggleBtn) {
-    toggleBtn.addEventListener("click", () => {
-      const icon = toggleBtn.querySelector("i");
-      if (!icon) return;
+    // 🟢 SECCIONES NORMALES (1–10): usa cards del contenedor
+    const container = card?.closest("[id^='cards-section']");
+    if (!container) return;
 
-      if (modalAudio.paused) {
-        modalAudio.play().catch(err => {
-          console.warn("⚠️ Error al reproducir:", err.name);
-        });
-        icon.classList.remove("fa-play");
-        icon.classList.add("fa-pause");
-      } else {
-        modalAudio.pause();
-        icon.classList.remove("fa-pause");
-        icon.classList.add("fa-play");
-      }
-    });
-  }
+    const cards = container.querySelectorAll(".card");
 
-  modalAudio.addEventListener("timeupdate", () => {
-    if (modalAudio.duration && progressBar) {
-      const percent = (modalAudio.currentTime / modalAudio.duration) * 100;
-      progressBar.style.width = `${percent}%`;
-    }
-  });
+    localPlaylist = [...cards].map(c => {
+      const b = c.querySelector(".btn-play");
+      const img = c.querySelector("img");
+      const h2 = c.querySelector("h2");
+      const p = c.querySelector("p");
 
-  if (progressContainer && progressBar) {
-    progressContainer.addEventListener("click", (e) => {
-      const rect = progressContainer.getBoundingClientRect();
-      const clickX = e.clientX - rect.left;
-      const percent = clickX / rect.width;
-      modalAudio.currentTime = percent * modalAudio.duration;
-      progressBar.style.width = `${percent * 100}%`;
-    });
-  }
+      return {
+        artista: h2?.textContent || "",
+        nombre: p?.textContent || "",
+        caratula: img?.src || "",
+        enlace: b?.dataset.src || ""
+      };
+    });
 
-  container.querySelectorAll(".card").forEach((card, index) => {
-    const btn = card.querySelector(".btn-play");
-    if (!btn) return;
+    localIndex = [...cards].indexOf(card);
 
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      e.stopPropagation();
+    if (localIndex < 0) return;
 
-      const globalPlayer = document.getElementById("global-player");
-      if (globalPlayer && !globalPlayer.paused) globalPlayer.pause();
+    loadTrack(localIndex);
+    buildQueue();
+    playCurrent();
+  });
 
-      playTrack(index);
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // ⏭️ / ⏮️ Navegación
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-      if (modalQueue) {
-        modalQueue.innerHTML = "";
-        localPlaylist.forEach((track, i) => {
-          const li = document.createElement("li");
-          li.textContent = `${track.artista} – ${track.nombre}`;
-          li.addEventListener("click", () => playTrack(i));
-          modalQueue.appendChild(li);
-        });
-      }
-    });
-  });
+  if (btnNext) {
+    btnNext.addEventListener("click", () => {
+      const next = localIndex + 1;
+      if (next < localPlaylist.length) {
+        loadTrack(next);
+        playCurrent();
+      }
+    });
+  }
+
+  if (btnPrev) {
+    btnPrev.addEventListener("click", () => {
+      const prev = localIndex - 1;
+      if (prev >= 0) {
+        loadTrack(prev);
+        playCurrent();
+      }
+    });
+  }
+
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // ⏯️ Play / Pause
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener("click", () => {
+      const icon = toggleBtn.querySelector("i");
+      if (!icon) return;
+
+      if (modalAudio.paused) {
+        modalAudio.play().catch(err => console.warn("Error al reanudar modal:", err));
+        icon.classList.remove("fa-play");
+        icon.classList.add("fa-pause");
+      } else {
+        modalAudio.pause();
+        icon.classList.remove("fa-pause");
+        icon.classList.add("fa-play");
+      }
+    });
+  }
+
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // ❌ Cerrar modal (botón)
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  if (closeBtn) {
+    closeBtn.addEventListener("click", () => {
+      resetModal();
+    });
+  }
+
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // ⌨️ Cerrar modal con ESC
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  document.addEventListener("keydown", (e) => {
+    if (typeof isWrappedActive !== "undefined" && isWrappedActive) return;
+    if (e.key !== "Escape") return;
+    if (modal.classList.contains("hidden")) return;
+    resetModal();
+  });
+
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🔁 Reproducción continua
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  modalAudio.addEventListener("ended", () => {
+    const next = localIndex + 1;
+    if (next < localPlaylist.length) {
+      loadTrack(next);
+      playCurrent();
+    } else {
+      resetModal();
+    }
+  });
+
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 🎚️ Controles extra
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  if (volumeControl) {
+    volumeControl.addEventListener("input", () => {
+      modalAudio.volume = parseFloat(volumeControl.value);
+    });
+  }
+
+  if (speedControl) {
+    speedControl.addEventListener("change", () => {
+      modalAudio.playbackRate = parseFloat(speedControl.value);
+    });
+  }
+
+  if (loopToggle) {
+    loopToggle.addEventListener("click", () => {
+      modalAudio.loop = !modalAudio.loop;
+      loopToggle.textContent = `Loop: ${modalAudio.loop ? "Loop: On" : "Loop: Off"}`;
+    });
+  }
+
+  if (muteToggle) {
+    muteToggle.addEventListener("click", () => {
+      modalAudio.muted = !modalAudio.muted;
+      muteToggle.textContent = modalAudio.muted ? "Unmute" : "Mute";
+    });
+  }
+
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  // 📈 Progreso
+  //━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  modalAudio.addEventListener("timeupdate", () => {
+    if (modalAudio.duration && progressBar) {
+      const percent = (modalAudio.currentTime / modalAudio.duration) * 100;
+      progressBar.style.width = `${percent}%`;
+    }
+  });
+
+  if (progressContainer) {
+    progressContainer.addEventListener("click", (e) => {
+      const rect = progressContainer.getBoundingClientRect();
+      const percent = (e.clientX - rect.left) / rect.width;
+      modalAudio.currentTime = percent * modalAudio.duration;
+    });
+  }
 }
