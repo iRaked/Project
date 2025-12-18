@@ -122,7 +122,7 @@ function renderCards(clave, contenedorId, data) {
 const listasDestacadas = [
   { nombre: "Novedades",       archivo: "https://radio-tekileros.vercel.app/Actual.json" },
   { nombre: "Éxitos",       archivo: "https://radio-tekileros.vercel.app/Exitos.json" },
-  { nombre: "Hardcore",     archivo: "https://radio-tekileros.vercel.app/HardCore.json" },
+  { nombre: "Ruido de Lata",     archivo: "https://radio-tekileros.vercel.app/HardCore.json" },
   { nombre: "Baladas Rock", archivo: "https://radio-tekileros.vercel.app/BaladasRock.json" },
   { nombre: "Rumba Caliente",        archivo: "https://radio-tekileros.vercel.app/Rumba.json" },
   { nombre: "Bandida",      archivo: "https://radio-tekileros.vercel.app/Bandida.json" }
