@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/x-icon" href="https://santi-graphics.vercel.app/assets/SG.ico" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="author" content="Raked">
+  <title>Globo Terrestre</title>
+  <!-- Estilos externos -->
+  <link href="Mapamundi.css" rel="stylesheet" type="text/css">
+  <link rel="author" href="https://santi-graphics.vercel.app/copyright.txt">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.0/firebase-firestore-compat.js"></script>
+  <!-- Scripts externos -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="Mapamundi.js" defer></script>
+
+</head>
+<body>
+
+  <!-- Counter -->
+  <div id="datario">
+    <i class="fa-solid fa-users"></i> <span id="visitor-count">0</span>
+  </div>
+
+  <!-- Controls -->
+  <div id="controls-container">
+    <div id="controls">
+      <button id="toggleDarkMode" class="control-btn">
+        <i class="fa-solid fa-adjust"></i> Dark
+      </button>
+      <button id="toggleView" class="control-btn">
+        <i class="fa-solid fa-globe"></i> 2D / 3D
+      </button>
+    </div>
+  </div>
+
+  <!-- Containers -->
+  <div id="globe-container"></div>
+  <div id="map-container"></div>
+
+</body>
+</html>
