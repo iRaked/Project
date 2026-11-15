@@ -1,0 +1,1049 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #e0e0e0;
+}
+
+.app-container {
+  width: 620px;
+  height: 540px;
+  background: #0a0a0a;
+  border: 1px solid #222;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+}
+
+.app-header {
+  padding: 16px;
+  background: #0f0f0f;
+  border-bottom: 1px solid #1a1a1a;
+  text-align: center;
+}
+
+.app-header h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.app-header i {
+  color: #d4d4d8;
+  margin-right: 8px;
+}
+
+.tab-nav {
+  display: flex;
+  background: #0a0a0a;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+.tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 14px 0;
+  color: #555;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent 0%, rgba(255,255,255,0.12) 50%, transparent 100%);
+  transform: skewX(-20deg);
+  pointer-events: none;
+}
+
+.tab-btn:hover {
+  color: #999;
+  background: #111;
+}
+
+.tab-btn.active {
+  color: #ffffff;
+  background: #161616;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: inset 0 -10px 18px -12px rgba(255,255,255,0.35);
+  text-shadow: 0 0 8px rgba(255,255,255,0.4);
+}
+
+.tab-btn.active::before {
+  animation: shine 2.8s ease-in-out infinite;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  60% { left: 100%; }
+  100% { left: 100%; }
+}
+
+.tab-content {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-pane {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  padding: 20px;
+  display: none;
+  overflow-y: auto;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-pane::-webkit-scrollbar { width: 6px; }
+.tab-pane::-webkit-scrollbar-track { background: #0a0a0a; }
+.tab-pane::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+.tab-pane::-webkit-scrollbar-thumb:hover { background: #555; }
+
+.placeholder-text {
+  color: #555;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* MÓDULO NICKS - Layout 2 columnas */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.nicks-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.nicks-col-left,
+.nicks-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+}
+
+.input-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Input */
+.nick-input {
+  width: 100%;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.nick-input:focus {
+  border-color: #fff;
+}
+
+/* Preview */
+.preview-box {
+  flex: 1;
+  background: #0f0f0f;
+  border: 1px dashed #2a2a2a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  min-height: 80px;
+}
+
+.nick-preview {
+  font-size: 1.4rem;
+  color: #fff;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* Output + Copy */
+.output-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.output-box code {
+  flex: 1;
+  font-family: 'Courier New', monospace;
+  font-size: 0.8rem;
+  color: #aaa;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-copy {
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 6px;
+  color: #888;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.btn-copy:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* Grid de Fuentes (más alto) */
+.font-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-height: 260px; /* Aumentado de 210px */
+  min-height: 180px; /* Aumentado de 150px */
+  overflow-y: auto;
+  padding-right: 6px;
+  flex: 1.6; /* Mayor proporción de crecimiento */
+}
+
+/* Grid de Símbolos (más compacto) */
+.symbol-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  max-height: 160px; /* Reducido de 210px */
+  min-height: 120px; /* Reducido de 150px */
+  overflow-y: auto;
+  padding-right: 6px;
+  flex: 1; /* Proporción normal */
+}
+
+/* Scrollbar de los grids (un poco más ancho para facilitar el uso) */
+.font-grid::-webkit-scrollbar,
+.symbol-grid::-webkit-scrollbar { 
+  width: 6px; 
+}
+.font-grid::-webkit-scrollbar-track,
+.symbol-grid::-webkit-scrollbar-track { 
+  background: #0a0a0a; 
+}
+.font-grid::-webkit-scrollbar-thumb,
+.symbol-grid::-webkit-scrollbar-thumb { 
+  background: #333; 
+  border-radius: 3px; 
+}
+.font-grid::-webkit-scrollbar-thumb:hover,
+.symbol-grid::-webkit-scrollbar-thumb:hover { 
+  background: #555; 
+}
+
+/* Asegurar que la columna derecha use todo el alto disponible */
+.nicks-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 0;
+  height: 100%; /* Clave para que flex: 1 funcione en los grids */
+}
+
+.font-option,
+.symbol-option {
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 6px;
+  padding: 8px 4px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+.font-option:hover,
+.symbol-option:hover {
+  border-color: #555;
+  background: #1a1a1a;
+}
+
+.font-option.selected,
+.symbol-option.selected {
+  border-color: #fff;
+  background: #1f1f1f;
+  color: #fff;
+}
+
+/* Toggle Powers */
+.powers-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid #1a1a1a;
+}
+
+.toggle-label {
+  font-size: 0.75rem;
+  color: #666;
+  font-weight: 600;
+}
+
+.btn-toggle {
+  flex: 1;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 8px;
+  color: #666;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-toggle.active {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* MÓDULO COLORES - Layout 2 columnas */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+
+.colors-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+/* Ambas columnas: sin flex-grow, alturas fijas para cada elemento */
+.colors-col-left,
+.colors-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  height: 100%;
+  overflow: auto; /* Sin scroll, todo debe encajar */
+  padding-right: 6px;
+}
+
+/* Cuadros de colores */
+.color-squares {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: flex-start;
+  max-height: 90px;
+  overflow-y: auto;
+  padding: 0;
+  flex-shrink: 0; /* No se encoje ni crece */
+}
+
+.color-squares::-webkit-scrollbar { width: 4px; }
+.color-squares::-webkit-scrollbar-track { background: #0a0a0a; }
+.color-squares::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+.color-square-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-square {
+  width: 45px;
+  height: 45px;
+  border: 2px solid #2a2a2a;
+  border-radius: 8px;
+  cursor: pointer;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+.color-square:hover { border-color: #555; }
+.color-square::-webkit-color-swatch-wrapper { padding: 0; }
+.color-square::-webkit-color-swatch { border: none; border-radius: 6px; }
+
+.add-color-btn {
+  width: 45px;
+  height: 45px;
+  border: 2px dashed #333;
+  border-radius: 8px;
+  background: transparent;
+  color: #666;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-color-btn:hover {
+  border-color: #fff;
+  color: #fff;
+  background: #1a1a1a;
+}
+
+/* Botón de eliminar color */
+.remove-color-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 18px;
+  height: 18px;
+  background: #ff4444;
+  color: #fff;
+  border: 1px solid #0f0f0f;
+  border-radius: 50%;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s, transform 0.2s;
+  z-index: 2;
+  padding: 0;
+}
+
+.color-square-wrapper:hover .remove-color-btn { opacity: 1; }
+.remove-color-btn:hover { transform: scale(1.1); background: #ff2222; }
+
+/* Controles de velocidad: altura FIJA siempre, solo cambia visibilidad */
+.speed-control,
+.speed-control-ruby {
+  height: 50px;
+  opacity: 0;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  transition: opacity 0.3s ease;
+}
+
+.speed-control.active,
+.speed-control-ruby.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.speed-control .input-label,
+.speed-control-ruby .input-label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.8rem;
+}
+
+.speed-control-ruby {
+  margin-top: -60px; /* -(50px height + 10px gap) → se superpone EXACTAMENTE sobre speed-control */
+  height: 50px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.speed-control-ruby.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.speed-slider {
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+  background: #222;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+.speed-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.speed-slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  border: none;
+}
+
+/* Vista previa: altura FIJA, sin flex: 1 */
+.preview-box {
+  background: #0f0f0f;
+  border: 1px dashed #2a2a2a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  overflow: visible;
+  height: 80px; /* Altura fija, no flex: 1 */
+  flex-shrink: 0; /* No se encoge */
+}
+
+.color-preview {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(135deg, #ff0000, #00ff00, #0000ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  animation: none;
+}
+
+/* Animaciones */
+@keyframes gradientShift {
+  0% { background-position: -200% 0%; }
+  100% { background-position: 200% 0%; }
+}
+
+@keyframes blenderMix {
+  0% { background-position: 0% 50%; }
+  25% { background-position: 50% 100%; }
+  50% { background-position: 100% 50%; }
+  75% { background-position: 50% 0%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Grid de efectos */
+.effect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.effect-btn {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 10px 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  text-align: center;
+}
+
+.effect-btn:hover { border-color: #555; background: #1a1a1a; }
+.effect-btn.active { border-color: #fff; background: #1f1f1f; }
+
+.effect-name { font-size: 0.85rem; font-weight: 600; color: #fff; margin-bottom: 3px; }
+
+/* Ruby options */
+.ruby-options {
+  max-height: 0;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  margin-top: 0;
+  transition: all 0.3s ease;
+}
+
+.ruby-options.active {
+  max-height: 60px;
+  opacity: 1;
+  pointer-events: auto;
+  margin-bottom: 4px;
+}
+
+/* Glow Wrapper */
+.glow-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 8px;
+  padding: 8px 12px;
+  flex-shrink: 0;
+}
+
+.glow-wrapper input[type="color"] {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.glow-wrapper input[type="color"]::-webkit-color-swatch-wrapper { padding: 0; }
+.glow-wrapper input[type="color"]::-webkit-color-swatch { border: 2px solid #333; border-radius: 4px; }
+
+/* Colores populares */
+.label-popular {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #1a1a1a;
+}
+
+/* Degradados y Ruby (Tamaño original: 3 columnas) */
+.popular-colors {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.color-preset {
+  height: 35px;
+  border: 2px solid #2a2a2a;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.color-preset:hover { border-color: #fff; transform: scale(1.05); }
+
+/* Sólidos NameColor (Mini cuadros) */
+.solid-colors-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 6px;
+}
+
+.solid-color-btn {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.solid-color-btn:hover {
+  transform: scale(1.1);
+  border-color: #fff;
+}
+
+/* Contenedor de presets con scroll interno (evita que aplaste a los guardados) */
+.presets-scroll-container {
+  max-height: 160px; /* Altura máxima antes de hacer scroll */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 4px;
+  flex-shrink: 0; /* No se encoge */
+}
+
+.presets-scroll-container::-webkit-scrollbar { width: 4px; }
+.presets-scroll-container::-webkit-scrollbar-track { background: #0a0a0a; }
+.presets-scroll-container::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+/* Degradados guardados: Altura fija garantizada */
+.saved-gradients {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-height: 100px; /* Altura mínima para que siempre se vean los recuadros */
+  max-height: 100px;
+  overflow-y: auto;
+  flex-shrink: 0; /* No se encoge */
+}
+
+.saved-gradients::-webkit-scrollbar { width: 4px; }
+.saved-gradients::-webkit-scrollbar-track { background: #0a0a0a; }
+.saved-gradients::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+.saved-gradient-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.saved-gradient-preview {
+  flex: 1;
+  height: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.saved-gradient-delete {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.saved-gradient-delete:hover { color: #ff4444; }
+
+.no-saved { color: #555; font-size: 0.8rem; text-align: center; padding: 10px; }
+
+.save-gradient-btn {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-left: 8px;
+  transition: color 0.2s;
+}
+
+.save-gradient-btn:hover { color: #fff; }
+
+.saved-gradient-edit {
+  background: transparent;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+  margin-right: 4px;
+}
+
+.saved-gradient-edit:hover { color: #3b82f6; /* Azul para diferenciar del rojo de eliminar */ }
+
+/* Scrollbar personalizado para las columnas de colores */
+.colors-col-left::-webkit-scrollbar,
+.colors-col-right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.colors-col-left::-webkit-scrollbar-track,
+.colors-col-right::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.colors-col-left::-webkit-scrollbar-thumb,
+.colors-col-right::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 3px;
+}
+
+.colors-col-left::-webkit-scrollbar-thumb:hover,
+.colors-col-right::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Secciones de presets compactas */
+.preset-section {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.preset-title {
+  font-size: 0.65rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.preset-scroll-row {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  padding-bottom: 4px;
+}
+
+.preset-scroll-row::-webkit-scrollbar { height: 4px; }
+.preset-scroll-row::-webkit-scrollbar-track { background: #0a0a0a; }
+.preset-scroll-row::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+.preset-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.preset-btn:hover {
+  transform: scale(1.1);
+  border-color: #fff;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+/* MÓDULO AVATAR - Layout 2 columnas */
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.avatars-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  height: 100%;
+}
+
+.avatars-col-left,
+.avatars-col-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.avatars-col-left::-webkit-scrollbar,
+.avatars-col-right::-webkit-scrollbar { width: 4px; }
+.avatars-col-left::-webkit-scrollbar-track,
+.avatars-col-right::-webkit-scrollbar-track { background: transparent; }
+.avatars-col-left::-webkit-scrollbar-thumb,
+.avatars-col-right::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+
+/* Zona de carga */
+.upload-zone {
+  border: 2px dashed #2a2a2a;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: border-color 0.2s;
+}
+
+.upload-zone:hover { border-color: #555; }
+
+.btn-upload {
+  background: #111;
+  border: 1px solid #333;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.2s;
+}
+
+.btn-upload:hover { background: #1f1f1f; border-color: #fff; }
+
+/* Filas de filtros y posición */
+.filter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 6px;
+}
+
+.filter-row span {
+  font-size: 0.75rem;
+  color: #888;
+  width: 100px;
+}
+
+.filter-row .speed-slider { flex: 1; }
+
+/* Grid de formas */
+.shape-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.shape-btn {
+  background: #111;
+  border: 1px solid #2a2a2a;
+  color: #888;
+  padding: 8px 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.2s;
+}
+
+.shape-btn:hover { border-color: #555; color: #fff; }
+.shape-btn.active { border-color: #fff; background: #1f1f1f; color: #fff; }
+
+/* Contenedor del Canvas (Tamaño visual fijo para no romper el layout) */
+.canvas-container {
+  background: #0a0a0a;
+  border: 1px dashed #2a2a2a;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  flex-shrink: 0;
+}
+
+#avatarCanvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: transparent;
+}
+
+/* Botones de acción */
+.avatar-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Botones: fila compacta con scroll si es necesario */
+.avatar-actions-scroll {
+  display: flex;
+  gap: 10px;
+  flex-shrink: 0;
+  min-width: 0; /* ← AGREGAR: permite que flex se encoja */
+}
+
+.btn-action {
+  flex: 1;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  color: #fff;
+  padding: 10px; /* ← REVERTIDO al original */
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem; /* ← REVERTIDO al original */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* ← REVERTIDO al original */
+  text-decoration: none;
+  transition: all 0.2s;
+  min-width: 0; /* ← AGREGAR: evita que el texto fuerce overflow */
+  text-align: center;
+}
+
+.btn-action:hover { border-color: #fff; background: #1f1f1f; }
+.btn-xat { background: #1a1a2e; border-color: #3b82f6; color: #3b82f6; }
+.btn-xat:hover { background: #3b82f6; color: #fff; }
+
+/* Vista Unificada (Reservada) */
+.label-unified {
+  margin-top: 10px;
+  padding-top: 12px;
+  border-top: 1px solid #1a1a1a;
+}
+
+/* Caja de Perfil: Cuadrada, compacta y con espacio para el nick */
+.unified-preview-box {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Fuerza que sea siempre un cuadrado perfecto */
+  max-height: 160px; /* Ocupa menos espacio vertical */
+  background: #0f0f0f;
+  border: 1px dashed #2a2a2a;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-top: 10px;
+}
+
+/* Texto inyectado en la vista unificada (NICK AVATARES) */
+.unified-nick-display {
+  font-size: 2.0rem;
+  font-weight: 700;
+  text-align: center;
+  word-break: break-word;
+  line-height: 1.2;
+  color: var(--unified-color, #ffffff);
+  text-shadow: 0 0 8px var(--unified-glow, #000000);
+  font-family: var(--unified-font, 'Inter', sans-serif);
+}
+
+/* Animación Wave para la vista unificada (si aplica) */
+.unified-nick-display.wave-anim {
+  background: var(--unified-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-repeat: repeat-x;
+  animation: gradientShift 4s linear infinite;
+  text-shadow: none;
+}
+
+/* Animación Ruby para la vista unificada */
+.unified-nick-display.ruby-anim {
+  background: var(--unified-ruby-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 300% 300%;
+  background-repeat: repeat;
+  animation: blenderMix var(--unified-ruby-speed, 4s) ease-in-out infinite;
+  text-shadow: none;
+}
+
+/* PERFIL minimalista: sin caja, sin borde, solo el texto */
+.unified-nick-minimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px; /* Altura mínima para el nick */
+  flex-shrink: 0;
+}
+
+/* Estilo para el preset (degradado o sólido) que está actualmente activo */
+.color-preset.active,
+.solid-color-btn.active {
+  border-color: #ffffff !important;
+  transform: scale(1.08);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  z-index: 2;
+}
