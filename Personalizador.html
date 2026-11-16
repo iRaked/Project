@@ -18,11 +18,57 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="Personalizador.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-  <!-- BLOCK 
+  <!-- BLOCK -->
   <script type="text/javascript">
-  document.onkeydown = function(){return false};
-  document.oncontextmenu = function(){return false}
-  </script>-->
+    (function () {
+      'use strict';
+
+      function isEditable(el) {
+        if (!el) return false;
+        if (el.tagName === 'TEXTAREA' || el.tagName === 'SELECT') return true;
+        if (el.tagName === 'INPUT') {
+          const t = (el.type || 'text').toLowerCase();
+          return !['button', 'submit', 'reset', 'checkbox', 'radio', 'file'].includes(t);
+        }
+        return !!el.isContentEditable;
+      }
+
+      function editable(e) {
+        const path = e.composedPath ? e.composedPath() : [e.target];
+        return path.some(isEditable);
+      }
+
+      document.addEventListener('keydown', function (e) {
+        const key = (e.key || '').toUpperCase();
+        const ctrl = e.ctrlKey || e.metaKey;
+
+        if (key === 'F12' ||
+            (ctrl && e.shiftKey && ['I','J','C','K','E','M'].includes(key)) ||
+            (ctrl && ['U','S','P'].includes(key))) {
+          e.preventDefault();
+          return false;
+        }
+
+        if (editable(e)) return true;
+
+        if (['CONTROL','SHIFT','ALT','META','CAPSLOCK','TAB'].includes(key)) return true;
+
+        e.preventDefault();
+        return false;
+      }, true);
+
+      document.addEventListener('contextmenu', function (e) {
+        if (editable(e)) return true;
+        e.preventDefault();
+        return false;
+      }, true);
+
+      document.addEventListener('dragstart', function (e) {
+        const tag = e.target && e.target.tagName;
+        if (tag === 'IMG' || tag === 'A') e.preventDefault();
+      }, true);
+    })();
+  </script>
 
 </head>
 <body>
